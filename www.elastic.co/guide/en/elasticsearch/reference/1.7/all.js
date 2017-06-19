@@ -3,6 +3,7 @@
 ,$s/<script\>.*<\/script>//gc
 ,$s/<noscript\>.*<\/noscript>//gc
 ,$s/<noscript\>\(.*\n\)\{-\}.*<\/noscript>//gc
+,$s/<script\>\(.*\n\)\{-\}.*<\/script>//gc
 ,$s/href="\(.\{-\}\).html"/href="#\1"/gc
 
 
