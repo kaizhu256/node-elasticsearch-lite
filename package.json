@@ -1,0 +1,43 @@
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "bin": {
+        "elasticsearch": "lib.elasticsearch.js"
+    },
+    "description": "this zero-dependency package will download and install the elasticsearch-v1.7.6 prebuilt-binary from https://download.elastic.co/elasticsearch/elasticsearch",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/kaizhu256/node-elasticsearch-lite",
+    "keywords": [
+        "elasticsearch",
+        "elasticsearch-lite",
+        "search",
+        "server"
+    ],
+    "license": "MIT",
+    "main": "lib.elasticsearch.js",
+    "name": "elasticsearch-lite",
+    "nameAlias": "elasticsearch",
+    "nameOriginal": "elasticsearch-lite",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kaizhu256/node-elasticsearch-lite.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\"",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
+    },
+    "version": "2017.1.7"
+}
