@@ -626,9 +626,19 @@ cat _parameters_12.html >> all.html
 ,$s/<\/body>\(.*\n\)\{-\}.*<body>/\r/gc
 ,$s/\n\n\n*/\r\r/gc
 [
+'script',
+'noscript',
+'script2',
   '.col-xs-12.col-sm-4.col-md-4',
   '.edit_me',
   '.page_header',
+'body style',
+'.edit_me',
+'#footer-subscribe',
+'.footer-wrapper',
+'header',
+'.page_header',
+'#right_col',
 ].forEach(function(query) {
     Array.from(document.querySelectorAll(query)).forEach(function (element) {
         element.remove();
