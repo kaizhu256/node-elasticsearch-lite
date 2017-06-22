@@ -487,11 +487,97 @@ cat _parameters_12.html >> all.html
 '#glossary',
 ].forEach(function (query) {
     try {
-        console.assert(document.querySelector(query));
-    } catch (errorCaught) {
-        console.error(errorCaught);
+        if (!document.querySelector(query)) {
+            console.error(query);
+        }
+    } catch (error) {
+        console.error(error);
     }
 });
+
+
+
+
+[
+'#index',
+'#kibana-guide',
+'#using-kibana-for-the-first-time',
+'#import-some-data',
+'#accessing-the-kibana-interface',
+'#the-first-search',
+'#configuring-another-index',
+'#_next_steps',
+'#working-with-queries-and-filters',
+'#our-dashboard',
+'#queries',
+'#multiple-queries',
+'#colors-and-legends',
+'#filters',
+'#_more_reading',
+'#rows-and-panels',
+'#loading-a-blank-dashboard',
+'#adding-a-row',
+'#the-row-controls',
+'#adding-panels',
+'#collapsing-and-expanding-rows',
+'#editing-rows',
+'#moving-and-removing-panels',
+'#moving-and-removing-rows',
+'#_next_steps_2',
+'#saving-and-loading-dashboards',
+'#saving-your-awesome-dashboard',
+'#recalling-your-dashboard',
+'#sharing-dashboards',
+'#saving-a-static-dashboard',
+'#_next_steps_3',
+'#_dashboard_schema',
+'#services',
+'#pulldown',
+'#nav',
+'#loader',
+'#rows-array',
+'#index-settings',
+'#the-rest',
+'#importing-schemas',
+'#templated-and-scripted-dashboards',
+'#the-dashboard-directory',
+'#templated-dashboards-.json',
+'#scripted-dashboards-.js',
+'#_parameters',
+'#panels',
+'#_bettermap',
+'#_parameters_2',
+'#_column',
+'#_parameters_3',
+'#_goal',
+'#_parameters_4',
+'#_histogram',
+'#_parameters_5',
+'#_hits',
+'#_parameters_6',
+'#_map',
+'#_parameters_7',
+'#_sparklines',
+'#_parameters_8',
+'#_table',
+'#_parameters_9',
+'#_terms',
+'#_parameters_10',
+'#_text',
+'#_parameters_11',
+'#_trends',
+'#_parameters_12',
+].forEach(function (query) {
+    try {
+        if (!document.querySelector(query)) {
+            console.error(query);
+        }
+    } catch (error) {
+        console.error(error);
+    }
+});
+
+
 
 
 
