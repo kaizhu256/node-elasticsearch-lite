@@ -627,6 +627,7 @@ cat _parameters_12.html >> all.html
 ,$s/\n\n\n*/\r\r/gc
 [
   '.col-xs-12.col-sm-4.col-md-4',
+  '.edit_me',
 ].forEach(function(query) {
     Array.from(document.querySelectorAll(query)).forEach(function (element) {
         element.remove();
