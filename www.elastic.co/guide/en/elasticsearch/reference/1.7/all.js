@@ -25,6 +25,7 @@
 ,$s/\/body >/\/body>/gc
 
 [
+'body > link',
 'body style',
 '.edit_me',
 '#footer-subscribe',
@@ -32,6 +33,7 @@
 'header',
 '.page_header',
 '#right_col',
+'.tertiary-nav',
 ].forEach(function (query) {
     Array.from(document.querySelectorAll(query)).forEach(function (element) {
         element.remove();
