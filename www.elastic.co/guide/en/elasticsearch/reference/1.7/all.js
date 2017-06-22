@@ -1,6 +1,5 @@
 aa = [
 'getting-started',
-'getting-started',
 '_basic_concepts',
 '_installation',
 '_exploring_your_cluster',
@@ -437,7 +436,7 @@ Array.from(document.querySelectorAll('[href]')).forEach(function (element) {
     if (href.indexOf('file://') !== 0) {
         return;
     }
-    href = href.split('/').slice(-1)[0].replace('.html', '');
+    href = href.split('/').slice(-1)[0].split('#')[0].replace('.html', '');
     cc[href] = true;
 });
 console.error(Object.keys(cc).length);
@@ -451,7 +450,7 @@ Array.from(document.querySelectorAll('[href]')).forEach(function (element) {
     if (href.indexOf('file://') !== 0) {
         return;
     }
-    href = href.split('/').slice(-1)[0].replace('.html', '');
+    href = href.split('/').slice(-1)[0].split('#')[0].replace('.html', '');
     if (bb[href]) {
         element.href = '#' + href;
     }
