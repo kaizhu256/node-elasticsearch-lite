@@ -502,3 +502,8 @@ Array.from(document.querySelectorAll('[href]')).forEach(function (element) {
 
 
 col-xs-12 col-sm-8 col-md-8 guide-section/col-xs-12 col-sm-12 col-md-12 guide-section/gc
+
+
+,$s/src="images\/\(\w*\)\.png"/class="images-\1-png"/gc
+,$s/src="images\/\(\w*\)\/\(\w*\)\.png"/class="images-\1-\2-png"/gc
+,$s/src="images\/\(\w*\)\/\(\w*\)\/\(\w*\)\.png"/class="images-\1-\2-\3-png"/gc
