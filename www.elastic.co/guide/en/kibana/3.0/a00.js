@@ -1,74 +1,4 @@
-cat index.html > all.html
-cat kibana-guide.html >> all.html
-cat using-kibana-for-the-first-time.html >> all.html
-cat import-some-data.html >> all.html
-cat accessing-the-kibana-interface.html >> all.html
-cat the-first-search.html >> all.html
-cat configuring-another-index.html >> all.html
-cat _next_steps.html >> all.html
-cat working-with-queries-and-filters.html >> all.html
-cat our-dashboard.html >> all.html
-cat queries.html >> all.html
-cat multiple-queries.html >> all.html
-cat colors-and-legends.html >> all.html
-cat filters.html >> all.html
-cat _more_reading.html >> all.html
-cat rows-and-panels.html >> all.html
-cat loading-a-blank-dashboard.html >> all.html
-cat adding-a-row.html >> all.html
-cat the-row-controls.html >> all.html
-cat adding-panels.html >> all.html
-cat collapsing-and-expanding-rows.html >> all.html
-cat editing-rows.html >> all.html
-cat moving-and-removing-panels.html >> all.html
-cat moving-and-removing-rows.html >> all.html
-cat _next_steps_2.html >> all.html
-cat saving-and-loading-dashboards.html >> all.html
-cat saving-your-awesome-dashboard.html >> all.html
-cat recalling-your-dashboard.html >> all.html
-cat sharing-dashboards.html >> all.html
-cat saving-a-static-dashboard.html >> all.html
-cat _next_steps_3.html >> all.html
-cat _dashboard_schema.html >> all.html
-cat services.html >> all.html
-cat pulldown.html >> all.html
-cat nav.html >> all.html
-cat loader.html >> all.html
-cat rows-array.html >> all.html
-cat index-settings.html >> all.html
-cat the-rest.html >> all.html
-cat importing-schemas.html >> all.html
-cat templated-and-scripted-dashboards.html >> all.html
-cat the-dashboard-directory.html >> all.html
-cat templated-dashboards-.json.html >> all.html
-cat scripted-dashboards-.js.html >> all.html
-cat _parameters.html >> all.html
-cat panels.html >> all.html
-cat _bettermap.html >> all.html
-cat _parameters_2.html >> all.html
-cat _column.html >> all.html
-cat _parameters_3.html >> all.html
-cat _goal.html >> all.html
-cat _parameters_4.html >> all.html
-cat _histogram.html >> all.html
-cat _parameters_5.html >> all.html
-cat _hits.html >> all.html
-cat _parameters_6.html >> all.html
-cat _map.html >> all.html
-cat _parameters_7.html >> all.html
-cat _sparklines.html >> all.html
-cat _parameters_8.html >> all.html
-cat _table.html >> all.html
-cat _parameters_9.html >> all.html
-cat _terms.html >> all.html
-cat _parameters_10.html >> all.html
-cat _text.html >> all.html
-cat _parameters_11.html >> all.html
-cat _trends.html >> all.html
-cat _parameters_12.html >> all.html
-
-
-
+if (0) {
 aa = [
 'kibana-guide',
 'using-kibana-for-the-first-time',
@@ -139,7 +69,7 @@ aa = [
 '_parameters_12',
 ];
 
-
+} else {
 
 aa = [
 'getting-started',
@@ -559,6 +489,7 @@ aa = [
 'glossary',
 ];
 
+}
 
 aa.forEach(function (query) {
     try {
@@ -588,9 +519,105 @@ Array.from(document.querySelectorAll('[href]')).forEach(function (element) {
 console.error(Object.keys(cc).length);
 Object.keys(cc).forEach(function (key) {
     if (!bb[key]) {
-        console.error(key.split('.')[1]);
+        console.error(key);
     }
 });
+Array.from(document.querySelectorAll('[href]')).forEach(function (element) {
+    href = element.href;
+    if (href.indexOf('file://') !== 0) {
+        return;
+    }
+    href = href.split('/').slice(-1)[0].replace('.html', '');
+    if (bb[href]) {
+        element.href = '#' + href;
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cat index.html > all.html
+cat kibana-guide.html >> all.html
+cat using-kibana-for-the-first-time.html >> all.html
+cat import-some-data.html >> all.html
+cat accessing-the-kibana-interface.html >> all.html
+cat the-first-search.html >> all.html
+cat configuring-another-index.html >> all.html
+cat _next_steps.html >> all.html
+cat working-with-queries-and-filters.html >> all.html
+cat our-dashboard.html >> all.html
+cat queries.html >> all.html
+cat multiple-queries.html >> all.html
+cat colors-and-legends.html >> all.html
+cat filters.html >> all.html
+cat _more_reading.html >> all.html
+cat rows-and-panels.html >> all.html
+cat loading-a-blank-dashboard.html >> all.html
+cat adding-a-row.html >> all.html
+cat the-row-controls.html >> all.html
+cat adding-panels.html >> all.html
+cat collapsing-and-expanding-rows.html >> all.html
+cat editing-rows.html >> all.html
+cat moving-and-removing-panels.html >> all.html
+cat moving-and-removing-rows.html >> all.html
+cat _next_steps_2.html >> all.html
+cat saving-and-loading-dashboards.html >> all.html
+cat saving-your-awesome-dashboard.html >> all.html
+cat recalling-your-dashboard.html >> all.html
+cat sharing-dashboards.html >> all.html
+cat saving-a-static-dashboard.html >> all.html
+cat _next_steps_3.html >> all.html
+cat _dashboard_schema.html >> all.html
+cat services.html >> all.html
+cat pulldown.html >> all.html
+cat nav.html >> all.html
+cat loader.html >> all.html
+cat rows-array.html >> all.html
+cat index-settings.html >> all.html
+cat the-rest.html >> all.html
+cat importing-schemas.html >> all.html
+cat templated-and-scripted-dashboards.html >> all.html
+cat the-dashboard-directory.html >> all.html
+cat templated-dashboards-.json.html >> all.html
+cat scripted-dashboards-.js.html >> all.html
+cat _parameters.html >> all.html
+cat panels.html >> all.html
+cat _bettermap.html >> all.html
+cat _parameters_2.html >> all.html
+cat _column.html >> all.html
+cat _parameters_3.html >> all.html
+cat _goal.html >> all.html
+cat _parameters_4.html >> all.html
+cat _histogram.html >> all.html
+cat _parameters_5.html >> all.html
+cat _hits.html >> all.html
+cat _parameters_6.html >> all.html
+cat _map.html >> all.html
+cat _parameters_7.html >> all.html
+cat _sparklines.html >> all.html
+cat _parameters_8.html >> all.html
+cat _table.html >> all.html
+cat _parameters_9.html >> all.html
+cat _terms.html >> all.html
+cat _parameters_10.html >> all.html
+cat _text.html >> all.html
+cat _parameters_11.html >> all.html
+cat _trends.html >> all.html
+cat _parameters_12.html >> all.html
+
+
+
 
 
 
