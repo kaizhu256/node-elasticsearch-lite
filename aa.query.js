@@ -502,9 +502,15 @@ console.assert(aa.length = 481);
 console.assert(Object.keys(bb).length = 481);
 
 idDict = {};
+idDuplicateDict = {};
 Array.from(document.querySelectorAll('[id]')).forEach(function (element) {
     idDict[element.id] = true;
+    if (document.querySelectorAll('[id="' + element.id+ '"]').length > 1 &&
+            document.querySelector('[href="#' + element.id+ '"]')) {
+        idDuplicateDict[element.id] = true;
+    }
 });
+console.error(idDuplicateDict);
 hrefDict = {};
 Array.from(document.querySelectorAll('[href]')).forEach(function (element) {
     href = element.href;
@@ -525,17 +531,16 @@ Object.keys(hrefDict).forEach(function (key) {
     }
 });
 
-Array.from(document.querySelectorAll('[href]')).forEach(function (element) {
-    href = element.href;
-    if (href.indexOf('file://') !== 0) {
-        return;
-    }
-    href = href.split('/').slice(-1)[0].split('#').slice(-1)[0].replace('.html', '');
-    if (!href || href === 'index') {
-        console.error(element.href);
-        console.error(element);
-        return;
-    }
-    element.href = '#' + href;
-});
-
+//!! Array.from(document.querySelectorAll('[href]')).forEach(function (element) {
+    //!! href = element.href;
+    //!! if (href.indexOf('file://') !== 0) {
+        //!! return;
+    //!! }
+    //!! href = href.split('/').slice(-1)[0].split('#').slice(-1)[0].replace('.html', '');
+    //!! if (!href || href === 'index') {
+        //!! console.error(element.href);
+        //!! console.error(element);
+        //!! return;
+    //!! }
+    //!! element.href = '#' + href;
+//!! });
