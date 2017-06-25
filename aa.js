@@ -42,7 +42,9 @@ document.documentElement.outerHTML
 ,$s/<!--\(.*\n\)\{6\}.*-->$//gc
 484
 
-
-
-
-
+,$s/src="images\/\(\w*\)\.png"/class="images-\1-png"/gc
+10
+,$s/src="images\/\(\w*\)\/\(\w*\)\.png"/class="images-\1-\2-png"/gc
+198
+,$s/src="images\/\(\w*\)\/\(\w*\)\/\(\w*\)\.png"/class="images-\1-\2-\3-png"/gc
+436
