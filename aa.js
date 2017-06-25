@@ -10,6 +10,9 @@
 ,$s/<script2\>\(.*\n\)\{-\}.*<\/script2>//gc
 7751
 
+,$s/<noscript\>\(.*\n\)\{-\}.*<\/noscript>//gc
+968
+
 ,$s/<iframe\>\(.*\n\)\{-\}.*<\/iframe>//gc
 484
 
