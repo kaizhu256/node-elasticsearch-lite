@@ -13,13 +13,6 @@
 ,$s/<noscript\>\(.*\n\)\{-\}.*<\/noscript>//gc
 968
 
-,$s/<iframe\>\(.*\n\)\{-\}.*<\/iframe>//gc
-484
-
-,$s/<noscript\>/<noscript3/gc
-,$s/\<noscript>/noscript3>/gc
-968
-
 [
   'script2',
   'noscript'
