@@ -14,8 +14,21 @@
 968
 
 [
-  'script2',
-  'noscript'
+    "#footer-subscribe",
+    "#right_col",
+    ".col-xs-12.col-sm-4.col-md-4",
+    ".edit_me",
+    ".footer-wrapper",
+    ".nav-mobile-dropdown",
+    ".navfooter",
+    ".page_header",
+    ".tertiary-nav",
+    "body > link",
+    "body style",
+    "header",
+    "noscript",
+    "script",
+    "script2",
 ].forEach(function (query) {
     Array.from(document.querySelectorAll(query)).forEach(function (element) {
         element.remove();
