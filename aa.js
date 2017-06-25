@@ -48,3 +48,10 @@ document.documentElement.outerHTML
 198
 ,$s/src="images\/\(\w*\)\/\(\w*\)\/\(\w*\)\.png"/class="images-\1-\2-\3-png"/gc
 436
+
+
+Array.from(document.querySelectorAll('[src]')).map(function (element) {
+    return element.src.split('.').slice(-2).join('.')
+}).sort().join('\n')
+
+,$s/src="..tutorials\/\(\w*\)\/\(\w*\)\.png"/class="tutorials-\1-\2-png"/gc
