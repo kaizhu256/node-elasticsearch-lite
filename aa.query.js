@@ -512,8 +512,9 @@ Array.from(document.querySelectorAll('[href]')).forEach(function (element) {
         return;
     }
     href = href.split('/').slice(-1)[0].split('#').slice(-1)[0].replace('.html', '');
-    if (!href) {
+    if (!href || href === 'index') {
         console.error(element.href);
+        console.error(element);
     }
     hrefDict[href] = true;
 });
@@ -523,3 +524,18 @@ Object.keys(hrefDict).forEach(function (key) {
         console.error(JSON.stringify(key));
     }
 });
+
+Array.from(document.querySelectorAll('[href]')).forEach(function (element) {
+    href = element.href;
+    if (href.indexOf('file://') !== 0) {
+        return;
+    }
+    href = href.split('/').slice(-1)[0].split('#').slice(-1)[0].replace('.html', '');
+    if (!href || href === 'index') {
+        console.error(element.href);
+        console.error(element);
+        return;
+    }
+    element.href = '#' + href;
+});
+
