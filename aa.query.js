@@ -505,12 +505,14 @@ idDict = {};
 idDuplicateDict = {};
 Array.from(document.querySelectorAll('[id]')).forEach(function (element) {
     idDict[element.id] = true;
-    if (document.querySelectorAll('[id="' + element.id+ '"]').length > 1 &&
+    if (!idDuplicateDict[element.id] &&
+            document.querySelectorAll('[id="' + element.id+ '"]').length > 1 &&
             document.querySelector('[href="#' + element.id+ '"]')) {
         idDuplicateDict[element.id] = true;
+        console.error(element.id);
+        console.error(document.querySelectorAll('[href="#' + element.id+ '"]'));
     }
 });
-console.error(idDuplicateDict);
 hrefDict = {};
 Array.from(document.querySelectorAll('[href]')).forEach(function (element) {
     href = element.href;
@@ -544,3 +546,51 @@ Object.keys(hrefDict).forEach(function (key) {
     //!! }
     //!! element.href = '#' + href;
 //!! });
+
+/*
+undegenerate _parameters
+
+VM17740:513 (6) [a, a, a, a, a, a]
+(anonymous) @ VM17740:513
+(anonymous) @ VM17740:506
+VM17740:512 _parameters_2
+(anonymous) @ VM17740:512
+(anonymous) @ VM17740:506
+VM17740:513 (3) [a, a, a]
+(anonymous) @ VM17740:513
+(anonymous) @ VM17740:506
+VM17740:512 _parameters_3
+(anonymous) @ VM17740:512
+(anonymous) @ VM17740:506
+VM17740:513 (3) [a, a, a]
+(anonymous) @ VM17740:513
+(anonymous) @ VM17740:506
+VM17740:512 _parameters_4
+(anonymous) @ VM17740:512
+(anonymous) @ VM17740:506
+VM17740:513 (3) [a, a, a]
+(anonymous) @ VM17740:513
+(anonymous) @ VM17740:506
+VM17740:512 _parameters_5
+(anonymous) @ VM17740:512
+(anonymous) @ VM17740:506
+VM17740:513 (3) [a, a, a]
+(anonymous) @ VM17740:513
+(anonymous) @ VM17740:506
+VM17740:512 _parameters_6
+(anonymous) @ VM17740:512
+(anonymous) @ VM17740:506
+VM17740:513 (3) [a, a, a]
+(anonymous) @ VM17740:513
+(anonymous) @ VM17740:506
+VM17740:512 _parameters_7
+(anonymous) @ VM17740:512
+(anonymous) @ VM17740:506
+VM17740:513 (3) [a, a, a]
+(anonymous) @ VM17740:513
+(anonymous) @ VM17740:506
+VM17740:512 _parameters_8
+(anonymous) @ VM17740:512
+(anonymous) @ VM17740:506
+VM17740:513 (3) [a, a, a]
+*/
