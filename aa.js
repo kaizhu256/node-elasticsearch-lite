@@ -35,3 +35,9 @@
     })
 });
 document.documentElement.outerHTML
+
+,$s/<!--.*-->$//gc
+5324
+
+,$s/<!--\(.*\n\)\{6\}.*-->$//gc
+484
