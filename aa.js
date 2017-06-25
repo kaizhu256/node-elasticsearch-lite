@@ -55,3 +55,9 @@ Array.from(document.querySelectorAll('[src]')).map(function (element) {
 }).sort().join('\n')
 
 ,$s/src="..tutorials\/\(\w*\)\/\(\w*\)\.png"/class="tutorials-\1-\2-png"/gc
+,$s/ alt="[^"]*\.png"//gc
+,$s/https:..f.cloud.github.com/https---f-cloud-github-com/gc
+,$s/.4320215./-4320215-/gc
+
+,$s/href="index.html">Kibana User Guide/href="#id-2">Kibana User Guide/gc
+
