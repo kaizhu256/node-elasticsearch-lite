@@ -16161,7 +16161,7 @@ return Utf8ArrayToStr(bff);
             // create apidoc.html
             local.fsWriteFileWithMkdirpSync(
                 local.env.npm_config_dir_build + '/apidoc.html',
-                local.apidocCreate(options)
+                local.tryCatchReadFile('apidoc.html', 'utf8') || local.apidocCreate(options)
             );
             console.error('created apidoc file ' + local.env.npm_config_dir_build +
                 '/apidoc.html\n');
@@ -16433,6 +16433,8 @@ return Utf8ArrayToStr(bff);
                 (/.*?\n.*?\n/),
                 // customize cdn-download
                 (/\n# cdn download\n[\S\s]*?\n\n\n\n/),
+                // customize demo
+                (/\n\[!\[github\.com test-server\][\S\s]*?\n\n\n\n/),
                 // customize todo
                 (/\n#### todo\n[\S\s]*?\n\n\n\n/),
                 // customize quickstart-example-js
@@ -16460,7 +16462,8 @@ return Utf8ArrayToStr(bff);
                 });
             });
             // customize swaggerdoc
-            if (!local.assetsDict['/assets.swgg.swagger.json']) {
+            if (!local.assetsDict['/assets.swgg.swagger.json'] ||
+                    local.assetsDict['/index.html'] === local.assetsDict['/assets.swgg.html']) {
                 options.dataTo = options.dataTo.replace(
                     (/\n#### swaggerdoc\n[\S\s]*?\n#### /),
                     '\n#### '
@@ -16468,23 +16471,21 @@ return Utf8ArrayToStr(bff);
             }
             // customize comment
             options.dataFrom.replace(
-                (/^( *?)(?:#!! |#\/\/ |\/\/!!)(.*?)$/gm),
+                (/^( *?)(?:#!\! |#\/\/ |\/\/!\! )(.*?)$/gm),
                 function (match0, match1, match2) {
                     options.dataTo = options.dataTo.replace(match1 + match2, match0);
                 }
             );
             options.customize();
             // customize no shDeployGithub
-            if (options.dataFrom.indexOf('shDeployGithub') < 0) {
+            if (options.dataFrom.indexOf('shDeployCustom') >= 0) {
                 [
-                    // customize demo
-                    (/\n# cdn download\n[\S\s]*?\n# documentation\n/),
                     // customize test-server
                     (/\n\| git-branch : \|[\S\s]*?\n\| test-report : \|/),
                     // customize swagger-doc
                     (/\n#### swaggerdoc\n[\S\s]*?\n#### /),
                     // customize quickstart
-                    (/\n# quickstart[\S\s]*?\n# all screenshots\n/)
+                    (/\n# quickstart [\S\s]*?\n# all screenshots\n/)
                 ].forEach(function (rgx) {
                     options.dataFrom.replace(rgx, function (match0) {
                         options.dataTo = options.dataTo.replace(rgx, match0);
@@ -16500,7 +16501,9 @@ return Utf8ArrayToStr(bff);
                 });
             }
             // customize assets.index.template.html with file-override
-            if (local.fs.existsSync('./assets.index.template.html')) {
+            if (local.assetsDict['/index.html'] ===
+                    local.assetsDict['/assets.swgg.html'] ||
+                    local.fs.existsSync('./assets.index.template.html')) {
                 options.dataTo = options.dataTo.replace(
                     new RegExp('\\n {8}\\/\\* jslint-ignore-begin \\*\\/\\n' +
                         ' {8}local.assetsDict\\[\'\\/assets.index.template.html\'\\]' +
@@ -18229,7 +18232,7 @@ vendor\\)s\\{0,1\\}\\(\\b\\|_\\)\
          * this function will require and export example.js embedded in README.md
          */
             var module, script, tmp;
-            // start the repl-debugger
+            // start repl-debugger
             local.replStart();
             // debug dir
             [__dirname, process.cwd()].forEach(function (dir) {
@@ -18255,14 +18258,15 @@ vendor\\)s\\{0,1\\}\\(\\b\\|_\\)\
             });
             if (local.global.utility2_rollup || local.env.npm_config_mode_start) {
                 // init assets
-                local.assetsDict['/'] = local.assetsDict['/index.html'] = local.templateRender(
-                    // uncomment utility2-comment
-                    local.assetsDict['/assets.index.template.html'].replace(
-                        (/<!-- utility2-comment\b([\S\s]+?)\butility2-comment -->/g),
-                        '$1'
-                    ),
-                    { env: local.env, isRollup: true }
-                );
+                local.assetsDict['/'] = local.assetsDict['/index.html'] =
+                    local.assetsDict['/index.html'] || local.templateRender(
+                        // uncomment utility2-comment
+                        local.assetsDict['/assets.index.template.html'].replace(
+                            (/<!-- utility2-comment\b([\S\s]+?)\butility2-comment -->/g),
+                            '$1'
+                        ),
+                        { env: local.env, isRollup: true }
+                    );
                 local.assetsDict['/assets.example.js'] =
                     local.assetsDict['/assets.example.template.js'];
                 local.assetsDict['/assets.app.js'] =
@@ -18328,12 +18332,13 @@ vendor\\)s\\{0,1\\}\\(\\b\\|_\\)\
                 local.fs.readFileSync('test.js', 'utf8'),
                 process.cwd() + '/test.js'
             );
-            // init assets.index.html
+            // init assets index.html
             local.tryCatchOnError(function () {
                 local.assetsDict['/assets.index.template.html'] =
                     local.fs.readFileSync('assets.index.template.html', 'utf8');
             }, local.nop);
             local.assetsDict['/'] = local.assetsDict['/index.html'] =
+                local.assetsDict['/index.html'] ||
                 local.jslintAndPrintConditional(local.templateRender(
                     // uncomment utility2-comment
                     local.assetsDict['/assets.index.template.html'].replace(
@@ -20007,7 +20012,7 @@ instruction\n\
             case 'lib.utility2.sh':
                 local.jslintAndPrintConditional(
                     local.tryCatchReadFile(__dirname + '/' + key, 'utf8')
-                        .replace((/^ *?#!! .*$/gm), ''),
+                        .replace((/^ *?#!\! .*$/gm), ''),
                     __dirname + '/' + key + '.html'
                 );
                 break;
@@ -23208,6 +23213,9 @@ local.templateUiResponseAjax = '\
                                 tmp = tmp.value;
                                 if (!tmp) {
                                     return;
+                                }
+                                if (paramDef.type === 'string' && typeof tmp === 'string') {
+                                    break;
                                 }
                                 // parse schema
                                 if (paramDef.in === 'body') {

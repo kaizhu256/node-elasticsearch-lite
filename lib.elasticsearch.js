@@ -62,14 +62,6 @@
          */
             var requestBackend, responseBackend;
             switch (request.urlParsed.pathname) {
-            // redirect to swgg
-            case '/swgg':
-            case '/swgg/':
-                response.writeHead(307, {
-                    location: '/assets.swgg.html' + (request.urlParsed.search || '')
-                });
-                response.end();
-                break;
             // redirect to kibana
             case '/kibana':
             case '/kibana/':
@@ -129,7 +121,7 @@
                                     'v.open(e,i,!0)',
                                     'v.open(e,local.githubCorsUrlOverride(i,' +
                                         '"https://h1-elasticsearch-alpha.herokuapp.com",' +
-                                        '(/(^\\/_)/)),!0)'
+                                        '(/(^\\/_\\w|^\\/[^\\/].*?\\/_\\w)/)),!0)'
                                 );
                             break;
                         // strip port 9200 from kibana
@@ -149,7 +141,15 @@
                 argv: [],
                 port: Number(process.env.PORT) || 9200
             });
-            options.argv.push('-Des.http.port=' + (options.port + 1));
+            [
+                '-Des.http.port=' + (options.port + 1),
+                '-Des.path.data=' + process.cwd() + '/elasticsearch.data.' +
+                    process.env.NODE_ENV
+            ].forEach(function (arg) {
+                if (process.argv.indexOf(arg) < 0) {
+                    options.argv.push(arg);
+                }
+            });
             local.objectSetDefault(local, options);
             local.global.utility2_processElasticsearch1 = local.child_process.spawn(
                 __dirname + '/external/elasticsearch/bin/elasticsearch',
@@ -177,15 +177,28 @@
 
 
     // run node js-env code - init-after
+    /* istanbul ignore next */
     case 'node':
+        if (local.global.utility2_rollup) {
+            return;
+        }
         // init utility2
         local.utility2 = local.utility2 || require('./assets.utility2.rollup.js');
         local.utility2.objectSetDefault(local, local.utility2);
+        // init assets
+        local.assetsDict['/'] = local.assetsDict['/index.html'] =
+            local.assetsDict['/assets.swgg.html'];
+        local.assetsDict['/assets.swgg.swagger.json'] =
+            local.fs.readFileSync(__dirname + '/assets.swgg.swagger.json');
         // run the cli
         if (module !== require.main || local.global.utility2_rollup) {
             break;
         }
         local.serverStart({ argv: process.argv.slice(2) });
+        // init exports
+        local.global.local = local;
+        // start repl-debugger
+        local.replStart();
         break;
     }
 }());

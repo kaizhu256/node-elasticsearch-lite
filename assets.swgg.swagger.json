@@ -360,7 +360,8 @@
                         "in": "body",
                         "name": "body",
                         "required": true,
-                        "serialize": "bulk"
+                        "serialize": "bulk",
+                        "type": "string"
                     },
                     {
                         "description": "Explicit write consistency setting for the operation",
@@ -3532,8 +3533,7 @@
                         "description": "The percolate request definitions (header & body pair), separated by newlines",
                         "in": "body",
                         "name": "body",
-                        "required": true,
-                        "serialize": "bulk"
+                        "required": true
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -3579,8 +3579,7 @@
                         "description": "The request definitions (metadata-search request definition pairs), separated by newlines",
                         "in": "body",
                         "name": "body",
-                        "required": true,
-                        "serialize": "bulk"
+                        "required": true
                     },
                     {
                         "description": "Search operation type",
@@ -8424,7 +8423,8 @@
                         "in": "body",
                         "name": "body",
                         "required": true,
-                        "serialize": "bulk"
+                        "serialize": "bulk",
+                        "type": "string"
                     },
                     {
                         "description": "Explicit write consistency setting for the operation",
@@ -9598,8 +9598,7 @@
                         "description": "The percolate request definitions (header & body pair), separated by newlines",
                         "in": "body",
                         "name": "body",
-                        "required": true,
-                        "serialize": "bulk"
+                        "required": true
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -9656,8 +9655,7 @@
                         "description": "The request definitions (metadata-search request definition pairs), separated by newlines",
                         "in": "body",
                         "name": "body",
-                        "required": true,
-                        "serialize": "bulk"
+                        "required": true
                     },
                     {
                         "description": "Search operation type",
@@ -12316,7 +12314,8 @@
                         "in": "body",
                         "name": "body",
                         "required": true,
-                        "serialize": "bulk"
+                        "serialize": "bulk",
+                        "type": "string"
                     },
                     {
                         "description": "Explicit write consistency setting for the operation",
@@ -12868,8 +12867,7 @@
                         "description": "The percolate request definitions (header & body pair), separated by newlines",
                         "in": "body",
                         "name": "body",
-                        "required": true,
-                        "serialize": "bulk"
+                        "required": true
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -12937,8 +12935,7 @@
                         "description": "The request definitions (metadata-search request definition pairs), separated by newlines",
                         "in": "body",
                         "name": "body",
-                        "required": true,
-                        "serialize": "bulk"
+                        "required": true
                     },
                     {
                         "description": "Search operation type",

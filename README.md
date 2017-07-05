@@ -1,5 +1,5 @@
 # elasticsearch-lite
-this zero-dependency package will download and install the elasticsearch-v1.7.6 prebuilt-binary from https://download.elastic.co/elasticsearch/elasticsearch
+this zero-dependency package will download and install elasticsearch-v1.7.6 and kibana-v3.1.3 from https://www.elastic.co/downloads
 
 [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-elasticsearch-lite.svg)](https://travis-ci.org/kaizhu256/node-elasticsearch-lite) [![coverage](https://kaizhu256.github.io/node-elasticsearch-lite/build/coverage.badge.svg)](https://kaizhu256.github.io/node-elasticsearch-lite/build/coverage.html/index.html)
 
@@ -40,13 +40,13 @@ this zero-dependency package will download and install the elasticsearch-v1.7.6 
 
 
 # live demo
-- [http://h1-elasticsearch-beta.herokuapp.com](http://h1-elasticsearch-beta.herokuapp.com)
+- [https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app)
 
-[![github.com test-server](https://github.com/kaizhu256/node-elasticsearch-lite/blob/gh-pages/build/screenshot.deployHeroku.browser.%252F.png)](http://h1-elasticsearch-beta.herokuapp.com)
+[![github.com test-server](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app)
 
-- [http://h1-elasticsearch-beta.herokuapp.com/kibana/](http://h1-elasticsearch-beta.herokuapp.com/kibana/)
+- [https://h1-elasticsearch-beta.herokuapp.com/kibana/](https://h1-elasticsearch-beta.herokuapp.com/kibana/)
 
-[![github.com test-server](https://github.com/kaizhu256/node-elasticsearch-lite/blob/gh-pages/build/screenshot.deployHeroku.browser.%252Fkibana%252F.png)](http://h1-elasticsearch-beta.herokuapp.com/kibana/)
+[![github.com test-server](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252Fkibana%252F.png)](https://h1-elasticsearch-beta.herokuapp.com/kibana/)
 
 
 
@@ -56,20 +56,13 @@ this zero-dependency package will download and install the elasticsearch-v1.7.6 
 
 [![apidoc](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/apidoc.html)
 
-#### swaggerdoc
-- [http://h1-elasticsearch-beta.herokuapp.com/assets.swgg.html](http://h1-elasticsearch-beta.herokuapp.com/assets.swgg.html)
-
-[![swaggerdoc](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252Fassets.swgg.html.png)](http://h1-elasticsearch-beta.herokuapp.com/assets.swgg.html)
-
 #### todo
-- persist file data at \$PWD/tmp/elasticsearch.data
 - none
 
-#### changelog for v2017.1.7
+#### changelog for v2017.6.1
 - npm publish 2017.6.1
-- add kibana to buildApp
-- enable cors in github
-- initial working server
+- persist db data at \$PWD/tmp/elasticsearch.data.\$NODE_ENV
+- update docs
 - none
 
 #### this package requires
@@ -77,12 +70,11 @@ this zero-dependency package will download and install the elasticsearch-v1.7.6 
 
 #### additional info
 - curl -XPOST 'localhost:9200/bank/account/_bulk?pretty' --data-binary @lib.elasticsearch.accounts.json
-- curl -XPOST localhost:9200/_bulk --data-binary @lib.elasticsearch.shakespeare.json
 
 
 
 # quickstart example.js
-[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleJs.browser.%252F.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/app/assets.example.html)
+![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleJs.browser.%252F.png)
 
 #### to run this example, follow the instruction in the script below
 - [example.js](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/example.js)
@@ -123,7 +115,7 @@ instruction
 ```
 
 #### output from browser
-[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleJs.browser.%252F.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/app/assets.example.html)
+![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleJs.browser.%252F.png)
 
 #### output from shell
 ![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleJs.svg)
@@ -140,6 +132,36 @@ instruction
 1. [https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)
 [![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)
 
+1. [https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp%252Fassets.swgg.html.png](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp%252Fassets.swgg.html.png)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp%252Fassets.swgg.html.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp%252Fassets.swgg.html.png)
+
+1. [https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp.png](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp.png)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp.png)
+
+1. [https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithubTest.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp.png](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithubTest.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp.png)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithubTest.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithubTest.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp.png)
+
+1. [https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252Fassets.swgg.html.png](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252Fassets.swgg.html.png)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252Fassets.swgg.html.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252Fassets.swgg.html.png)
+
+1. [https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252F.png](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252F.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252F.png)
+
+1. [https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHerokuTest.browser.%252F.png](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHerokuTest.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHerokuTest.browser.%252F.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHerokuTest.browser.%252F.png)
+
+1. [https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.npmTest.browser.%252F.png](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.npmTest.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.npmTest.browser.%252F.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.npmTest.browser.%252F.png)
+
+1. [https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.npmTestPublished.browser.%252F.png](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.npmTestPublished.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.npmTestPublished.browser.%252F.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.npmTestPublished.browser.%252F.png)
+
+1. [https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleJs.browser.%252F.png](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleJs.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleJs.browser.%252F.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleJs.browser.%252F.png)
+
+1. [https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleSh.browser.%252F.png](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleSh.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleSh.browser.%252F.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleSh.browser.%252F.png)
+
 
 
 # package.json
@@ -149,7 +171,7 @@ instruction
     "bin": {
         "elasticsearch": "lib.elasticsearch.js"
     },
-    "description": "this zero-dependency package will download and install the elasticsearch-v1.7.6 prebuilt-binary from https://download.elastic.co/elasticsearch/elasticsearch",
+    "description": "this zero-dependency package will download and install elasticsearch-v1.7.6 and kibana-v3.1.3 from https://www.elastic.co/downloads",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
@@ -185,7 +207,7 @@ instruction
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
-    "version": "2017.1.7"
+    "version": "2017.6.1"
 }
 ```
 
@@ -204,12 +226,11 @@ instruction
 # this shell script will run the build for this package
 
 shBuildCiAfter() {(set -e
+    shDeployGithub
     shDeployHeroku
     # screenshot
     MODE_BUILD=deployHeroku shBrowserTest \
-        "http://h1-elasticsearch-$CI_BRANCH.herokuapp.com/kibana/" screenshot
-    cp doc.html tmp/build/apidoc.html
-    MODE_BUILD=buildCi shBrowserTest tmp/build/apidoc.html screenshot
+        "https://h1-elasticsearch-$CI_BRANCH.herokuapp.com/kibana/" screenshot
     shReadmeTest example.sh
 )}
 
