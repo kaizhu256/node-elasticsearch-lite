@@ -143,7 +143,7 @@
             });
             [
                 '-Des.http.port=' + (options.port + 1),
-                '-Des.path.data=' + process.cwd() + '/elasticsearch.data.' +
+                '-Des.path.data=' + process.cwd() + '/tmp/elasticsearch.data.' +
                     process.env.NODE_ENV
             ].forEach(function (arg) {
                 if (process.argv.indexOf(arg) < 0) {

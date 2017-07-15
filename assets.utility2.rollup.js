@@ -13778,7 +13778,7 @@ node ./assets.app.js\n\
 \n\
 \n\
 \n\
-# all screenshots\n\
+# extra screenshots\n\
 1. [https://kaizhu256.github.io/node-jslint-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png](https://kaizhu256.github.io/node-jslint-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)\n\
 [![screenshot](https://kaizhu256.github.io/node-jslint-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-jslint-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)\n\
 \n\
@@ -16434,7 +16434,7 @@ return Utf8ArrayToStr(bff);
                 // customize cdn-download
                 (/\n# cdn download\n[\S\s]*?\n\n\n\n/),
                 // customize demo
-                (/\n\[!\[github\.com test-server\][\S\s]*?\n\n\n\n/),
+                (/\n# live demo\n[\S\s]*?\n\n\n\n/),
                 // customize todo
                 (/\n#### todo\n[\S\s]*?\n\n\n\n/),
                 // customize quickstart-example-js
@@ -16482,10 +16482,10 @@ return Utf8ArrayToStr(bff);
                 [
                     // customize test-server
                     (/\n\| git-branch : \|[\S\s]*?\n\| test-report : \|/),
-                    // customize swagger-doc
+                    // customize swaggerdoc
                     (/\n#### swaggerdoc\n[\S\s]*?\n#### /),
                     // customize quickstart
-                    (/\n# quickstart [\S\s]*?\n# all screenshots\n/)
+                    (/\n# quickstart [\S\s]*?\n# extra screenshots\n/)
                 ].forEach(function (rgx) {
                     options.dataFrom.replace(rgx, function (match0) {
                         options.dataTo = options.dataTo.replace(rgx, match0);

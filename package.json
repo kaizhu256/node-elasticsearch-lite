@@ -14,9 +14,10 @@
     "homepage": "https://github.com/kaizhu256/node-elasticsearch-lite",
     "keywords": [
         "elasticsearch",
-        "elasticsearch-lite",
-        "search",
-        "server"
+        "elk",
+        "kibana",
+        "logstash",
+        "search"
     ],
     "license": "MIT",
     "main": "lib.elasticsearch.js",
@@ -39,5 +40,5 @@
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
-    "version": "2017.6.1"
+    "version": "2017.6.2"
 }

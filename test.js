@@ -97,25 +97,6 @@
             );
         };
 
-        local.testCase_buildReadme_default = function (options, onError) {
-        /*
-         * this function will test buildReadme's default handling-behavior
-         */
-            options = {};
-            options.customize = function () {
-                // search-and-replace - customize dataTo
-                [
-                    // customize quickstart
-                    (/\n# quickstart[\S\s]*?\n# all screenshots\n/)
-                ].forEach(function (rgx) {
-                    options.dataFrom.replace(rgx, function (match0) {
-                        options.dataTo = options.dataTo.replace(rgx, match0);
-                    });
-                });
-            };
-            local.buildReadme(options, onError);
-        };
-
         local.testCase_webpage_default = function (options, onError) {
         /*
          * this function will test webpage's default handling-behavior
