@@ -56,9 +56,91 @@
 
     // run shared js-env code - function
     (function () {
-        local.middlewareRouter = function (request, response, nextMiddleware) {
+        local.killElasticsearch = function () {
         /*
-         * this function will run the route elasticsearch requests
+         * this function will kill elasticsearch
+         */
+            process.kill(local.global.utility2_processElasticsearch1.pid);
+        };
+
+        local.middlewareBulkPut = function (request, response, nextMiddleware) {
+        /*
+         * this function will run the middleware,
+         * that will bulk upsert documents into elasticsearch
+         */
+            var options, tmp;
+            options = {};
+            local.onNext(options, function (error, data) {
+                switch (options.modeNext) {
+                case 1:
+                    nextMiddleware = nextMiddleware || local.onErrorDefault;
+                    if (!request) {
+                        request = local.middlewareBulkPutList.shift();
+                        if (!request) {
+                            return;
+                        }
+                        local.middlewareBulkPut(request, null, nextMiddleware);
+                        return;
+                    }
+                    if (!response) {
+                        response = { end: local.nop };
+                        options.onNext(null, request.data);
+                        return;
+                    }
+                    // read request-body
+                    local.streamReadAll(request, options.onNext);
+                    break;
+                case 2:
+                    options.data = new Buffer(data).toString();
+                    // forward-proxy request to elasticsearch
+                    local.ajax({
+                        data: options.data,
+                        method: 'put',
+                        url: local.serverLocalHostElasticsearch + request.url
+                    }, options.onNext);
+                    break;
+                case 3:
+                    // successful operation
+                    if (data.responseText.slice(0, 256).indexOf(',"errors":false,') >= 0) {
+                        response.end(data.responseText);
+                        return;
+                    }
+                    // fallback
+                    options.data = options.data.split('\n');
+                    options.responseJson = JSON.parse(data.responseText);
+                    options.result = '';
+                    options.responseJson.items.forEach(function (element, ii) {
+                        tmp = element.create || element.index;
+                        if (tmp.status < 300) {
+                            return;
+                        }
+                        tmp.status = tmp === element.create
+                            ? 201
+                            : 200;
+                        options.result += JSON.stringify({
+                            _id: tmp.id,
+                            _index: tmp.index,
+                            _type: tmp.type
+                        }) + '\n';
+                        options.result += options.data[2 * ii + 1] + '\n';
+                    });
+                    response.end(JSON.stringify(data.responseJson));
+                    local.middlewareBulkPutList.push({
+                        data: options.result,
+                        url: request.url
+                    });
+                    break;
+                default:
+                    nextMiddleware(error);
+                }
+            });
+            options.modeNext = 0;
+            options.onNext();
+        };
+
+        local.middlewareRouterCustom = function (request, response, nextMiddleware) {
+        /*
+         * this function will run the middleware that will route elasticsearch requests
          */
             var requestBackend, responseBackend;
             switch (request.urlParsed.pathname) {
@@ -76,10 +158,24 @@
                     response.end();
                     return;
                 }
+                local.serverRespondHeadSet(request, response, null, {
+                    'content-type': 'application/json'
+                });
+                switch (request.swgg.crud.operationId) {
+                // handle _bulk upsert
+                case '/_bulk.put':
+                case '/{index}/_bulk.put':
+                case '/{index}/{type}/_bulk.put':
+                    local.middlewareBulkPut(request, response, nextMiddleware);
+                    return;
+                }
+                // forward-proxy request to elasticsearch
                 requestBackend = local.http.request({
                     method: request.method,
-                    path: request.url,
-                    port: local.port + 1
+                    path: request.swgg.crud.operationId === '/__info.get'
+                        ? '/'
+                        : request.url,
+                    port: local.serverLocalHostElasticsearch.split(':')[2]
                 }, function (_response) {
                     responseBackend = _response.on('error', nextMiddleware);
                     responseBackend.pipe(response);
@@ -89,11 +185,36 @@
         };
 
         local.serverStart = function (options) {
-            if (local.global.utility2_processElasticsearch1) {
+            if (local.global.utility2_rollup || local.global.utility2_processElasticsearch1) {
                 return;
             }
+            // start server
+            local.objectSetDefault(local.env, { PORT: '9200' });
+            local.utility2.middlewareList = [
+                local.middlewareInit,
+                local.middlewareForwardProxy,
+                local.middlewareAssetsCached,
+                local.swgg.middlewareRouter,
+                local.swgg.middlewareUserLogin,
+                local.middlewareJsonpStateInit,
+                local.middlewareRouterCustom,
+                local.middlewareBodyRead,
+                local.swgg.middlewareBodyParse,
+                local.swgg.middlewareValidate,
+                local.swgg.middlewareCrudBuiltin,
+                local.swgg.middlewareCrudEnd
+            ];
+            local.testRunServer(local);
+            // init assets - swgg
+            local.assetsDict['/'] =
+                local.assetsDict['/index.html'] =
+                local.assetsDict['/assets.index.template.html'] =
+                local.assetsDict['/assets.swgg.html'];
+            local.assetsDict['/assets.swgg.swagger.json'] =
+                local.fs.readFileSync(__dirname + '/assets.swgg.swagger.json');
+            local.apiDictUpdate(require('./assets.swgg.swagger.json'));
+            // init assets - kibana
             local.onReadyBefore.counter += 1;
-            // init assets kibana
             local.child_process.exec('find kibana', {
                 cwd: __dirname + '/external'
             }, function (error, data) {
@@ -112,23 +233,37 @@
                             return;
                         }
                         switch (options2.element) {
-                        // githubCorsHost
                         case 'kibana/app/app.js':
                             data = 'var local={};local.githubCorsUrlOverride=' +
                                 local.githubCorsUrlOverride.toString().trim() + ';\n' + data
                                 .toString()
+                                // githubCorsHost
                                 .replace(
                                     'v.open(e,i,!0)',
                                     'v.open(e,local.githubCorsUrlOverride(i,' +
                                         '"https://h1-elasticsearch-alpha.herokuapp.com",' +
-                                        '(/(^\\/_\\w|^\\/[^\\/].*?\\/_\\w)/)),!0)'
+                                        '(/^(' +
+                                        '\\/_\\w|' +
+                                        '\\/[^\\/].*?\\/_\\w|' +
+                                        '\\/kibana-int\\/' +
+                                        ')/)),!0)'
                                 );
                             break;
-                        // strip port 9200 from kibana
                         case 'kibana/config.js':
                             data = data
                                 .toString()
+                                // strip port 9200 from kibana
                                 .replace('"http://"+window.location.hostname+":9200"', '""');
+                            break;
+                        case 'kibana/app/dashboards/logstash.json':
+                            data = data
+                                .toString()
+                                // relax logstash index-filter
+                                .replace('"interval": "day",', '"interval": "none",')
+                                .replace(
+                                    '"default": "NO_TIME_FILTER_OR_INDEX_PATTERN_NOT_MATCHED"',
+                                    '"default": "_all"'
+                                );
                             break;
                         }
                         local.assetsDict['/' + options2.element] = data;
@@ -136,40 +271,49 @@
                     });
                 }, local.onReadyBefore);
             });
-            // start elasticsearch
-            local.objectSetDefault(options, {
-                argv: [],
-                port: Number(process.env.PORT) || 9200
+            // init serverLocalHostElasticsearch
+            local.serverLocalHostElasticsearch = 'http://127.0.0.1:' +
+                (Number(local.env.PORT) + 1);
+            // start elasticsearch-server
+            console.error('starting elasticsearch-server ...');
+            local.onResetAfter(function () {
+                local.onResetAfterElasticsearch = true;
             });
+            local.onResetBefore.counter += 1;
+            local.timerIntervalElasticsearchStatus = setInterval(function () {
+                local.ajax({ url: local.serverLocalHostElasticsearch }, function (error) {
+                    if (error) {
+                        return;
+                    }
+                    clearInterval(local.timerIntervalElasticsearchStatus);
+                    console.error('elasticsearch-server listening on http-port' +
+                        local.serverLocalHostElasticsearch.split(':')[2]);
+                    local.onResetBefore();
+                });
+            }, 1000);
+            // init argv
+            local.objectSetDefault(options, { argv: [] });
             [
-                '-Des.http.port=' + (options.port + 1),
+                '-Des.http.port=' + local.serverLocalHostElasticsearch.split(':')[2],
                 '-Des.path.data=' + process.cwd() + '/tmp/elasticsearch.data.' +
-                    process.env.NODE_ENV
+                    local.env.NODE_ENV,
+                // coverage-hack - test redundant arg
+                '',
+                ''
             ].forEach(function (arg) {
-                if (process.argv.indexOf(arg) < 0) {
+                if (options.argv.indexOf(arg) < 0) {
                     options.argv.push(arg);
                 }
             });
-            local.objectSetDefault(local, options);
             local.global.utility2_processElasticsearch1 = local.child_process.spawn(
                 __dirname + '/external/elasticsearch/bin/elasticsearch',
-                local.argv,
-                { stdio: [0, 1, 2] }
-            ).on('exit', function (exitCode) {
-                process.exit(exitCode);
-            });
-            process.on('exit', function () {
-                process.kill(local.global.utility2_processElasticsearch1.pid);
-            });
-            // start server
-            local.utility2.middlewareList = local.utility2.middlewareList || [
-                local.middlewareInit,
-                local.middlewareForwardProxy,
-                local.middlewareAssetsCached,
-                local.middlewareJsonpStateInit,
-                local.middlewareRouter
-            ];
-            local.testRunServer(local);
+                options.argv,
+                { stdio: ['ignore', 1, 2] }
+            ).on('exit', local.exit);
+            process.on('exit', local.killElasticsearch);
+            // init middlewareBulkPutList
+            local.middlewareBulkPutList = [];
+            setInterval(local.middlewareBulkPut, 1000);
         };
     }());
     switch (local.modeJs) {
@@ -180,16 +324,11 @@
     /* istanbul ignore next */
     case 'node':
         if (local.global.utility2_rollup) {
-            return;
+            break;
         }
         // init utility2
         local.utility2 = local.utility2 || require('./assets.utility2.rollup.js');
         local.utility2.objectSetDefault(local, local.utility2);
-        // init assets
-        local.assetsDict['/'] = local.assetsDict['/index.html'] =
-            local.assetsDict['/assets.swgg.html'];
-        local.assetsDict['/assets.swgg.swagger.json'] =
-            local.fs.readFileSync(__dirname + '/assets.swgg.swagger.json');
         // run the cli
         if (module !== require.main || local.global.utility2_rollup) {
             break;

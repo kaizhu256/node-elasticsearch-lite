@@ -1,5 +1,7 @@
 # elasticsearch-lite
-this zero-dependency package will download and install elasticsearch-v1.7.6 and kibana-v3.1.3 from https://www.elastic.co/downloads
+this zero-dependency package will download and install elasticsearch-v1.7.6, kibana-v3.1.3 and logstash-v2.4.1 from https://www.elastic.co/downloads
+
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp%252Fkibana%252Findex.html.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app/kibana/index.html#/dashboard/file/logstash.json)
 
 [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-elasticsearch-lite.svg)](https://travis-ci.org/kaizhu256/node-elasticsearch-lite) [![coverage](https://kaizhu256.github.io/node-elasticsearch-lite/build/coverage.badge.svg)](https://kaizhu256.github.io/node-elasticsearch-lite/build/coverage.html/index.html)
 
@@ -25,6 +27,7 @@ this zero-dependency package will download and install elasticsearch-v1.7.6 and 
 1. [cdn download](#cdn-download)
 1. [live demo](#live-demo)
 1. [documentation](#documentation)
+1. [quickstart shell example](#quickstart-shell-example)
 1. [quickstart example.js](#quickstart-examplejs)
 1. [extra screenshots](#extra-screenshots)
 1. [package.json](#packagejson)
@@ -40,13 +43,13 @@ this zero-dependency package will download and install elasticsearch-v1.7.6 and 
 
 
 # live demo
+- [https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app/kibana/index.html#/dashboard/file/logstash.json](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app/kibana/index.html#/dashboard/file/logstash.json)
+
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp%252Fkibana%252Findex.html.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app/kibana/index.html#/dashboard/file/logstash.json)
+
 - [https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app)
 
-[![github.com test-server](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app)
-
-- [https://h1-elasticsearch-beta.herokuapp.com/kibana/](https://h1-elasticsearch-beta.herokuapp.com/kibana/)
-
-[![github.com test-server](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252Fkibana%252F.png)](https://h1-elasticsearch-beta.herokuapp.com/kibana/)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app)
 
 
 
@@ -57,26 +60,54 @@ this zero-dependency package will download and install elasticsearch-v1.7.6 and 
 [![apidoc](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/apidoc.html)
 
 #### todo
-- add logstash for full elk stack
-- improve online kibana demo with seed data
-- standardize npm-script heroku-postbuild
+- fix swagger validation
+- revamp _bulk api to retry on errors
 - none
 
-#### changelog for v2017.6.2
-- npm publish 2017.6.2
-- persist db data at \$PWD/tmp/elasticsearch.data.\$NODE_ENV
+#### changelog for v2017.7.24
+- npm publish 2017.7.24
+- add extra elasticsearch api /__info
+- add function local.middlewareBulkPut
+- add functional kibana demo
+- add info.title and info.description to swagger.json
+- add logstash for full elk stack
+- add quickstart shell example in README.md
+- remove file lib.elasticsearch.accounts._json
 - none
 
 #### this package requires
 - darwin or linux os
 
-#### additional info
-- curl -XPUT 'localhost:9200/bank/account/_bulk?pretty' --data-binary @lib.elasticsearch.accounts._json
+
+
+# quickstart shell example
+#### to run this example, follow the instruction in the script below
+- [example.sh](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/example.sh)
+```shell
+# example.sh
+
+# this shell script will auto-generate documentation for the mysql npm-package with zero-config
+
+# 1. npm install elasticsearch-lite
+npm install elasticsearch-lite
+# 2. start elasticsearch server on PORT=9200
+PORT=9200 node_modules/.bin/elasticsearch
+# 3. open a browser to http://127.0.0.1:9200 to play with elasticsearch api
+# 3. open a browser to http://127.0.0.1:9200/kibana/index.html#/dashboard/file/logstash.json to play with kibana and logstash
+```
+
+#### output from browser
+![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleSh.browser.%252F.png)
+
+![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleSh.browser.%252Fkibana%252Findex.html.png)
+
+#### output from shell
+![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleSh.svg)
 
 
 
 # quickstart example.js
-![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleJs.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleJs.browser.%252F.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/app/assets.example.html)
 
 #### to run this example, follow the instruction in the script below
 - [example.js](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/example.js)
@@ -109,15 +140,255 @@ instruction
 */
 (function () {
     'use strict';
-    if (global.utility2_rollup) {
-        return;
+    var local;
+
+
+
+    // run shared js-env code - init-before
+    (function () {
+        // init local
+        local = {};
+        // init modeJs
+        local.modeJs = (function () {
+            try {
+                return typeof navigator.userAgent === 'string' &&
+                    typeof document.querySelector('body') === 'object' &&
+                    typeof XMLHttpRequest.prototype.open === 'function' &&
+                    'browser';
+            } catch (errorCaughtBrowser) {
+                return module.exports &&
+                    typeof process.versions.node === 'string' &&
+                    typeof require('http').createServer === 'function' &&
+                    'node';
+            }
+        }());
+        // init global
+        local.global = local.modeJs === 'browser'
+            ? window
+            : global;
+        // init utility2_rollup
+        local = local.global.utility2_rollup || (local.modeJs === 'browser'
+            ? local.global.utility2_elasticsearch
+            : require('elasticsearch-lite'));
+        // init exports
+        local.global.local = local;
+    }());
+    switch (local.modeJs) {
+
+
+
+    // run node js-env code - function
+    case 'node':
+        local.serverStart({ port: Number(process.env.PORT) });
+        // push serverLog to elasticsearch
+        local.utility2.serverLog = function (options) {
+            console.error('serverLog - ' + JSON.stringify(options));
+            if (!local.onResetAfterElasticsearch) {
+                return;
+            }
+            options = local.jsonCopy(options);
+            options['@timestamp'] = options.time;
+            local.middlewareBulkPut({
+                data: JSON.stringify({ index: {
+                    _index: 'server_log',
+                    _type: options.type
+                } }) + '\n' + JSON.stringify(options) + '\n',
+                url: '/server_log/server_response/_bulk'
+            });
+        };
+        // test serverLog
+        local.ajax({ url: local.serverLocalHost }, local.onErrorDefault);
+        local.onReadyBefore.counter += 1;
+        local.onResetAfter(function () {
+            local.ajax({ url: local.serverLocalHost }, function (error) {
+                local.onErrorDefault(error);
+                local.onReadyBefore();
+            });
+        });
+        break;
     }
-    require('elasticsearch-lite').serverStart({ port: Number(process.env.PORT) });
+    switch (local.modeJs) {
+
+
+
+    // init-after
+    // run browser js-env code - init-after
+    /* istanbul ignore next */
+    case 'browser':
+        local.testRunBrowser = function (event) {
+            if (!event || (event &&
+                    event.currentTarget &&
+                    event.currentTarget.className &&
+                    event.currentTarget.className.includes &&
+                    event.currentTarget.className.includes('onreset'))) {
+                // reset output
+                Array.from(
+                    document.querySelectorAll('body > .resettable')
+                ).forEach(function (element) {
+                    switch (element.tagName) {
+                    case 'INPUT':
+                    case 'TEXTAREA':
+                        element.value = '';
+                        break;
+                    default:
+                        element.textContent = '';
+                    }
+                });
+            }
+            switch (event && event.currentTarget && event.currentTarget.id) {
+            case 'testRunButton1':
+                // show tests
+                if (document.querySelector('#testReportDiv1').style.maxHeight === '0px') {
+                    local.uiAnimateSlideDown(document.querySelector('#testReportDiv1'));
+                    document.querySelector('#testRunButton1').textContent =
+                        'hide internal test';
+                    local.modeTest = true;
+                    local.testRunDefault(local);
+                // hide tests
+                } else {
+                    local.uiAnimateSlideUp(document.querySelector('#testReportDiv1'));
+                    document.querySelector('#testRunButton1').textContent = 'run internal test';
+                }
+                break;
+            // custom-case
+            default:
+                break;
+            }
+            if (document.querySelector('#inputTextareaEval1') && (!event || (event &&
+                    event.currentTarget &&
+                    event.currentTarget.className &&
+                    event.currentTarget.className.includes &&
+                    event.currentTarget.className.includes('oneval')))) {
+                // try to eval input-code
+                try {
+                    /*jslint evil: true*/
+                    eval(document.querySelector('#inputTextareaEval1').value);
+                } catch (errorCaught) {
+                    console.error(errorCaught);
+                }
+            }
+        };
+        // log stderr and stdout to #outputTextareaStdout1
+        ['error', 'log'].forEach(function (key) {
+            console[key + '_original'] = console[key];
+            console[key] = function () {
+                var element;
+                console[key + '_original'].apply(console, arguments);
+                element = document.querySelector('#outputTextareaStdout1');
+                if (!element) {
+                    return;
+                }
+                // append text to #outputTextareaStdout1
+                element.value += Array.from(arguments).map(function (arg) {
+                    return typeof arg === 'string'
+                        ? arg
+                        : JSON.stringify(arg, null, 4);
+                }).join(' ') + '\n';
+                // scroll textarea to bottom
+                element.scrollTop = element.scrollHeight;
+            };
+        });
+        // init event-handling
+        ['change', 'click', 'keyup'].forEach(function (event) {
+            Array.from(document.querySelectorAll('.on' + event)).forEach(function (element) {
+                element.addEventListener(event, local.testRunBrowser);
+            });
+        });
+        // run tests
+        local.testRunBrowser();
+        break;
+
+
+
+    // run node js-env code - init-after
+    /* istanbul ignore next */
+    case 'node':
+        // init exports
+        module.exports = local;
+        // require modules
+        local.fs = require('fs');
+        local.http = require('http');
+        local.url = require('url');
+        // init assets
+        local.assetsDict = local.assetsDict || {};
+        [
+            'assets.index.css',
+            'assets.index.template.html',
+            'assets.swgg.swagger.json',
+            'assets.swgg.swagger.server.json'
+        ].forEach(function (file) {
+            file = '/' + file;
+            local.assetsDict[file] = local.assetsDict[file] || '';
+            if (local.fs.existsSync(local.__dirname + file)) {
+                local.assetsDict[file] = local.fs.readFileSync(
+                    local.__dirname + file,
+                    'utf8'
+                );
+            }
+        });
+        local.assetsDict['/'] =
+            local.assetsDict['/assets.example.html'] =
+            local.assetsDict['/assets.index.template.html']
+            .replace((/\{\{env\.(\w+?)\}\}/g), function (match0, match1) {
+                // jslint-hack
+                String(match0);
+                switch (match1) {
+                case 'npm_package_description':
+                    return 'the greatest app in the world!';
+                case 'npm_package_name':
+                    return 'elasticsearch-lite';
+                case 'npm_package_nameAlias':
+                    return 'elasticsearch';
+                case 'npm_package_version':
+                    return '0.0.1';
+                default:
+                    return match0;
+                }
+            });
+        // run the cli
+        if (local.global.utility2_rollup || module !== require.main) {
+            break;
+        }
+        local.assetsDict['/assets.example.js'] =
+            local.assetsDict['/assets.example.js'] ||
+            local.fs.readFileSync(__filename, 'utf8');
+        // bug-workaround - long $npm_package_buildCustomOrg
+        /* jslint-ignore-begin */
+        local.assetsDict['/assets.elasticsearch.js'] =
+            local.assetsDict['/assets.elasticsearch.js'] ||
+            local.fs.readFileSync(
+                local.elasticsearch.__dirname + '/lib.elasticsearch.js',
+                'utf8'
+            ).replace((/^#!/), '//');
+        /* jslint-ignore-end */
+        local.assetsDict['/favicon.ico'] = local.assetsDict['/favicon.ico'] || '';
+        // if $npm_config_timeout_exit exists,
+        // then exit this process after $npm_config_timeout_exit ms
+        if (Number(process.env.npm_config_timeout_exit)) {
+            setTimeout(process.exit, Number(process.env.npm_config_timeout_exit));
+        }
+        // start server
+        if (local.global.utility2_serverHttp1) {
+            break;
+        }
+        process.env.PORT = process.env.PORT || '8081';
+        console.error('server starting on port ' + process.env.PORT);
+        local.http.createServer(function (request, response) {
+            request.urlParsed = local.url.parse(request.url);
+            if (local.assetsDict[request.urlParsed.pathname] !== undefined) {
+                response.end(local.assetsDict[request.urlParsed.pathname]);
+                return;
+            }
+            response.statusCode = 404;
+            response.end();
+        }).listen(process.env.PORT);
+        break;
+    }
 }());
 ```
 
 #### output from browser
-![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleJs.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleJs.browser.%252F.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build/app/assets.example.html)
 
 #### output from shell
 ![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.testExampleJs.svg)
@@ -143,7 +414,7 @@ instruction
     "bin": {
         "elasticsearch": "lib.elasticsearch.js"
     },
-    "description": "this zero-dependency package will download and install elasticsearch-v1.7.6 and kibana-v3.1.3 from https://www.elastic.co/downloads",
+    "description": "this zero-dependency package will download and install elasticsearch-v1.7.6, kibana-v3.1.3 and logstash-v2.4.1 from https://www.elastic.co/downloads",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
@@ -163,6 +434,7 @@ instruction
     "main": "lib.elasticsearch.js",
     "name": "elasticsearch-lite",
     "nameAlias": "elasticsearch",
+    "nameAliasPublish": "elk-lite kibana-lite logstash-lite",
     "nameOriginal": "elasticsearch-lite",
     "os": [
         "darwin",
@@ -175,12 +447,12 @@ instruction
     "scripts": {
         "build-ci": "utility2 shReadmeTest build_ci.sh",
         "env": "env",
-        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\"",
+        "heroku-postbuild": "npm uninstall utility2 2>/dev/null; npm install kaizhu256/node-utility2#alpha",
         "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
-    "version": "2017.6.2"
+    "version": "2017.7.24"
 }
 ```
 
@@ -203,9 +475,18 @@ shBuildCiAfter() {(set -e
     shDeployGithub
     shDeployHeroku
     # screenshot
-    MODE_BUILD=deployHeroku shBrowserTest \
-        "https://h1-elasticsearch-$CI_BRANCH.herokuapp.com/kibana/" screenshot
+    MODE_BUILD=deployGithub shBrowserTest \
+        "https://kaizhu256.github.io/node-elasticsearch-lite/build..$CI_BRANCH..travis-ci.org/app/kibana/index.html#/dashboard/file/logstash.json" screenshot
+    (
+    export PORT=9200
+    # screenshot
+    (
+    shSleep 15
+    MODE_BUILD=testExampleSh shBrowserTest \
+        "http://127.0.0.1:$PORT/kibana/index.html#/dashboard/file/logstash.json" screenshot
+    ) &
     shReadmeTest example.sh
+    )
 )}
 
 shBuildCiBefore() {(set -e

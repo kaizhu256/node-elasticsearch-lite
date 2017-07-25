@@ -16,7 +16,6 @@
 
 
     // run shared js-env code - init-before
-    /* istanbul ignore next */
     (function () {
         // init local
         local = {};
@@ -60,14 +59,43 @@
 
     // run shared js-env code - function
     (function () {
-        return;
+        local.testCase_middlewareRouterCustom_default = function (options, onError) {
+        /*
+         * this function will test middlewareRouterCustom's default handling-behavior
+         */
+            options = {
+                list: [{
+                    method: 'GET',
+                    url: '/__info'
+                }, {
+                    method: 'GET',
+                    url: '/_alias'
+                }, {
+                    method: 'PUT',
+                    data: '{"index":{"_id":null,"_index":"server_log","_type":"test"}}\n{}\n',
+                    url: '/_bulk'
+                }, {
+                    method: 'GET',
+                    url: '/kibana'
+                }, {
+                    method: 'GET',
+                    url: '/kibana/'
+                }, {
+                    method: 'OPTIONS',
+                    url: '/undefined'
+                }]
+            };
+            local.onParallelList(options, function (options2, onParallel) {
+                onParallel.counter += 1;
+                local.ajax(options2.element, onParallel);
+            }, onError);
+        };
     }());
     switch (local.modeJs) {
 
 
 
     // run browser js-env code - function
-    /* istanbul ignore next */
     case 'browser':
         break;
 
@@ -89,6 +117,9 @@
             }, {
                 file: '/kibana/config.js',
                 url: '/kibana/config.js'
+            }, {
+                file: '/kibana/app/dashboards/logstash.json',
+                url: '/kibana/app/dashboards/logstash.json'
             }];
             local.buildApp(options, onError);
             local.child_process.execSync(
@@ -97,16 +128,64 @@
             );
         };
 
+        local.testCase_killElasticsearch_default = function (options, onError) {
+        /*
+         * this function will test killElasticsearch's default handling-behavior
+         */
+            options = [
+                [process, { kill: local.nop }]
+            ];
+            local.testMock(options, function (onError) {
+                local.killElasticsearch();
+                onError();
+            }, onError);
+        };
+
+        local.testCase_middlewareBulkPut_default = function (options, onError) {
+        /*
+         * this function will test middlewareBulkPut's default handling-behavior
+         */
+            options = {
+                list: [{
+                    method: 'GET',
+                    url: '/__info'
+                }, {
+                    method: 'GET',
+                    url: '/_alias'
+                }, {
+                    method: 'PUT',
+                    data: '{"index":{"_id":null,"_index":"server_log","_type":"test"}}\n{}\n',
+                    url: '/_bulk'
+                }, {
+                    method: 'GET',
+                    url: '/kibana'
+                }, {
+                    method: 'GET',
+                    url: '/kibana/'
+                }, {
+                    method: 'OPTIONS',
+                    url: '/undefined'
+                }]
+            };
+            local.onParallelList(options, function (options2, onParallel) {
+                onParallel.counter += 1;
+                local.ajax(options2.element, onParallel);
+            }, onError);
+        };
+
         local.testCase_webpage_default = function (options, onError) {
         /*
          * this function will test webpage's default handling-behavior
          */
-            onError(null, options);
+            options = {
+                modeCoverageMerge: true,
+                url: local.serverLocalHost + '/index.default.html?modeTest=1'
+            };
+            local.browserTest(options, onError);
         };
 
-        local.utility2.testRunBefore = function () {
-            local.objectSetDefault(local.elasticsearch, local);
-        };
+        // coverage-hack - re-run serverStart
+        local.serverStart();
         break;
     }
 
@@ -140,7 +219,7 @@
              */
                 // jslint-hack
                 local.nop(url);
-                return local.env.npm_package_nameAlias && (/\bgithub.io$/).test(location.host)
+                return local.env.npm_package_nameAlias && location.host.match(/\bgithub.io$/)
                     ? 'https://h1-' + local.env.npm_package_nameAlias + '-alpha.herokuapp.com'
                     : location.protocol + '//' + location.host;
             };

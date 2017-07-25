@@ -3,7 +3,7 @@
     "bin": {
         "elasticsearch": "lib.elasticsearch.js"
     },
-    "description": "this zero-dependency package will download and install elasticsearch-v1.7.6 and kibana-v3.1.3 from https://www.elastic.co/downloads",
+    "description": "this zero-dependency package will download and install elasticsearch-v1.7.6, kibana-v3.1.3 and logstash-v2.4.1 from https://www.elastic.co/downloads",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
@@ -23,6 +23,7 @@
     "main": "lib.elasticsearch.js",
     "name": "elasticsearch-lite",
     "nameAlias": "elasticsearch",
+    "nameAliasPublish": "elk-lite kibana-lite logstash-lite",
     "nameOriginal": "elasticsearch-lite",
     "os": [
         "darwin",
@@ -35,10 +36,10 @@
     "scripts": {
         "build-ci": "utility2 shReadmeTest build_ci.sh",
         "env": "env",
-        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\"",
+        "heroku-postbuild": "npm uninstall utility2 2>/dev/null; npm install kaizhu256/node-utility2#alpha",
         "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
-    "version": "2017.6.2"
+    "version": "2017.7.24"
 }

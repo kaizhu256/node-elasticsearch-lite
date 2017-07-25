@@ -2,14 +2,31 @@
     "basePath": "/",
     "definitions": {},
     "info": {
-        "description": "",
-        "title": "",
-        "version": "1.7.6"
+        "description": "this zero-dependency package will download and install elasticsearch-v1.7.6, kibana-v3.1.3 and logstash-v2.4.1 from https://www.elastic.co/downloads",
+        "title": "elasticsearch-lite",
+        "version": "2017.7.24",
+        "x-homepage": "https://github.com/kaizhu256/node-elasticsearch-lite"
     },
     "paths": {
+        "/__info": {
+            "get": {
+                "operationId": "/__info.get",
+                "parameters": [],
+                "responses": {
+                    "default": {
+                        "description": "default response"
+                    }
+                },
+                "summary": "elasticsearch server info",
+                "tags": [
+                    "elasticsearch_all",
+                    "elasticsearch_get"
+                ]
+            }
+        },
         "/_alias": {
             "get": {
-                "operationId": "/_alias/.get",
+                "operationId": "/_alias.get",
                 "parameters": [
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -44,7 +61,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -101,7 +120,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -159,7 +180,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -186,7 +209,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -201,7 +226,10 @@
                         "description": "The definition of `actions` to perform",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Specify timeout for connection to master",
@@ -217,7 +245,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -255,7 +285,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -271,7 +303,10 @@
                     {
                         "description": "The text on which the analysis should be performed",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "The name of the analyzer to use",
@@ -342,7 +377,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-analyze.html",
                 "tags": [
@@ -360,8 +397,9 @@
                         "in": "body",
                         "name": "body",
                         "required": true,
-                        "serialize": "bulk",
-                        "type": "string"
+                        "schema": {
+                            "type": "string"
+                        }
                     },
                     {
                         "description": "Explicit write consistency setting for the operation",
@@ -411,7 +449,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-bulk.html",
                 "tags": [
@@ -426,7 +466,10 @@
                 "parameters": [
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -529,7 +572,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-clearcache.html",
                 "tags": [
@@ -551,7 +596,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat.html",
                 "tags": [
@@ -602,7 +649,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-alias.html",
                 "tags": [
@@ -664,7 +713,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-alias.html",
                 "tags": [
@@ -727,7 +778,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-allocation.html",
                 "tags": [
@@ -801,7 +854,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-allocation.html",
                 "tags": [
@@ -852,7 +907,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-count.html",
                 "tags": [
@@ -914,7 +971,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-count.html",
                 "tags": [
@@ -987,7 +1046,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-fielddata.html",
                 "tags": [
@@ -1071,7 +1132,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-fielddata.html",
                 "tags": [
@@ -1129,7 +1192,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-health.html",
                 "tags": [
@@ -1199,7 +1264,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-indices.html",
                 "tags": [
@@ -1280,7 +1347,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-indices.html",
                 "tags": [
@@ -1331,7 +1400,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-master.html",
                 "tags": [
@@ -1382,7 +1453,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-nodes.html",
                 "tags": [
@@ -1433,7 +1506,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-pending-tasks.html",
                 "tags": [
@@ -1484,7 +1559,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-plugins.html",
                 "tags": [
@@ -1541,7 +1618,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-recovery.html",
                 "tags": [
@@ -1609,7 +1688,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-recovery.html",
                 "tags": [
@@ -1648,7 +1729,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-segments.html",
                 "tags": [
@@ -1698,7 +1781,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-segments.html",
                 "tags": [
@@ -1749,7 +1834,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-shards.html",
                 "tags": [
@@ -1811,7 +1898,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-shards.html",
                 "tags": [
@@ -1869,7 +1958,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cat-thread-pool.html",
                 "tags": [
@@ -1944,7 +2035,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-health.html",
                 "tags": [
@@ -2004,7 +2097,7 @@
                         "description": "Wait until the specified number of nodes is available",
                         "in": "query",
                         "name": "wait_for_nodes",
-                        "type": "string"
+                        "type": "number"
                     },
                     {
                         "description": "Wait until the specified number of relocating shards is finished",
@@ -2026,7 +2119,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-health.html",
                 "tags": [
@@ -2041,7 +2136,10 @@
                 "parameters": [
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Set the delay for the operation (default: 1s)",
@@ -2057,7 +2155,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-shutdown.html",
                 "tags": [
@@ -2113,7 +2213,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-hot-threads.html",
                 "tags": [
@@ -2169,7 +2271,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-hot-threads.html",
                 "tags": [
@@ -2195,7 +2299,10 @@
                     },
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Set the delay for the operation (default: 1s)",
@@ -2211,7 +2318,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-shutdown.html",
                 "tags": [
@@ -2278,7 +2387,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-hot-threads.html",
                 "tags": [
@@ -2345,7 +2456,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-hot-threads.html",
                 "tags": [
@@ -2372,7 +2485,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-pending.html",
                 "tags": [
@@ -2388,7 +2503,10 @@
                     {
                         "description": "The definition of `commands` to perform (`move`, `cancel`, `allocate`)",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Simulate the operation only and return the resulting state",
@@ -2434,7 +2552,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-reroute.html",
                 "tags": [
@@ -2467,7 +2587,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-update-settings.html",
                 "tags": [
@@ -2481,7 +2603,10 @@
                     {
                         "description": "The settings to be updated. Can be either `transient` or `persistent` (survives cluster restart).",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Return settings in flat format (default: false)",
@@ -2503,7 +2628,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-update-settings.html",
                 "tags": [
@@ -2561,7 +2688,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-state.html",
                 "tags": [
@@ -2639,7 +2768,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-state.html",
                 "tags": [
@@ -2728,7 +2859,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-state.html",
                 "tags": [
@@ -2762,7 +2895,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-stats.html",
                 "tags": [
@@ -2807,7 +2942,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-stats.html",
                 "tags": [
@@ -2823,7 +2960,10 @@
                     {
                         "description": "A query to restrict the results specified with the Query DSL (optional)",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -2917,7 +3057,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-count.html",
                 "tags": [
@@ -2932,7 +3074,10 @@
                 "parameters": [
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -2982,7 +3127,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-field-stats.html",
                 "tags": [
@@ -2997,7 +3144,10 @@
                 "parameters": [
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -3038,7 +3188,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-flush.html",
                 "tags": [
@@ -3053,11 +3205,16 @@
                 "parameters": [
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-synced-flush.html",
                 "tags": [
@@ -3103,7 +3260,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-get-mapping.html",
                 "tags": [
@@ -3166,7 +3325,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-get-field-mapping.html",
                 "tags": [
@@ -3223,7 +3384,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-get-mapping.html",
                 "tags": [
@@ -3245,7 +3408,10 @@
                         "description": "The mapping definition",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -3292,7 +3458,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-put-mapping.html",
                 "tags": [
@@ -3366,7 +3534,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-get-field-mapping.html",
                 "tags": [
@@ -3390,7 +3560,10 @@
                         "description": "The mapping definition",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -3437,7 +3610,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-put-mapping.html",
                 "tags": [
@@ -3454,7 +3629,10 @@
                         "description": "Document identifiers; can be either `docs` (containing full document information) or `ids` (when index and type is provided in the URL.",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "collectionFormat": "csv",
@@ -3516,7 +3694,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-multi-get.html",
                 "tags": [
@@ -3533,7 +3713,10 @@
                         "description": "The percolate request definitions (header & body pair), separated by newlines",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -3562,7 +3745,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-percolate.html",
                 "tags": [
@@ -3579,7 +3764,10 @@
                         "description": "The request definitions (metadata-search request definition pairs), separated by newlines",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Search operation type",
@@ -3597,7 +3785,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-multi-search.html",
                 "tags": [
@@ -3614,7 +3804,10 @@
                         "description": "Define ids, parameters or a list of parameters per document here. You must at least provide a list of document ids. See documentation.",
                         "in": "body",
                         "name": "body",
-                        "required": false
+                        "required": false,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "default": true,
@@ -3708,7 +3901,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-multi-termvectors.html",
                 "tags": [
@@ -3742,7 +3937,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-info.html",
                 "tags": [
@@ -3798,7 +3995,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-hot-threads.html",
                 "tags": [
@@ -3854,7 +4053,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-hot-threads.html",
                 "tags": [
@@ -3940,7 +4141,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-stats.html",
                 "tags": [
@@ -4049,7 +4252,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-stats.html",
                 "tags": [
@@ -4188,7 +4393,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-stats.html",
                 "tags": [
@@ -4243,7 +4450,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-info.html",
                 "tags": [
@@ -4288,7 +4497,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-info.html",
                 "tags": [
@@ -4355,7 +4566,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-hot-threads.html",
                 "tags": [
@@ -4422,7 +4635,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-hot-threads.html",
                 "tags": [
@@ -4519,7 +4734,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-stats.html",
                 "tags": [
@@ -4639,7 +4856,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-stats.html",
                 "tags": [
@@ -4789,7 +5008,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-stats.html",
                 "tags": [
@@ -4855,7 +5076,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-info.html",
                 "tags": [
@@ -4870,7 +5093,10 @@
                 "parameters": [
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -4935,7 +5161,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-optimize.html",
                 "tags": [
@@ -4971,7 +5199,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-recovery.html",
                 "tags": [
@@ -4986,7 +5216,10 @@
                 "parameters": [
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -5028,7 +5261,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-refresh.html",
                 "tags": [
@@ -5075,7 +5310,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-scripting.html",
                 "tags": [
@@ -5120,7 +5357,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-scripting.html",
                 "tags": [
@@ -5149,7 +5388,10 @@
                         "description": "The document",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "default": "index",
@@ -5182,7 +5424,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-scripting.html",
                 "tags": [
@@ -5198,7 +5442,10 @@
                     {
                         "description": "The search definition using the Query DSL",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "collectionFormat": "csv",
@@ -5452,7 +5699,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-search.html",
                 "tags": [
@@ -5468,7 +5717,10 @@
                     {
                         "description": "A query to restrict the results specified with the Query DSL (optional)",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -5562,7 +5814,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-exists.html",
                 "tags": [
@@ -5576,7 +5830,9 @@
                 "operationId": "/_search/scroll.delete",
                 "parameters": [],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-request-scroll.html",
                 "tags": [
@@ -5590,7 +5846,10 @@
                     {
                         "description": "The scroll ID if not passed by URL or query parameter.",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Specify how long a consistent view of the index should be maintained for scrolled search",
@@ -5606,7 +5865,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-request-scroll.html",
                 "tags": [
@@ -5632,7 +5893,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-request-scroll.html",
                 "tags": [
@@ -5653,7 +5916,10 @@
                     {
                         "description": "The scroll ID if not passed by URL or query parameter.",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Specify how long a consistent view of the index should be maintained for scrolled search",
@@ -5669,7 +5935,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-request-scroll.html",
                 "tags": [
@@ -5685,7 +5953,10 @@
                     {
                         "description": "The search definition template and its params",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -5750,7 +6021,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/current/search-template.html",
                 "tags": [
@@ -5790,7 +6063,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-template.html",
                 "tags": [
@@ -5828,7 +6103,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-template.html",
                 "tags": [
@@ -5850,7 +6127,10 @@
                         "description": "The document",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "default": "index",
@@ -5883,7 +6163,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-template.html",
                 "tags": [
@@ -5898,7 +6180,10 @@
                 "parameters": [
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -5945,7 +6230,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-shards.html",
                 "tags": [
@@ -5998,7 +6285,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-segments.html",
                 "tags": [
@@ -6053,7 +6342,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-get-settings.html",
                 "tags": [
@@ -6068,7 +6359,10 @@
                         "description": "The index settings to be updated",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -6109,7 +6403,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-update-settings.html",
                 "tags": [
@@ -6175,7 +6471,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-get-settings.html",
                 "tags": [
@@ -6190,7 +6488,10 @@
                 "parameters": [
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Set the delay for the operation (default: 1s)",
@@ -6206,7 +6507,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/cluster-nodes-shutdown.html",
                 "tags": [
@@ -6233,7 +6536,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-snapshots.html",
                 "tags": [
@@ -6254,7 +6559,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-snapshots.html",
                 "tags": [
@@ -6292,7 +6599,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-snapshots.html",
                 "tags": [
@@ -6328,7 +6637,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-snapshots.html",
                 "tags": [
@@ -6350,7 +6661,10 @@
                         "description": "The repository definition",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Explicit operation timeout for connection to master node",
@@ -6372,7 +6686,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-snapshots.html",
                 "tags": [
@@ -6400,7 +6716,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-snapshots.html",
                 "tags": [
@@ -6422,7 +6740,10 @@
                     },
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Explicit operation timeout for connection to master node",
@@ -6438,7 +6759,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-snapshots.html",
                 "tags": [
@@ -6473,7 +6796,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-snapshots.html",
                 "tags": [
@@ -6510,7 +6835,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-snapshots.html",
                 "tags": [
@@ -6539,7 +6866,10 @@
                         "description": "The snapshot definition",
                         "in": "body",
                         "name": "body",
-                        "required": false
+                        "required": false,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Explicit operation timeout for connection to master node",
@@ -6556,7 +6886,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-snapshots.html",
                 "tags": [
@@ -6587,7 +6919,10 @@
                         "description": "Details of what to restore",
                         "in": "body",
                         "name": "body",
-                        "required": false
+                        "required": false,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Explicit operation timeout for connection to master node",
@@ -6604,7 +6939,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-snapshots.html",
                 "tags": [
@@ -6643,7 +6980,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/modules-snapshots.html",
                 "tags": [
@@ -6727,7 +7066,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-stats.html",
                 "tags": [
@@ -6841,7 +7182,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-stats.html",
                 "tags": [
@@ -6906,7 +7249,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-status.html",
                 "tags": [
@@ -6923,7 +7268,10 @@
                         "description": "The request definition",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -6964,7 +7312,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-suggesters.html",
                 "tags": [
@@ -6997,7 +7347,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-templates.html",
                 "tags": [
@@ -7031,7 +7383,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-templates.html",
                 "tags": [
@@ -7069,7 +7423,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-templates.html",
                 "tags": [
@@ -7101,7 +7457,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-templates.html",
                 "tags": [
@@ -7123,7 +7481,10 @@
                         "description": "The template definition",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "default": false,
@@ -7158,7 +7519,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-templates.html",
                 "tags": [
@@ -7205,7 +7568,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-upgrade.html",
                 "tags": [
@@ -7218,7 +7583,10 @@
                 "parameters": [
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -7259,7 +7627,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-upgrade.html",
                 "tags": [
@@ -7275,7 +7645,10 @@
                     {
                         "description": "The query definition specified with the Query DSL",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -7369,7 +7742,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-validate.html",
                 "tags": [
@@ -7415,7 +7790,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-warmers.html",
                 "tags": [
@@ -7472,7 +7849,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-warmers.html",
                 "tags": [
@@ -7494,7 +7873,10 @@
                         "description": "The search request definition for the warmer (query, filters, facets, sorting, etc)",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices in the search request to warm. (This includes `_all` string or when no indices have been specified)",
@@ -7529,7 +7911,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-warmers.html",
                 "tags": [
@@ -7553,7 +7937,10 @@
                         "description": "The search request definition for the warmer (query, filters, facets, sorting, etc)",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices in the search request to warm. (This includes `_all` string or when no indices have been specified)",
@@ -7588,7 +7975,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-warmers.html",
                 "tags": [
@@ -7626,7 +8015,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-delete-index.html",
                 "tags": [
@@ -7681,7 +8072,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-get-index.html",
                 "tags": [
@@ -7736,7 +8129,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-exists.html",
                 "tags": [
@@ -7757,7 +8152,10 @@
                     {
                         "description": "The configuration for the index (`settings` and `mappings`)",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Specify timeout for connection to master",
@@ -7773,7 +8171,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-create-index.html",
                 "tags": [
@@ -7830,7 +8230,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -7888,7 +8290,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -7937,7 +8341,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -8003,7 +8409,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -8072,7 +8480,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -8105,7 +8515,10 @@
                         "description": "The settings for the alias, such as `routing` or `filter`",
                         "in": "body",
                         "name": "body",
-                        "required": false
+                        "required": false,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Specify timeout for connection to master",
@@ -8121,7 +8534,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -8159,7 +8574,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -8208,7 +8625,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -8255,7 +8674,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -8288,7 +8709,10 @@
                         "description": "The settings for the alias, such as `routing` or `filter`",
                         "in": "body",
                         "name": "body",
-                        "required": false
+                        "required": false,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Specify timeout for connection to master",
@@ -8304,7 +8728,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-aliases.html",
                 "tags": [
@@ -8327,7 +8753,10 @@
                     {
                         "description": "The text on which the analysis should be performed",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "The name of the analyzer to use",
@@ -8398,7 +8827,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-analyze.html",
                 "tags": [
@@ -8423,8 +8854,9 @@
                         "in": "body",
                         "name": "body",
                         "required": true,
-                        "serialize": "bulk",
-                        "type": "string"
+                        "schema": {
+                            "type": "string"
+                        }
                     },
                     {
                         "description": "Explicit write consistency setting for the operation",
@@ -8474,7 +8906,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-bulk.html",
                 "tags": [
@@ -8500,7 +8934,10 @@
                     },
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -8603,7 +9040,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-clearcache.html",
                 "tags": [
@@ -8625,7 +9064,10 @@
                     },
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -8666,7 +9108,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-open-close.html",
                 "tags": [
@@ -8693,7 +9137,10 @@
                     {
                         "description": "A query to restrict the results specified with the Query DSL (optional)",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -8787,7 +9234,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-count.html",
                 "tags": [
@@ -8813,7 +9262,10 @@
                     },
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -8863,7 +9315,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-field-stats.html",
                 "tags": [
@@ -8889,7 +9343,10 @@
                     },
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -8930,7 +9387,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-flush.html",
                 "tags": [
@@ -8956,11 +9415,16 @@
                     },
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-synced-flush.html",
                 "tags": [
@@ -9017,7 +9481,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-get-mapping.html",
                 "tags": [
@@ -9091,7 +9557,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-get-field-mapping.html",
                 "tags": [
@@ -9134,7 +9602,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-delete-mapping.html",
                 "tags": [
@@ -9200,7 +9670,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-get-mapping.html",
                 "tags": [
@@ -9233,7 +9705,10 @@
                         "description": "The mapping definition",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -9280,7 +9755,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-put-mapping.html",
                 "tags": [
@@ -9365,7 +9842,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-get-field-mapping.html",
                 "tags": [
@@ -9408,7 +9887,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-delete-mapping.html",
                 "tags": [
@@ -9441,7 +9922,10 @@
                         "description": "The mapping definition",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -9488,7 +9972,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-put-mapping.html",
                 "tags": [
@@ -9512,7 +9998,10 @@
                         "description": "Document identifiers; can be either `docs` (containing full document information) or `ids` (when index and type is provided in the URL.",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "collectionFormat": "csv",
@@ -9574,7 +10063,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-multi-get.html",
                 "tags": [
@@ -9598,7 +10089,10 @@
                         "description": "The percolate request definitions (header & body pair), separated by newlines",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -9627,7 +10121,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-percolate.html",
                 "tags": [
@@ -9655,7 +10151,10 @@
                         "description": "The request definitions (metadata-search request definition pairs), separated by newlines",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Search operation type",
@@ -9673,7 +10172,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-multi-search.html",
                 "tags": [
@@ -9697,7 +10198,10 @@
                         "description": "Define ids, parameters or a list of parameters per document here. You must at least provide a list of document ids. See documentation.",
                         "in": "body",
                         "name": "body",
-                        "required": false
+                        "required": false,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "default": true,
@@ -9791,7 +10295,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-multi-termvectors.html",
                 "tags": [
@@ -9813,7 +10319,10 @@
                     },
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -9854,7 +10363,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-open-close.html",
                 "tags": [
@@ -9880,7 +10391,10 @@
                     },
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -9945,7 +10459,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-optimize.html",
                 "tags": [
@@ -10059,7 +10575,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-delete-by-query.html",
                 "tags": [
@@ -10106,7 +10624,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-recovery.html",
                 "tags": [
@@ -10132,7 +10652,10 @@
                     },
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -10174,7 +10697,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-refresh.html",
                 "tags": [
@@ -10201,7 +10726,10 @@
                     {
                         "description": "The search definition using the Query DSL",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "collectionFormat": "csv",
@@ -10455,7 +10983,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-search.html",
                 "tags": [
@@ -10482,7 +11012,10 @@
                     {
                         "description": "A query to restrict the results specified with the Query DSL (optional)",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -10576,7 +11109,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-exists.html",
                 "tags": [
@@ -10603,7 +11138,10 @@
                     {
                         "description": "The search definition template and its params",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -10668,7 +11206,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/current/search-template.html",
                 "tags": [
@@ -10690,7 +11230,10 @@
                     },
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -10737,7 +11280,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-shards.html",
                 "tags": [
@@ -10801,7 +11346,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-segments.html",
                 "tags": [
@@ -10867,7 +11414,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-get-settings.html",
                 "tags": [
@@ -10893,7 +11442,10 @@
                         "description": "The index settings to be updated",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -10934,7 +11486,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-update-settings.html",
                 "tags": [
@@ -11011,7 +11565,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-get-settings.html",
                 "tags": [
@@ -11106,7 +11662,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-stats.html",
                 "tags": [
@@ -11231,7 +11789,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-stats.html",
                 "tags": [
@@ -11307,7 +11867,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-status.html",
                 "tags": [
@@ -11335,7 +11897,10 @@
                         "description": "The request definition",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -11376,7 +11941,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-suggesters.html",
                 "tags": [
@@ -11434,7 +12001,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-upgrade.html",
                 "tags": [
@@ -11458,7 +12027,10 @@
                     },
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -11499,7 +12071,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-upgrade.html",
                 "tags": [
@@ -11526,7 +12100,10 @@
                     {
                         "description": "The query definition specified with the Query DSL",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -11620,7 +12197,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-validate.html",
                 "tags": [
@@ -11677,7 +12256,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-warmers.html",
                 "tags": [
@@ -11730,7 +12311,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-warmers.html",
                 "tags": [
@@ -11796,7 +12379,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-warmers.html",
                 "tags": [
@@ -11829,7 +12414,10 @@
                         "description": "The search request definition for the warmer (query, filters, facets, sorting, etc)",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices in the search request to warm. (This includes `_all` string or when no indices have been specified)",
@@ -11864,7 +12452,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-warmers.html",
                 "tags": [
@@ -11917,7 +12507,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-warmers.html",
                 "tags": [
@@ -11950,7 +12542,10 @@
                         "description": "The search request definition for the warmer (query, filters, facets, sorting, etc)",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices in the search request to warm. (This includes `_all` string or when no indices have been specified)",
@@ -11985,7 +12580,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-warmers.html",
                 "tags": [
@@ -12053,7 +12650,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-get-index.html",
                 "tags": [
@@ -12096,7 +12695,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-delete-mapping.html",
                 "tags": [
@@ -12162,7 +12763,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-types-exists.html",
                 "tags": [
@@ -12191,7 +12794,10 @@
                         "description": "The document",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Explicit write consistency setting for the operation",
@@ -12282,7 +12888,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-index_.html",
                 "tags": [
@@ -12314,8 +12922,9 @@
                         "in": "body",
                         "name": "body",
                         "required": true,
-                        "serialize": "bulk",
-                        "type": "string"
+                        "schema": {
+                            "type": "string"
+                        }
                     },
                     {
                         "description": "Explicit write consistency setting for the operation",
@@ -12365,7 +12974,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-bulk.html",
                 "tags": [
@@ -12403,7 +13014,10 @@
                     {
                         "description": "A query to restrict the results specified with the Query DSL (optional)",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -12497,7 +13111,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-count.html",
                 "tags": [
@@ -12540,7 +13156,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-delete-mapping.html",
                 "tags": [
@@ -12573,7 +13191,10 @@
                         "description": "The mapping definition",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -12620,7 +13241,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-put-mapping.html",
                 "tags": [
@@ -12663,7 +13286,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-delete-mapping.html",
                 "tags": [
@@ -12696,7 +13321,10 @@
                         "description": "The mapping definition",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -12743,7 +13371,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-put-mapping.html",
                 "tags": [
@@ -12774,7 +13404,10 @@
                         "description": "Document identifiers; can be either `docs` (containing full document information) or `ids` (when index and type is provided in the URL.",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "collectionFormat": "csv",
@@ -12836,7 +13469,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-multi-get.html",
                 "tags": [
@@ -12867,7 +13502,10 @@
                         "description": "The percolate request definitions (header & body pair), separated by newlines",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -12896,7 +13534,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-percolate.html",
                 "tags": [
@@ -12935,7 +13575,10 @@
                         "description": "The request definitions (metadata-search request definition pairs), separated by newlines",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Search operation type",
@@ -12953,7 +13596,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-multi-search.html",
                 "tags": [
@@ -12984,7 +13629,10 @@
                         "description": "Define ids, parameters or a list of parameters per document here. You must at least provide a list of document ids. See documentation.",
                         "in": "body",
                         "name": "body",
-                        "required": false
+                        "required": false,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "default": true,
@@ -13078,7 +13726,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-multi-termvectors.html",
                 "tags": [
@@ -13109,7 +13759,10 @@
                         "description": "The percolator request definition using the percolate DSL",
                         "in": "body",
                         "name": "body",
-                        "required": false
+                        "required": false,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -13205,7 +13858,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-percolate.html",
                 "tags": [
@@ -13236,7 +13891,10 @@
                         "description": "The count percolator request definition using the percolate DSL",
                         "in": "body",
                         "name": "body",
-                        "required": false
+                        "required": false,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -13311,7 +13969,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-percolate.html",
                 "tags": [
@@ -13436,7 +14096,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-delete-by-query.html",
                 "tags": [
@@ -13474,7 +14136,10 @@
                     {
                         "description": "The search definition using the Query DSL",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "collectionFormat": "csv",
@@ -13728,7 +14393,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-search.html",
                 "tags": [
@@ -13766,7 +14433,10 @@
                     {
                         "description": "A query to restrict the results specified with the Query DSL (optional)",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -13860,7 +14530,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-exists.html",
                 "tags": [
@@ -13898,7 +14570,10 @@
                     {
                         "description": "The search definition template and its params",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -13963,7 +14638,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/current/search-template.html",
                 "tags": [
@@ -13992,7 +14669,10 @@
                     },
                     {
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -14039,7 +14719,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-shards.html",
                 "tags": [
@@ -14070,7 +14752,10 @@
                         "description": "Define parameters. See documentation.",
                         "in": "body",
                         "name": "body",
-                        "required": false
+                        "required": false,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "default": true,
@@ -14153,7 +14838,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-termvectors.html",
                 "tags": [
@@ -14191,7 +14878,10 @@
                     {
                         "description": "The query definition specified with the Query DSL",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -14285,7 +14975,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-validate.html",
                 "tags": [
@@ -14364,7 +15056,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-warmers.html",
                 "tags": [
@@ -14408,7 +15102,10 @@
                         "description": "The search request definition for the warmer (query, filters, facets, sorting, etc)",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices in the search request to warm. (This includes `_all` string or when no indices have been specified)",
@@ -14443,7 +15140,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-warmers.html",
                 "tags": [
@@ -14489,7 +15188,10 @@
                         "description": "The search request definition for the warmer (query, filters, facets, sorting, etc)",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices in the search request to warm. (This includes `_all` string or when no indices have been specified)",
@@ -14524,7 +15226,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/indices-warmers.html",
                 "tags": [
@@ -14624,7 +15328,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-delete.html",
                 "tags": [
@@ -14747,7 +15453,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-get.html",
                 "tags": [
@@ -14812,7 +15520,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-get.html",
                 "tags": [
@@ -14848,7 +15558,10 @@
                         "description": "The document",
                         "in": "body",
                         "name": "body",
-                        "required": true
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Explicit write consistency setting for the operation",
@@ -14939,7 +15652,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-index_.html",
                 "tags": [
@@ -14976,7 +15691,10 @@
                     {
                         "description": "The query definition using the Query DSL",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "collectionFormat": "csv",
@@ -15085,7 +15803,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-explain.html",
                 "tags": [
@@ -15123,7 +15843,10 @@
                     {
                         "description": "A specific search request definition",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "The boost factor",
@@ -15251,7 +15974,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-more-like-this.html",
                 "tags": [
@@ -15289,7 +16014,10 @@
                         "description": "The percolator request definition using the percolate DSL",
                         "in": "body",
                         "name": "body",
-                        "required": false
+                        "required": false,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -15385,7 +16113,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-percolate.html",
                 "tags": [
@@ -15423,7 +16153,10 @@
                         "description": "The count percolator request definition using the percolate DSL",
                         "in": "body",
                         "name": "body",
-                        "required": false
+                        "required": false,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
@@ -15498,7 +16231,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/search-percolate.html",
                 "tags": [
@@ -15613,7 +16348,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-get.html",
                 "tags": [
@@ -15651,7 +16388,10 @@
                         "description": "Define parameters. See documentation.",
                         "in": "body",
                         "name": "body",
-                        "required": false
+                        "required": false,
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "default": true,
@@ -15734,7 +16474,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-termvectors.html",
                 "tags": [
@@ -15771,7 +16513,10 @@
                     {
                         "description": "The request definition using either `script` or partial `doc`",
                         "in": "body",
-                        "name": "body"
+                        "name": "body",
+                        "schema": {
+                            "type": "object"
+                        }
                     },
                     {
                         "description": "Explicit write consistency setting for the operation",
@@ -15889,7 +16634,9 @@
                     }
                 ],
                 "responses": {
-                    "default": {}
+                    "default": {
+                        "description": "default response"
+                    }
                 },
                 "summary": "http://www.elastic.co/guide/en/elasticsearch/reference/1.7/docs-update.html",
                 "tags": [

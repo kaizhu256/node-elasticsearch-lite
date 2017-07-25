@@ -66,6 +66,33 @@ postinstall() {(set -e
         # untar file
         tar --strip-components=1 -C external/kibana -xzf /tmp/$FILE_BASE
     fi
+    # install logstash
+    VERSION=2.4.1
+    FILE_BASE="logstash-$VERSION.tar.gz"
+    FILE_URL="https://download.elastic.co/logstash/logstash/$FILE_BASE"
+    # init external/logstash/index.html
+    mkdir -p external/logstash
+    if [ ! -f external/logstash/index.html ]
+    then
+        if [ ! -f "/tmp/$FILE_BASE" ]
+        then
+            FILE_TMP="$(mktemp "/tmp/$FILE_BASE.XXXXXXXX")"
+            # copy cached file
+            if [ -f "/$FILE_BASE" ]
+            then
+                cp "/$FILE_BASE" "$FILE_TMP"
+            # download file
+            else
+                printf "downloading $FILE_URL to /tmp/$FILE_BASE ...\n"
+                curl -#Lo "$FILE_TMP" "$FILE_URL"
+            fi
+            chmod 644 "$FILE_TMP"
+            # mv file to prevent race-condition
+            mv "$FILE_TMP" "/tmp/$FILE_BASE" 2>/dev/null || true
+        fi
+        # untar file
+        tar --strip-components=1 -C external/logstash -xzf /tmp/$FILE_BASE
+    fi
 )}
 
 # run command
