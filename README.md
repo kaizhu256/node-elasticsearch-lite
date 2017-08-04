@@ -1,7 +1,7 @@
 # elasticsearch-lite
 this zero-dependency package will download and install elasticsearch-v1.7.6, kibana-v3.1.3 and logstash-v2.4.1 from https://www.elastic.co/downloads
 
-[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp%252Fkibana%252Findex.html.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app/kibana/index.html#/dashboard/file/logstash.json)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252Fkibana%252Findex.html.png)](https://h1-elasticsearch-beta.herokuapp.com/kibana/index.html#/dashboard/file/logstash.json)
 
 [![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-elasticsearch-lite.svg)](https://travis-ci.org/kaizhu256/node-elasticsearch-lite) [![coverage](https://kaizhu256.github.io/node-elasticsearch-lite/build/coverage.badge.svg)](https://kaizhu256.github.io/node-elasticsearch-lite/build/coverage.html/index.html)
 
@@ -43,13 +43,13 @@ this zero-dependency package will download and install elasticsearch-v1.7.6, kib
 
 
 # live demo
-- [https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app/kibana/index.html#/dashboard/file/logstash.json](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app/kibana/index.html#/dashboard/file/logstash.json)
+- [https://h1-elasticsearch-beta.herokuapp.com/kibana/index.html#/dashboard/file/logstash.json](https://h1-elasticsearch-beta.herokuapp.com/kibana/index.html#/dashboard/file/logstash.json)
 
-[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp%252Fkibana%252Findex.html.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app/kibana/index.html#/dashboard/file/logstash.json)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252Fkibana%252Findex.html.png)](https://h1-elasticsearch-beta.herokuapp.com/kibana/index.html#/dashboard/file/logstash.json)
 
-- [https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app)
+- [http://h1-elasticsearch-beta.herokuapp.com/](http://h1-elasticsearch-beta.herokuapp.com/)
 
-[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployGithub.browser.%252Fnode-elasticsearch-lite%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/app)
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252F.png)](http://h1-elasticsearch-beta.herokuapp.com/)
 
 
 
@@ -64,15 +64,9 @@ this zero-dependency package will download and install elasticsearch-v1.7.6, kib
 - revamp _bulk api to retry on errors
 - none
 
-#### changelog for v2017.7.24
-- npm publish 2017.7.24
-- add extra elasticsearch api /__info
-- add function local.middlewareBulkPut
-- add functional kibana demo
-- add info.title and info.description to swagger.json
-- add logstash for full elk stack
-- add quickstart shell example in README.md
-- remove file lib.elasticsearch.accounts._json
+#### changelog for v2017.7.25
+- npm publish 2017.7.25
+- use heroku for online demo instead of github
 - none
 
 #### this package requires
@@ -452,7 +446,7 @@ instruction
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
-    "version": "2017.7.24"
+    "version": "2017.7.25"
 }
 ```
 
@@ -475,8 +469,8 @@ shBuildCiAfter() {(set -e
     shDeployGithub
     shDeployHeroku
     # screenshot
-    MODE_BUILD=deployGithub shBrowserTest \
-        "https://kaizhu256.github.io/node-elasticsearch-lite/build..$CI_BRANCH..travis-ci.org/app/kibana/index.html#/dashboard/file/logstash.json" screenshot
+    MODE_BUILD=deployHeroku shBrowserTest "https://h1-elasticsearch-beta.herokuapp.com\
+/kibana/index.html#/dashboard/file/logstash.json" screenshot
     (
     export PORT=9200
     # screenshot

@@ -4,7 +4,7 @@
     "info": {
         "description": "this zero-dependency package will download and install elasticsearch-v1.7.6, kibana-v3.1.3 and logstash-v2.4.1 from https://www.elastic.co/downloads",
         "title": "elasticsearch-lite",
-        "version": "2017.7.24",
+        "version": "2017.7.25",
         "x-homepage": "https://github.com/kaizhu256/node-elasticsearch-lite"
     },
     "paths": {

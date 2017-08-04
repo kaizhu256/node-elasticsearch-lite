@@ -13252,7 +13252,7 @@ local.assetsDict['/assets.index.template.html'] = '\
 <head>\n\
 <meta charset="UTF-8">\n\
 <meta name="viewport" content="width=device-width, initial-scale=1">\n\
-<meta data-template="assets.index.default.template.html">\n\
+<!-- "assets.index.default.template.html" -->\n\
 <title>{{env.npm_package_name}} (v{{env.npm_package_version}})</title>\n\
 <style>\n\
 /*csslint\n\
@@ -13737,7 +13737,7 @@ the greatest app in the world!\n\
 \n\
 \n\
 # live demo\n\
-- [https://kaizhu256.github.io/node-jslint-lite/build..beta..travis-ci.org/app](https://kaizhu256.github.io/node-jslint-lite/build..beta..travis-ci.org/app)\n\
+- [https://kaizhu256.github.io/node-jslint-lite/build..beta..travis-ci.org/app/](https://kaizhu256.github.io/node-jslint-lite/build..beta..travis-ci.org/app)\n\
 \n\
 [![screenshot](https://kaizhu256.github.io/node-jslint-lite/build/screenshot.deployGithub.browser.%252Fnode-jslint-lite%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-jslint-lite/build..beta..travis-ci.org/app)\n\
 \n\
@@ -20647,11 +20647,11 @@ border: 0;\n\
 \n\
 </script>\n\
 <div class="swggUiContainer">\n\
-<form2 class="header tr">\n\
+<div class="form header tr">\n\
     <a class="td1" href="https://github.com/kaizhu256/node-swgg" target="_blank">swgg</a>\n\
     <input class="flex1 td2" type="text">\n\
     <button class="td3">Explore</button>\n\
-</form2>\n\
+</div>\n\
 </div>\n\
 <div class="swggAjaxProgressDiv" style="margin-top: 1rem; text-align: center;">fetching resource-list ...</div>\n\
 <script>\n\
@@ -21386,7 +21386,7 @@ local.templateUiMain = '\
     <form class="datatable eventDelegateClick"></form>\n\
 </div>\n\
 <div class="eventDelegateClick popup" style="display: none;"></div>\n\
-<form2 class="eventDelegateSubmit header onEventUiReload tr">\n\
+<div class="eventDelegateSubmit form header onEventUiReload tr">\n\
     <a class="td1" href="https://github.com/kaizhu256/node-swgg" target="_blank">swgg</a>\n\
     <input\n\
         class="flex1 td2"\n\
@@ -21394,7 +21394,7 @@ local.templateUiMain = '\
         value="{{url}}"\n\
     >\n\
     <button class="eventDelegateClick onEventUiReload td3">Explore</button>\n\
-</form2>\n\
+</div>\n\
 <div class="info reset">\n\
     {{#if info}}\n\
     {{#if info.x-homepage}}\n\
@@ -22077,7 +22077,7 @@ swgg\n\
             min = isFinite(propDef.maximum)
                 ? propDef.minimum
                 : 0;
-            switch (propDef.type) {
+            switch (propDef.type || (propDef.schema && propDef.schema.type)) {
             case 'array':
                 tmp = [];
                 // http://json-schema.org/latest/json-schema-validation.html#anchor36
@@ -23308,7 +23308,7 @@ swgg\n\
 
         local.uiEventListenerDict['.onEventOperationAjax'] = function (event) {
         /*
-         * this function will return submit the operation to the backend
+         * this function will submit the operation to the backend
          */
             var options, tmp;
             options = {};
@@ -23830,8 +23830,10 @@ swgg\n\
                     .removeChild(document.querySelector('.resourceList'));
                 document.querySelector('.swggUiContainer').appendChild(options.uiFragment);
                 /* istanbul ignore next */
-                // bug-workaround - add keypress listener for <form2>
-                document.querySelector('form2').addEventListener('keypress', function (event) {
+                // bug-workaround - add keypress listener for <form>
+                document.querySelector(
+                    '.swggUiContainer .form'
+                ).addEventListener('keypress', function (event) {
                     if (event.keyCode === 13) {
                         local.uiEventListenerDict['.onEventUiReload']();
                     }
