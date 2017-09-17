@@ -2,77 +2,77 @@
 <rect height="1342" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
-<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2017-09-17T10:57:33.838Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2017-09-17T11:37:10.396Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
 <tspan x="10" y="58">-elasticsearch-lite</tspan>
 <tspan x="10" y="74"></tspan>
 <tspan x="10" y="90"></tspan>
 <tspan x="10" y="106">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp\</tspan>
 <tspan x="10" y="122">/build/test-report.json</tspan>
 <tspan x="10" y="138">override assets assets.swgg.swagger.json</tspan>
-<tspan x="10" y="154">&gt; server listening on http-port 46303</tspan>
+<tspan x="10" y="154">&gt; server listening on http-port 51542</tspan>
 <tspan x="10" y="170">starting elasticsearch-server ...</tspan>
-<tspan x="10" y="186">serverLog - {"type":"serverResponse","time":"2017-09-17T10:57:34.850Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="202">"statusCode":200,"duration":6,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
-<tspan x="10" y="218">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="234">[2017-09-17 10:57:35,105][INFO ][node                     ] [Shrunken Bones] version[1.7.6], pid\</tspan>
-<tspan x="10" y="250">[6601], build[c730b59/2016-11-18T15:21:16Z]</tspan>
-<tspan x="10" y="266">[2017-09-17 10:57:35,105][INFO ][node                     ] [Shrunken Bones] initializing ...</tspan>
-<tspan x="10" y="282">[2017-09-17 10:57:35,178][INFO ][plugins                  ] [Shrunken Bones] loaded [], sites []</tspan>
-<tspan x="10" y="298">[2017-09-17 10:57:35,210][INFO ][env                      ] [Shrunken Bones] using [1] data path\</tspan>
-<tspan x="10" y="314">s, mounts [[/ (/dev/sda1)]], net usable_space [17.3gb], net total_space [29.4gb], types [ext4]</tspan>
-<tspan x="10" y="330">[2017-09-17 10:57:37,522][INFO ][node                     ] [Shrunken Bones] initialized</tspan>
-<tspan x="10" y="346">[2017-09-17 10:57:37,527][INFO ][node                     ] [Shrunken Bones] starting ...</tspan>
-<tspan x="10" y="362">[2017-09-17 10:57:37,704][INFO ][transport                ] [Shrunken Bones] bound_address {inet\</tspan>
-<tspan x="10" y="378">[/0.0.0.0:9300]}, publish_address {inet[/10.10.20.71:9300]}</tspan>
-<tspan x="10" y="394">[2017-09-17 10:57:37,759][INFO ][discovery                ] [Shrunken Bones] elasticsearch/vuJFV\</tspan>
-<tspan x="10" y="410">5pdRL-hUbvJY22_vQ</tspan>
-<tspan x="10" y="426">[2017-09-17 10:57:41,559][INFO ][cluster.service          ] [Shrunken Bones] new_master [Shrunke\</tspan>
-<tspan x="10" y="442">n Bones][vuJFV5pdRL-hUbvJY22_vQ][testing-gce-fda7aaf6-890d-4803-8e57-7ca6402d7687][inet[/10.10.2\</tspan>
-<tspan x="10" y="458">0.71:9300]], reason: zen-disco-join (elected_as_master)</tspan>
-<tspan x="10" y="474">[2017-09-17 10:57:41,599][INFO ][http                     ] [Shrunken Bones] bound_address {inet\</tspan>
-<tspan x="10" y="490">[/0.0.0.0:46304]}, publish_address {inet[/10.10.20.71:46304]}</tspan>
-<tspan x="10" y="506">[2017-09-17 10:57:41,600][INFO ][node                     ] [Shrunken Bones] started</tspan>
-<tspan x="10" y="522">[2017-09-17 10:57:41,639][INFO ][gateway                  ] [Shrunken Bones] recovered [1] indic\</tspan>
-<tspan x="10" y="538">es into cluster_state</tspan>
-<tspan x="10" y="554">elasticsearch-server listening on http-port46304</tspan>
-<tspan x="10" y="570">serverLog - {"type":"serverResponse","time":"2017-09-17T10:57:42.444Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="586">"statusCode":200,"duration":2,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
+<tspan x="10" y="186">serverLog - {"type":"serverResponse","time":"2017-09-17T11:37:11.296Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="202">"statusCode":200,"duration":13,"requestContentLength":0,"responseContentLength":11557,"requestHe\</tspan>
+<tspan x="10" y="218">aderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="234">[2017-09-17 11:37:11,574][INFO ][node                     ] [Nebula] version[1.7.6], pid[6609], \</tspan>
+<tspan x="10" y="250">build[c730b59/2016-11-18T15:21:16Z]</tspan>
+<tspan x="10" y="266">[2017-09-17 11:37:11,581][INFO ][node                     ] [Nebula] initializing ...</tspan>
+<tspan x="10" y="282">[2017-09-17 11:37:11,642][INFO ][plugins                  ] [Nebula] loaded [], sites []</tspan>
+<tspan x="10" y="298">[2017-09-17 11:37:11,674][INFO ][env                      ] [Nebula] using [1] data paths, mount\</tspan>
+<tspan x="10" y="314">s [[/ (/dev/sda1)]], net usable_space [17.3gb], net total_space [29.4gb], types [ext4]</tspan>
+<tspan x="10" y="330">[2017-09-17 11:37:14,188][INFO ][node                     ] [Nebula] initialized</tspan>
+<tspan x="10" y="346">[2017-09-17 11:37:14,196][INFO ][node                     ] [Nebula] starting ...</tspan>
+<tspan x="10" y="362">[2017-09-17 11:37:14,349][INFO ][transport                ] [Nebula] bound_address {inet[/0.0.0.\</tspan>
+<tspan x="10" y="378">0:9300]}, publish_address {inet[/10.10.20.19:9300]}</tspan>
+<tspan x="10" y="394">[2017-09-17 11:37:14,393][INFO ][discovery                ] [Nebula] elasticsearch/O5yYD4hjTXaN4\</tspan>
+<tspan x="10" y="410">BAeRoYZWA</tspan>
+<tspan x="10" y="426">[2017-09-17 11:37:18,190][INFO ][cluster.service          ] [Nebula] new_master [Nebula][O5yYD4h\</tspan>
+<tspan x="10" y="442">jTXaN4BAeRoYZWA][testing-gce-69713992-128f-41eb-876b-d947faf050e1][inet[/10.10.20.19:9300]], rea\</tspan>
+<tspan x="10" y="458">son: zen-disco-join (elected_as_master)</tspan>
+<tspan x="10" y="474">[2017-09-17 11:37:18,243][INFO ][gateway                  ] [Nebula] recovered [1] indices into \</tspan>
+<tspan x="10" y="490">cluster_state</tspan>
+<tspan x="10" y="506">[2017-09-17 11:37:18,282][INFO ][http                     ] [Nebula] bound_address {inet[/0.0.0.\</tspan>
+<tspan x="10" y="522">0:51543]}, publish_address {inet[/10.10.20.19:51543]}</tspan>
+<tspan x="10" y="538">[2017-09-17 11:37:18,282][INFO ][node                     ] [Nebula] started</tspan>
+<tspan x="10" y="554">elasticsearch-server listening on http-port51543</tspan>
+<tspan x="10" y="570">serverLog - {"type":"serverResponse","time":"2017-09-17T11:37:19.028Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="586">"statusCode":200,"duration":3,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
 <tspan x="10" y="602">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="618">&gt; server listening on http-port 50237</tspan>
-<tspan x="10" y="634">serverLog - {"type":"serverResponse","time":"2017-09-17T10:57:43.410Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="650">"statusCode":200,"duration":6,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
+<tspan x="10" y="618">&gt; server listening on http-port 65420</tspan>
+<tspan x="10" y="634">serverLog - {"type":"serverResponse","time":"2017-09-17T11:37:20.245Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="650">"statusCode":200,"duration":5,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
 <tspan x="10" y="666">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="682">serverLog - {"type":"serverResponse","time":"2017-09-17T10:57:43.434Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="698">"statusCode":200,"duration":3,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
+<tspan x="10" y="682">serverLog - {"type":"serverResponse","time":"2017-09-17T11:37:20.253Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="698">"statusCode":200,"duration":5,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
 <tspan x="10" y="714">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
 <tspan x="10" y="730">[node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
-<tspan x="10" y="746">[2017-09-17 10:57:49,339][INFO ][node                     ] [Shrunken Bones] stopping ...</tspan>
-<tspan x="10" y="762">[2017-09-17 10:57:49,419][INFO ][node                     ] [Shrunken Bones] stopped</tspan>
-<tspan x="10" y="778">[2017-09-17 10:57:49,419][INFO ][node                     ] [Shrunken Bones] closing ...</tspan>
-<tspan x="10" y="794">[2017-09-17 10:57:49,438][INFO ][node                     ] [Shrunken Bones] closed</tspan>
+<tspan x="10" y="746">[2017-09-17 11:37:26,202][INFO ][node                     ] [Nebula] stopping ...</tspan>
+<tspan x="10" y="762">[2017-09-17 11:37:26,290][INFO ][node                     ] [Nebula] stopped</tspan>
+<tspan x="10" y="778">[2017-09-17 11:37:26,290][INFO ][node                     ] [Nebula] closing ...</tspan>
+<tspan x="10" y="794">[2017-09-17 11:37:26,306][INFO ][node                     ] [Nebula] closed</tspan>
 <tspan x="10" y="810"></tspan>
 <tspan x="10" y="826">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp\</tspan>
 <tspan x="10" y="842">/build/test-report.json</tspan>
 <tspan x="10" y="858"></tspan>
 <tspan x="10" y="874">-------------------------------------------------------</tspan>
-<tspan x="10" y="890">| test-report - buildApidoc - node - linux v6.11.3 - 2017-09-17T10:55:59.021Z</tspan>
-<tspan x="10" y="906">|  100911 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="890">| test-report - buildApidoc - node - linux v6.11.3 - 2017-09-17T11:35:35.325Z</tspan>
+<tspan x="10" y="906">|  101444 ms            0 failed        1 passed      |</tspan>
 <tspan x="10" y="922">-------------------------------------------------------</tspan>
 <tspan x="10" y="938">| test-report - npmTest - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_64) AppleW\</tspan>
 <tspan x="10" y="954">ebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36 - 2017-09-17T\</tspan>
-<tspan x="10" y="970">10:55:41.491Z</tspan>
-<tspan x="10" y="986">|     101 ms            0 failed        9 passed      |</tspan>
+<tspan x="10" y="970">11:35:18.076Z</tspan>
+<tspan x="10" y="986">|     155 ms            0 failed        9 passed      |</tspan>
 <tspan x="10" y="1002">-------------------------------------------------------</tspan>
-<tspan x="10" y="1018">| test-report - npmTest - node - linux v6.11.3 - 2017-09-17T10:55:31.153Z</tspan>
-<tspan x="10" y="1034">|   17606 ms            0 failed       11 passed      |</tspan>
+<tspan x="10" y="1018">| test-report - npmTest - node - linux v6.11.3 - 2017-09-17T11:35:06.525Z</tspan>
+<tspan x="10" y="1034">|   17439 ms            0 failed       11 passed      |</tspan>
 <tspan x="10" y="1050">-------------------------------------------------------</tspan>
 <tspan x="10" y="1066">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
 <tspan x="10" y="1082">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36 - 20\</tspan>
-<tspan x="10" y="1098">17-09-17T10:54:19.260Z</tspan>
-<tspan x="10" y="1114">|      77 ms            0 failed        2 passed      |</tspan>
+<tspan x="10" y="1098">17-09-17T11:33:52.911Z</tspan>
+<tspan x="10" y="1114">|      72 ms            0 failed        2 passed      |</tspan>
 <tspan x="10" y="1130">-------------------------------------------------------</tspan>
-<tspan x="10" y="1146">| test-report - npmTestPublished - node - linux v6.11.3 - 2017-09-17T10:54:06.864Z</tspan>
-<tspan x="10" y="1162">|   17492 ms            0 failed       10 passed      |</tspan>
+<tspan x="10" y="1146">| test-report - npmTestPublished - node - linux v6.11.3 - 2017-09-17T11:33:40.260Z</tspan>
+<tspan x="10" y="1162">|   17845 ms            0 failed       10 passed      |</tspan>
 <tspan x="10" y="1178">-------------------------------------------------------</tspan>
 <tspan x="10" y="1194"></tspan>
 <tspan x="10" y="1210">created test-report file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/build/test-rep\</tspan>
@@ -82,6 +82,6 @@
 <tspan x="10" y="1274">buildApp - 0 failed tests</tspan>
 <tspan x="10" y="1290"></tspan>
 <tspan x="10" y="1306"></tspan>
-<tspan x="10" y="1322">[MODE_BUILD=buildApp] - 2017-09-17T10:57:49.656Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="1322">[MODE_BUILD=buildApp] - 2017-09-17T11:37:26.542Z - EXIT_CODE - 0</tspan>
 </text>
 </svg>

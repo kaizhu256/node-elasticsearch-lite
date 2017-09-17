@@ -20640,6 +20640,10 @@ instruction\n\
          * 2. start server on local.env.PORT
          * 3. run tests
          */
+            if (local.modeJs === 'browser') {
+                local.testRunDefault(options);
+                return;
+            }
             if (local.global.utility2_serverHttp1) {
                 return;
             }
