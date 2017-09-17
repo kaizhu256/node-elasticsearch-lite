@@ -16,55 +16,55 @@
 <tspan x="10" y="218">npm WARN app No license field.</tspan>
 <tspan x="10" y="234">server listening on http-port 8081</tspan>
 <tspan x="10" y="250">starting elasticsearch-server ...</tspan>
-<tspan x="10" y="266">serverLog - {"type":"serverResponse","time":"2017-09-17T11:34:19.851Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="266">serverLog - {"type":"serverResponse","time":"2017-09-17T11:50:05.341Z","method":"GET","url":"/",\</tspan>
 <tspan x="10" y="282">"statusCode":200,"duration":8,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
 <tspan x="10" y="298">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="314">[2017-09-17 11:34:20,418][INFO ][node                     ] [Madelyne Pryor] version[1.7.6], pid\</tspan>
-<tspan x="10" y="330">[5173], build[c730b59/2016-11-18T15:21:16Z]</tspan>
-<tspan x="10" y="346">[2017-09-17 11:34:20,419][INFO ][node                     ] [Madelyne Pryor] initializing ...</tspan>
-<tspan x="10" y="362">[2017-09-17 11:34:20,512][INFO ][plugins                  ] [Madelyne Pryor] loaded [], sites []</tspan>
-<tspan x="10" y="378">[2017-09-17 11:34:20,544][INFO ][env                      ] [Madelyne Pryor] using [1] data path\</tspan>
-<tspan x="10" y="394">s, mounts [[/ (/dev/sda1)]], net usable_space [17.6gb], net total_space [29.4gb], types [ext4]</tspan>
-<tspan x="10" y="410">[2017-09-17 11:34:23,046][INFO ][node                     ] [Madelyne Pryor] initialized</tspan>
-<tspan x="10" y="426">[2017-09-17 11:34:23,046][INFO ][node                     ] [Madelyne Pryor] starting ...</tspan>
-<tspan x="10" y="442">[2017-09-17 11:34:23,138][INFO ][transport                ] [Madelyne Pryor] bound_address {inet\</tspan>
-<tspan x="10" y="458">[/0.0.0.0:9300]}, publish_address {inet[/10.10.20.19:9300]}</tspan>
-<tspan x="10" y="474">[2017-09-17 11:34:23,170][INFO ][discovery                ] [Madelyne Pryor] elasticsearch/w-XXT\</tspan>
-<tspan x="10" y="490">MV8RRCVeVYpqiUGKQ</tspan>
-<tspan x="10" y="506">[2017-09-17 11:34:26,951][INFO ][cluster.service          ] [Madelyne Pryor] new_master [Madelyn\</tspan>
-<tspan x="10" y="522">e Pryor][w-XXTMV8RRCVeVYpqiUGKQ][testing-gce-69713992-128f-41eb-876b-d947faf050e1][inet[/10.10.2\</tspan>
-<tspan x="10" y="538">0.19:9300]], reason: zen-disco-join (elected_as_master)</tspan>
-<tspan x="10" y="554">[2017-09-17 11:34:27,037][INFO ][http                     ] [Madelyne Pryor] bound_address {inet\</tspan>
-<tspan x="10" y="570">[/0.0.0.0:8082]}, publish_address {inet[/10.10.20.19:8082]}</tspan>
-<tspan x="10" y="586">[2017-09-17 11:34:27,039][INFO ][node                     ] [Madelyne Pryor] started</tspan>
-<tspan x="10" y="602">[2017-09-17 11:34:27,051][INFO ][gateway                  ] [Madelyne Pryor] recovered [0] indic\</tspan>
-<tspan x="10" y="618">es into cluster_state</tspan>
-<tspan x="10" y="634">serverLog - {"type":"serverResponse","time":"2017-09-17T11:34:27.081Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="650">"statusCode":200,"duration":11,"requestContentLength":0,"responseContentLength":3572,"requestHea\</tspan>
+<tspan x="10" y="314">[2017-09-17 11:50:05,888][INFO ][node                     ] [Timeshadow] version[1.7.6], pid[516\</tspan>
+<tspan x="10" y="330">5], build[c730b59/2016-11-18T15:21:16Z]</tspan>
+<tspan x="10" y="346">[2017-09-17 11:50:05,894][INFO ][node                     ] [Timeshadow] initializing ...</tspan>
+<tspan x="10" y="362">[2017-09-17 11:50:05,995][INFO ][plugins                  ] [Timeshadow] loaded [], sites []</tspan>
+<tspan x="10" y="378">[2017-09-17 11:50:06,040][INFO ][env                      ] [Timeshadow] using [1] data paths, m\</tspan>
+<tspan x="10" y="394">ounts [[/ (/dev/sda1)]], net usable_space [17.6gb], net total_space [29.4gb], types [ext4]</tspan>
+<tspan x="10" y="410">[2017-09-17 11:50:08,426][INFO ][node                     ] [Timeshadow] initialized</tspan>
+<tspan x="10" y="426">[2017-09-17 11:50:08,427][INFO ][node                     ] [Timeshadow] starting ...</tspan>
+<tspan x="10" y="442">[2017-09-17 11:50:08,562][INFO ][transport                ] [Timeshadow] bound_address {inet[/0.\</tspan>
+<tspan x="10" y="458">0.0.0:9300]}, publish_address {inet[/10.10.20.62:9300]}</tspan>
+<tspan x="10" y="474">[2017-09-17 11:50:08,612][INFO ][discovery                ] [Timeshadow] elasticsearch/lb0pUsosQ\</tspan>
+<tspan x="10" y="490">HSMMOVtSUnEhA</tspan>
+<tspan x="10" y="506">[2017-09-17 11:50:12,429][INFO ][cluster.service          ] [Timeshadow] new_master [Timeshadow]\</tspan>
+<tspan x="10" y="522">[lb0pUsosQHSMMOVtSUnEhA][testing-gce-51ab725b-f48f-4b5f-8d0f-47594ac58302][inet[/10.10.20.62:930\</tspan>
+<tspan x="10" y="538">0]], reason: zen-disco-join (elected_as_master)</tspan>
+<tspan x="10" y="554">[2017-09-17 11:50:12,505][INFO ][http                     ] [Timeshadow] bound_address {inet[/0.\</tspan>
+<tspan x="10" y="570">0.0.0:8082]}, publish_address {inet[/10.10.20.62:8082]}</tspan>
+<tspan x="10" y="586">[2017-09-17 11:50:12,506][INFO ][gateway                  ] [Timeshadow] recovered [0] indices i\</tspan>
+<tspan x="10" y="602">nto cluster_state</tspan>
+<tspan x="10" y="618">[2017-09-17 11:50:12,515][INFO ][node                     ] [Timeshadow] started</tspan>
+<tspan x="10" y="634">serverLog - {"type":"serverResponse","time":"2017-09-17T11:50:12.915Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="650">"statusCode":200,"duration":16,"requestContentLength":0,"responseContentLength":3572,"requestHea\</tspan>
 <tspan x="10" y="666">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"","requestHeaderUserAgent"\</tspan>
 <tspan x="10" y="682">:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Ele\</tspan>
 <tspan x="10" y="698">ctron/1.6.11 Safari/537.36"}</tspan>
-<tspan x="10" y="714">serverLog - {"type":"serverResponse","time":"2017-09-17T11:34:27.191Z","method":"GET","url":"/as\</tspan>
-<tspan x="10" y="730">sets.utility2.rollup.js","statusCode":200,"duration":105,"requestContentLength":0,"responseConte\</tspan>
+<tspan x="10" y="714">serverLog - {"type":"serverResponse","time":"2017-09-17T11:50:13.024Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="730">sets.utility2.rollup.js","statusCode":200,"duration":102,"requestContentLength":0,"responseConte\</tspan>
 <tspan x="10" y="746">ntLength":275857,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer"\</tspan>
 <tspan x="10" y="762">:"http://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/\</tspan>
 <tspan x="10" y="778">537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
-<tspan x="10" y="794">serverLog - {"type":"serverResponse","time":"2017-09-17T11:34:27.421Z","method":"GET","url":"/as\</tspan>
-<tspan x="10" y="810">sets.swgg.swagger.json","statusCode":200,"duration":25,"requestContentLength":0,"responseContent\</tspan>
+<tspan x="10" y="794">serverLog - {"type":"serverResponse","time":"2017-09-17T11:50:13.255Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="810">sets.swgg.swagger.json","statusCode":200,"duration":23,"requestContentLength":0,"responseContent\</tspan>
 <tspan x="10" y="826">Length":31468,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"h\</tspan>
 <tspan x="10" y="842">ttp://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
 <tspan x="10" y="858">.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
 <tspan x="10" y="874">elasticsearch-server listening on http-port8082</tspan>
-<tspan x="10" y="890">serverLog - {"type":"serverResponse","time":"2017-09-17T11:34:27.919Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="906">"statusCode":200,"duration":3,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
+<tspan x="10" y="890">serverLog - {"type":"serverResponse","time":"2017-09-17T11:50:13.465Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="906">"statusCode":200,"duration":1,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
 <tspan x="10" y="922">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="938">[2017-09-17 11:34:28,419][INFO ][cluster.metadata         ] [Madelyne Pryor] [server_log] creati\</tspan>
-<tspan x="10" y="954">ng index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
-<tspan x="10" y="970">[2017-09-17 11:34:29,098][INFO ][cluster.metadata         ] [Madelyne Pryor] [server_log] update\</tspan>
-<tspan x="10" y="986">_mapping [serverResponse] (dynamic)</tspan>
-<tspan x="10" y="1002">[2017-09-17 11:34:49,532][INFO ][node                     ] [Madelyne Pryor] stopping ...</tspan>
-<tspan x="10" y="1018">[2017-09-17 11:34:49,572][INFO ][node                     ] [Madelyne Pryor] stopped</tspan>
-<tspan x="10" y="1034">[2017-09-17 11:34:49,572][INFO ][node                     ] [Madelyne Pryor] closing ...</tspan>
-<tspan x="10" y="1050">[2017-09-17 11:34:49,580][INFO ][node                     ] [Madelyne Pryor] closed</tspan>
+<tspan x="10" y="938">[2017-09-17 11:50:13,960][INFO ][cluster.metadata         ] [Timeshadow] [server_log] creating i\</tspan>
+<tspan x="10" y="954">ndex, cause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
+<tspan x="10" y="970">[2017-09-17 11:50:14,666][INFO ][cluster.metadata         ] [Timeshadow] [server_log] update_map\</tspan>
+<tspan x="10" y="986">ping [serverResponse] (dynamic)</tspan>
+<tspan x="10" y="1002">[2017-09-17 11:50:35,030][INFO ][node                     ] [Timeshadow] stopping ...</tspan>
+<tspan x="10" y="1018">[2017-09-17 11:50:35,084][INFO ][node                     ] [Timeshadow] stopped</tspan>
+<tspan x="10" y="1034">[2017-09-17 11:50:35,084][INFO ][node                     ] [Timeshadow] closing ...</tspan>
+<tspan x="10" y="1050">[2017-09-17 11:50:35,089][INFO ][node                     ] [Timeshadow] closed</tspan>
 </text>
 </svg>
