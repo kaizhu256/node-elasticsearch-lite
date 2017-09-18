@@ -16,55 +16,55 @@
 <tspan x="10" y="218">npm WARN app No license field.</tspan>
 <tspan x="10" y="234">server listening on http-port 8081</tspan>
 <tspan x="10" y="250">starting elasticsearch-server ...</tspan>
-<tspan x="10" y="266">serverLog - {"type":"serverResponse","time":"2017-09-18T19:28:06.065Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="282">"statusCode":200,"duration":8,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
+<tspan x="10" y="266">serverLog - {"type":"serverResponse","time":"2017-09-18T21:48:14.813Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="282">"statusCode":200,"duration":9,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
 <tspan x="10" y="298">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="314">[2017-09-18 19:28:06,565][INFO ][node                     ] [Aquarian] version[1.7.6], pid[5164]\</tspan>
-<tspan x="10" y="330">, build[c730b59/2016-11-18T15:21:16Z]</tspan>
-<tspan x="10" y="346">[2017-09-18 19:28:06,568][INFO ][node                     ] [Aquarian] initializing ...</tspan>
-<tspan x="10" y="362">[2017-09-18 19:28:06,666][INFO ][plugins                  ] [Aquarian] loaded [], sites []</tspan>
-<tspan x="10" y="378">[2017-09-18 19:28:06,702][INFO ][env                      ] [Aquarian] using [1] data paths, mou\</tspan>
-<tspan x="10" y="394">nts [[/ (/dev/sda1)]], net usable_space [17.6gb], net total_space [29.4gb], types [ext4]</tspan>
-<tspan x="10" y="410">[2017-09-18 19:28:09,093][INFO ][node                     ] [Aquarian] initialized</tspan>
-<tspan x="10" y="426">[2017-09-18 19:28:09,093][INFO ][node                     ] [Aquarian] starting ...</tspan>
-<tspan x="10" y="442">[2017-09-18 19:28:09,309][INFO ][transport                ] [Aquarian] bound_address {inet[/0.0.\</tspan>
-<tspan x="10" y="458">0.0:9300]}, publish_address {inet[/10.10.21.54:9300]}</tspan>
-<tspan x="10" y="474">[2017-09-18 19:28:09,360][INFO ][discovery                ] [Aquarian] elasticsearch/zm-Kyzp6Rpa\</tspan>
-<tspan x="10" y="490">NxdkXj7sj2w</tspan>
-<tspan x="10" y="506">serverLog - {"type":"serverResponse","time":"2017-09-18T19:28:12.947Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="522">"statusCode":200,"duration":18,"requestContentLength":0,"responseContentLength":3572,"requestHea\</tspan>
+<tspan x="10" y="314">[2017-09-18 21:48:15,393][INFO ][node                     ] [Mikado] version[1.7.6], pid[5265], \</tspan>
+<tspan x="10" y="330">build[c730b59/2016-11-18T15:21:16Z]</tspan>
+<tspan x="10" y="346">[2017-09-18 21:48:15,393][INFO ][node                     ] [Mikado] initializing ...</tspan>
+<tspan x="10" y="362">[2017-09-18 21:48:15,520][INFO ][plugins                  ] [Mikado] loaded [], sites []</tspan>
+<tspan x="10" y="378">[2017-09-18 21:48:15,558][INFO ][env                      ] [Mikado] using [1] data paths, mount\</tspan>
+<tspan x="10" y="394">s [[/ (/dev/sda1)]], net usable_space [17.6gb], net total_space [29.4gb], types [ext4]</tspan>
+<tspan x="10" y="410">[2017-09-18 21:48:18,344][INFO ][node                     ] [Mikado] initialized</tspan>
+<tspan x="10" y="426">[2017-09-18 21:48:18,345][INFO ][node                     ] [Mikado] starting ...</tspan>
+<tspan x="10" y="442">[2017-09-18 21:48:18,548][INFO ][transport                ] [Mikado] bound_address {inet[/0.0.0.\</tspan>
+<tspan x="10" y="458">0:9300]}, publish_address {inet[/10.10.20.161:9300]}</tspan>
+<tspan x="10" y="474">[2017-09-18 21:48:18,619][INFO ][discovery                ] [Mikado] elasticsearch/iXsXrTH3RAGpr\</tspan>
+<tspan x="10" y="490">ZeaD4oHZQ</tspan>
+<tspan x="10" y="506">serverLog - {"type":"serverResponse","time":"2017-09-18T21:48:20.556Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="522">"statusCode":200,"duration":17,"requestContentLength":0,"responseContentLength":3572,"requestHea\</tspan>
 <tspan x="10" y="538">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"","requestHeaderUserAgent"\</tspan>
 <tspan x="10" y="554">:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Ele\</tspan>
 <tspan x="10" y="570">ctron/1.6.11 Safari/537.36"}</tspan>
-<tspan x="10" y="586">[2017-09-18 19:28:13,161][INFO ][cluster.service          ] [Aquarian] new_master [Aquarian][zm-\</tspan>
-<tspan x="10" y="602">Kyzp6RpaNxdkXj7sj2w][testing-gce-2d2118ae-2596-4553-88c8-c913bac192d8][inet[/10.10.21.54:9300]],\</tspan>
-<tspan x="10" y="618"> reason: zen-disco-join (elected_as_master)</tspan>
-<tspan x="10" y="634">[2017-09-18 19:28:13,241][INFO ][http                     ] [Aquarian] bound_address {inet[/0.0.\</tspan>
-<tspan x="10" y="650">0.0:8082]}, publish_address {inet[/10.10.21.54:8082]}</tspan>
-<tspan x="10" y="666">[2017-09-18 19:28:13,252][INFO ][node                     ] [Aquarian] started</tspan>
-<tspan x="10" y="682">[2017-09-18 19:28:13,244][INFO ][gateway                  ] [Aquarian] recovered [0] indices int\</tspan>
-<tspan x="10" y="698">o cluster_state</tspan>
-<tspan x="10" y="714">serverLog - {"type":"serverResponse","time":"2017-09-18T19:28:13.083Z","method":"GET","url":"/as\</tspan>
-<tspan x="10" y="730">sets.utility2.rollup.js","statusCode":200,"duration":190,"requestContentLength":0,"responseConte\</tspan>
-<tspan x="10" y="746">ntLength":275836,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer"\</tspan>
-<tspan x="10" y="762">:"http://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/\</tspan>
-<tspan x="10" y="778">537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
-<tspan x="10" y="794">serverLog - {"type":"serverResponse","time":"2017-09-18T19:28:13.417Z","method":"GET","url":"/as\</tspan>
-<tspan x="10" y="810">sets.swgg.swagger.json","statusCode":200,"duration":23,"requestContentLength":0,"responseContent\</tspan>
-<tspan x="10" y="826">Length":31468,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"h\</tspan>
-<tspan x="10" y="842">ttp://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
-<tspan x="10" y="858">.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="586">serverLog - {"type":"serverResponse","time":"2017-09-18T21:48:20.740Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="602">sets.utility2.rollup.js","statusCode":200,"duration":118,"requestContentLength":0,"responseConte\</tspan>
+<tspan x="10" y="618">ntLength":275836,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer"\</tspan>
+<tspan x="10" y="634">:"http://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/\</tspan>
+<tspan x="10" y="650">537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="666">serverLog - {"type":"serverResponse","time":"2017-09-18T21:48:21.029Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="682">sets.swgg.swagger.json","statusCode":200,"duration":27,"requestContentLength":0,"responseContent\</tspan>
+<tspan x="10" y="698">Length":31468,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"h\</tspan>
+<tspan x="10" y="714">ttp://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
+<tspan x="10" y="730">.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="746">[2017-09-18 21:48:22,424][INFO ][cluster.service          ] [Mikado] new_master [Mikado][iXsXrTH\</tspan>
+<tspan x="10" y="762">3RAGprZeaD4oHZQ][testing-gce-50ad92bc-e4f9-475b-a056-db0f2588d295][inet[/10.10.20.161:9300]], re\</tspan>
+<tspan x="10" y="778">ason: zen-disco-join (elected_as_master)</tspan>
+<tspan x="10" y="794">[2017-09-18 21:48:22,502][INFO ][http                     ] [Mikado] bound_address {inet[/0.0.0.\</tspan>
+<tspan x="10" y="810">0:8082]}, publish_address {inet[/10.10.20.161:8082]}</tspan>
+<tspan x="10" y="826">[2017-09-18 21:48:22,506][INFO ][node                     ] [Mikado] started</tspan>
+<tspan x="10" y="842">[2017-09-18 21:48:22,519][INFO ][gateway                  ] [Mikado] recovered [0] indices into \</tspan>
+<tspan x="10" y="858">cluster_state</tspan>
 <tspan x="10" y="874">elasticsearch-server listening on http-port8082</tspan>
-<tspan x="10" y="890">serverLog - {"type":"serverResponse","time":"2017-09-18T19:28:14.185Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="890">serverLog - {"type":"serverResponse","time":"2017-09-18T21:48:22.949Z","method":"GET","url":"/",\</tspan>
 <tspan x="10" y="906">"statusCode":200,"duration":2,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
 <tspan x="10" y="922">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="938">[2017-09-18 19:28:14,566][INFO ][cluster.metadata         ] [Aquarian] [server_log] creating ind\</tspan>
-<tspan x="10" y="954">ex, cause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
-<tspan x="10" y="970">[2017-09-18 19:28:15,116][INFO ][cluster.metadata         ] [Aquarian] [server_log] update_mappi\</tspan>
-<tspan x="10" y="986">ng [serverResponse] (dynamic)</tspan>
-<tspan x="10" y="1002">[2017-09-18 19:28:35,760][INFO ][node                     ] [Aquarian] stopping ...</tspan>
-<tspan x="10" y="1018">[2017-09-18 19:28:35,805][INFO ][node                     ] [Aquarian] stopped</tspan>
-<tspan x="10" y="1034">[2017-09-18 19:28:35,806][INFO ][node                     ] [Aquarian] closing ...</tspan>
-<tspan x="10" y="1050">[2017-09-18 19:28:35,818][INFO ][node                     ] [Aquarian] closed</tspan>
+<tspan x="10" y="938">[2017-09-18 21:48:23,311][INFO ][cluster.metadata         ] [Mikado] [server_log] creating index\</tspan>
+<tspan x="10" y="954">, cause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
+<tspan x="10" y="970">[2017-09-18 21:48:23,979][INFO ][cluster.metadata         ] [Mikado] [server_log] update_mapping\</tspan>
+<tspan x="10" y="986"> [serverResponse] (dynamic)</tspan>
+<tspan x="10" y="1002">[2017-09-18 21:48:44,445][INFO ][node                     ] [Mikado] stopping ...</tspan>
+<tspan x="10" y="1018">[2017-09-18 21:48:44,508][INFO ][node                     ] [Mikado] stopped</tspan>
+<tspan x="10" y="1034">[2017-09-18 21:48:44,508][INFO ][node                     ] [Mikado] closing ...</tspan>
+<tspan x="10" y="1050">[2017-09-18 21:48:44,514][INFO ][node                     ] [Mikado] closed</tspan>
 </text>
 </svg>
