@@ -37,29 +37,11 @@
         local.global = local.modeJs === 'browser'
             ? window
             : global;
-        switch (local.modeJs) {
-        // re-init local from window.local
-        case 'browser':
-            local = local.global.utility2.objectSetDefault(
-                local.global.utility2_rollup || local.global.local,
-                local.global.utility2
-            );
-            break;
-        // re-init local from example.js
-        case 'node':
-            local = (local.global.utility2_rollup ||
-                require('./assets.utility2.rollup.js')).requireReadme();
-            break;
-        }
-        // init testCase_buildXxx
-        Object.keys(local).forEach(function (key) {
-            if (key.indexOf('_testCase_build') === 0 ||
-                    key === '_testCase_webpage_default') {
-                local[key.slice(1)] = local[key.slice(1)] || local[key];
-            }
-        });
-        // init exports
-        local.global.local = local;
+        // re-init local
+        local = local.global.local = (local.global.utility2 ||
+            require('./assets.utility2.rollup.js')).requireReadme();
+        // init test
+        local.testRunInit(local);
     }());
 
 

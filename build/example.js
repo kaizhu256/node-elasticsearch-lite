@@ -224,7 +224,7 @@ instruction
                     return 'the greatest app in the world!';
                 case 'npm_package_name':
                     return 'elasticsearch-lite';
-                case 'npm_package_nameAlias':
+                case 'npm_package_nameLib':
                     return 'elasticsearch';
                 case 'npm_package_version':
                     return '0.0.1';

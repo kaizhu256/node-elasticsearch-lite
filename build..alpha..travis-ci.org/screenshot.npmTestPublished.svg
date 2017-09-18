@@ -1,41 +1,41 @@
-<svg height="2558" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="2558" fill="#555" width="720"></rect>
+<svg height="2542" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="2542" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
-<tspan x="10" y="42">[MODE_BUILD=npmTestPublished] - 2017-09-17T11:49:25.953Z - npm-testing /tmp/npmTestPublished/nod\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=npmTestPublished] - 2017-09-18T19:27:28.857Z - npm-testing /tmp/npmTestPublished/nod\</tspan>
 <tspan x="10" y="58">e_modules/elasticsearch-lite</tspan>
 <tspan x="10" y="74"></tspan>
 <tspan x="10" y="90"></tspan>
 <tspan x="10" y="106">covering $ /home/travis/.nvm/versions/node/v6.11.3/bin/node /tmp/npmTestPublished/node_modules/e\</tspan>
 <tspan x="10" y="122">lasticsearch-lite/test.js</tspan>
 <tspan x="10" y="138">override assets assets.swgg.swagger.json</tspan>
-<tspan x="10" y="154">&gt; server listening on http-port 43473</tspan>
+<tspan x="10" y="154">&gt; server listening on http-port 64427</tspan>
 <tspan x="10" y="170">starting elasticsearch-server ...</tspan>
-<tspan x="10" y="186">serverLog - {"type":"serverResponse","time":"2017-09-17T11:49:27.188Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="202">"statusCode":200,"duration":8,"requestContentLength":0,"responseContentLength":11616,"requestHea\</tspan>
+<tspan x="10" y="186">serverLog - {"type":"serverResponse","time":"2017-09-18T19:27:29.961Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="202">"statusCode":200,"duration":9,"requestContentLength":0,"responseContentLength":11616,"requestHea\</tspan>
 <tspan x="10" y="218">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="234">[2017-09-17 11:49:27,643][INFO ][node                     ] [Lunatica] version[1.7.6], pid[4715]\</tspan>
-<tspan x="10" y="250">, build[c730b59/2016-11-18T15:21:16Z]</tspan>
-<tspan x="10" y="266">[2017-09-17 11:49:27,655][INFO ][node                     ] [Lunatica] initializing ...</tspan>
-<tspan x="10" y="282">[2017-09-17 11:49:27,840][INFO ][plugins                  ] [Lunatica] loaded [], sites []</tspan>
-<tspan x="10" y="298">[2017-09-17 11:49:27,899][INFO ][env                      ] [Lunatica] using [1] data paths, mou\</tspan>
-<tspan x="10" y="314">nts [[/ (/dev/sda1)]], net usable_space [17.8gb], net total_space [29.4gb], types [ext4]</tspan>
-<tspan x="10" y="330">[2017-09-17 11:49:31,071][INFO ][node                     ] [Lunatica] initialized</tspan>
-<tspan x="10" y="346">[2017-09-17 11:49:31,081][INFO ][node                     ] [Lunatica] starting ...</tspan>
-<tspan x="10" y="362">[2017-09-17 11:49:31,295][INFO ][transport                ] [Lunatica] bound_address {inet[/0.0.\</tspan>
-<tspan x="10" y="378">0.0:9300]}, publish_address {inet[/10.10.20.62:9300]}</tspan>
-<tspan x="10" y="394">[2017-09-17 11:49:31,352][INFO ][discovery                ] [Lunatica] elasticsearch/Cke9juNpQfS\</tspan>
-<tspan x="10" y="410">cojHi1Vg4Yw</tspan>
-<tspan x="10" y="426">[2017-09-17 11:49:35,135][INFO ][cluster.service          ] [Lunatica] new_master [Lunatica][Cke\</tspan>
-<tspan x="10" y="442">9juNpQfScojHi1Vg4Yw][testing-gce-51ab725b-f48f-4b5f-8d0f-47594ac58302][inet[/10.10.20.62:9300]],\</tspan>
-<tspan x="10" y="458"> reason: zen-disco-join (elected_as_master)</tspan>
-<tspan x="10" y="474">[2017-09-17 11:49:35,164][INFO ][http                     ] [Lunatica] bound_address {inet[/0.0.\</tspan>
-<tspan x="10" y="490">0.0:43474]}, publish_address {inet[/10.10.20.62:43474]}</tspan>
-<tspan x="10" y="506">[2017-09-17 11:49:35,165][INFO ][node                     ] [Lunatica] started</tspan>
-<tspan x="10" y="522">[2017-09-17 11:49:35,180][INFO ][gateway                  ] [Lunatica] recovered [0] indices int\</tspan>
-<tspan x="10" y="538">o cluster_state</tspan>
-<tspan x="10" y="554">elasticsearch-server listening on http-port43474</tspan>
-<tspan x="10" y="570">serverLog - {"type":"serverResponse","time":"2017-09-17T11:49:35.907Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="234">[2017-09-18 19:27:30,396][INFO ][node                     ] [Agron] version[1.7.6], pid[4712], b\</tspan>
+<tspan x="10" y="250">uild[c730b59/2016-11-18T15:21:16Z]</tspan>
+<tspan x="10" y="266">[2017-09-18 19:27:30,398][INFO ][node                     ] [Agron] initializing ...</tspan>
+<tspan x="10" y="282">[2017-09-18 19:27:30,476][INFO ][plugins                  ] [Agron] loaded [], sites []</tspan>
+<tspan x="10" y="298">[2017-09-18 19:27:30,510][INFO ][env                      ] [Agron] using [1] data paths, mounts\</tspan>
+<tspan x="10" y="314"> [[/ (/dev/sda1)]], net usable_space [17.8gb], net total_space [29.4gb], types [ext4]</tspan>
+<tspan x="10" y="330">[2017-09-18 19:27:33,350][INFO ][node                     ] [Agron] initialized</tspan>
+<tspan x="10" y="346">[2017-09-18 19:27:33,350][INFO ][node                     ] [Agron] starting ...</tspan>
+<tspan x="10" y="362">[2017-09-18 19:27:33,611][INFO ][transport                ] [Agron] bound_address {inet[/0.0.0.0\</tspan>
+<tspan x="10" y="378">:9300]}, publish_address {inet[/10.10.21.54:9300]}</tspan>
+<tspan x="10" y="394">[2017-09-18 19:27:33,673][INFO ][discovery                ] [Agron] elasticsearch/IcymvYOEQz-Sag\</tspan>
+<tspan x="10" y="410">C8HHFSNQ</tspan>
+<tspan x="10" y="426">[2017-09-18 19:27:37,466][INFO ][cluster.service          ] [Agron] new_master [Agron][IcymvYOEQ\</tspan>
+<tspan x="10" y="442">z-SagC8HHFSNQ][testing-gce-2d2118ae-2596-4553-88c8-c913bac192d8][inet[/10.10.21.54:9300]], reaso\</tspan>
+<tspan x="10" y="458">n: zen-disco-join (elected_as_master)</tspan>
+<tspan x="10" y="474">[2017-09-18 19:27:37,492][INFO ][http                     ] [Agron] bound_address {inet[/0.0.0.0\</tspan>
+<tspan x="10" y="490">:64428]}, publish_address {inet[/10.10.21.54:64428]}</tspan>
+<tspan x="10" y="506">[2017-09-18 19:27:37,493][INFO ][node                     ] [Agron] started</tspan>
+<tspan x="10" y="522">[2017-09-18 19:27:37,512][INFO ][gateway                  ] [Agron] recovered [0] indices into c\</tspan>
+<tspan x="10" y="538">luster_state</tspan>
+<tspan x="10" y="554">elasticsearch-server listening on http-port64428</tspan>
+<tspan x="10" y="570">serverLog - {"type":"serverResponse","time":"2017-09-18T19:27:37.634Z","method":"GET","url":"/",\</tspan>
 <tspan x="10" y="586">"statusCode":200,"duration":3,"requestContentLength":0,"responseContentLength":11616,"requestHea\</tspan>
 <tspan x="10" y="602">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
 <tspan x="10" y="618">created apidoc file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/build/apidoc.html</tspan>
@@ -47,65 +47,65 @@
 <tspan x="10" y="714">[node test-case 5 of 10 passed] - testCase_buildTest_default</tspan>
 <tspan x="10" y="730">[node test-case 6 of 10 passed] - testCase_killElasticsearch_default</tspan>
 <tspan x="10" y="746">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="762">[2017-09-17 11:49:36,653][INFO ][cluster.metadata         ] [Lunatica] [server_log] creating ind\</tspan>
-<tspan x="10" y="778">ex, cause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
-<tspan x="10" y="794">[2017-09-17 11:49:37,391][INFO ][cluster.metadata         ] [Lunatica] [server_log] update_mappi\</tspan>
-<tspan x="10" y="810">ng [test] (dynamic)</tspan>
-<tspan x="10" y="826"></tspan>
-<tspan x="10" y="842">browserTest - created electron entry-page /tmp/npmTestPublished/node_modules/elasticsearch-lite/\</tspan>
-<tspan x="10" y="858">tmp/electron.15e8fac26300.9192cfac03ec3.html</tspan>
-<tspan x="10" y="874"></tspan>
-<tspan x="10" y="890">[2017-09-17 11:49:37,468][INFO ][cluster.metadata         ] [Lunatica] [server_log] update_mappi\</tspan>
-<tspan x="10" y="906">ng [serverResponse] (dynamic)</tspan>
-<tspan x="10" y="922">[node test-case 7 of 10 passed] - testCase_middlewareBulkPut_default</tspan>
-<tspan x="10" y="938">[node test-case 8 of 10 passed] - testCase_middlewareRouterCustom_default</tspan>
+<tspan x="10" y="762">[2017-09-18 19:27:38,491][INFO ][cluster.metadata         ] [Agron] [server_log] creating index,\</tspan>
+<tspan x="10" y="778"> cause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
+<tspan x="10" y="794">[2017-09-18 19:27:39,186][INFO ][cluster.metadata         ] [Agron] [server_log] update_mapping \</tspan>
+<tspan x="10" y="810">[test] (dynamic)</tspan>
+<tspan x="10" y="826">[node test-case 7 of 10 passed] - testCase_middlewareBulkPut_default</tspan>
+<tspan x="10" y="842">[node test-case 8 of 10 passed] - testCase_middlewareRouterCustom_default</tspan>
+<tspan x="10" y="858">[2017-09-18 19:27:39,250][INFO ][cluster.metadata         ] [Agron] [server_log] update_mapping \</tspan>
+<tspan x="10" y="874">[serverResponse] (dynamic)</tspan>
+<tspan x="10" y="890"></tspan>
+<tspan x="10" y="906">browserTest - created electron entry-page /tmp/npmTestPublished/node_modules/elasticsearch-lite/\</tspan>
+<tspan x="10" y="922">tmp/electron.15e9675d9450.09acb7c14d6f3.html</tspan>
+<tspan x="10" y="938"></tspan>
 <tspan x="10" y="954">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="970">[4861:0917/114937.616395:WARNING:audio_manager.cc(317)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="970">[4859:0918/192739.383940:WARNING:audio_manager.cc(317)] Multiple instances of AudioManager detec\</tspan>
 <tspan x="10" y="986">ted</tspan>
-<tspan x="10" y="1002">[4861:0917/114937.624134:WARNING:audio_manager.cc(278)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="1002">[4859:0918/192739.384033:WARNING:audio_manager.cc(278)] Multiple instances of AudioManager detec\</tspan>
 <tspan x="10" y="1018">ted</tspan>
-<tspan x="10" y="1034">[4861:0917/114937.752027:ERROR:bus.cc(427)] Failed to connect to the bus: //bin/dbus-launch term\</tspan>
+<tspan x="10" y="1034">[4859:0918/192739.453374:ERROR:bus.cc(427)] Failed to connect to the bus: //bin/dbus-launch term\</tspan>
 <tspan x="10" y="1050">inated abnormally without any error message</tspan>
-<tspan x="10" y="1066">[4898:0917/114937.768013:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="1066">[4898:0918/192739.521608:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple t\</tspan>
 <tspan x="10" y="1082">hreads in process gpu-process. </tspan>
-<tspan x="10" y="1098">[4861:0917/114937.830001:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1098">[4859:0918/192739.542728:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="1114">l.</tspan>
-<tspan x="10" y="1130">[4861:0917/114937.837213:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1130">[4859:0918/192739.542824:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="1146">l.</tspan>
-<tspan x="10" y="1162">[4861:0917/114937.844788:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1162">[4859:0918/192739.542889:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="1178">l.</tspan>
-<tspan x="10" y="1194">[4861:0917/114937.856776:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1194">[4859:0918/192739.542954:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="1210">l.</tspan>
-<tspan x="10" y="1226">[4861:0917/114937.864409:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1226">[4859:0918/192739.543019:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="1242">l.</tspan>
-<tspan x="10" y="1258">&gt; server listening on http-port 61105</tspan>
-<tspan x="10" y="1274"></tspan>
-<tspan x="10" y="1290">browserTest - opened http://127.0.0.1:43473/index.default.html?modeTest=1</tspan>
-<tspan x="10" y="1306"></tspan>
-<tspan x="10" y="1322">serverLog - {"type":"serverResponse","time":"2017-09-17T11:49:38.315Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="1338">"statusCode":200,"duration":17,"requestContentLength":0,"responseContentLength":11616,"requestHe\</tspan>
-<tspan x="10" y="1354">aderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="1370">serverLog - {"type":"serverResponse","time":"2017-09-17T11:49:38.340Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="1386">"statusCode":200,"duration":12,"requestContentLength":0,"responseContentLength":11616,"requestHe\</tspan>
-<tspan x="10" y="1402">aderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="1418">[4861:0917/114939.008487:INFO:CONSOLE(73)] "[browser test-case 1 of 2 passed] - testCase_browser\</tspan>
+<tspan x="10" y="1258">&gt; server listening on http-port 51639</tspan>
+<tspan x="10" y="1274">serverLog - {"type":"serverResponse","time":"2017-09-18T19:27:39.743Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="1290">"statusCode":200,"duration":6,"requestContentLength":0,"responseContentLength":11616,"requestHea\</tspan>
+<tspan x="10" y="1306">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="1322">serverLog - {"type":"serverResponse","time":"2017-09-18T19:27:39.754Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="1338">"statusCode":200,"duration":4,"requestContentLength":0,"responseContentLength":11616,"requestHea\</tspan>
+<tspan x="10" y="1354">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="1370"></tspan>
+<tspan x="10" y="1386">browserTest - opened http://127.0.0.1:64427/index.default.html?modeTest=1</tspan>
+<tspan x="10" y="1402"></tspan>
+<tspan x="10" y="1418">[4859:0918/192740.277956:INFO:CONSOLE(73)] "[browser test-case 1 of 2 passed] - testCase_browser\</tspan>
 <tspan x="10" y="1434">_nullCase", source: file:///tmp/npmTestPublished/node_modules/elasticsearch-lite/tmp/electron.15\</tspan>
-<tspan x="10" y="1450">e8fac26300.9192cfac03ec3.html (73)</tspan>
-<tspan x="10" y="1466">[4861:0917/114939.118838:INFO:CONSOLE(73)] "[browser test-case 2 of 2 passed] - testCase_middlew\</tspan>
+<tspan x="10" y="1450">e9675d9450.09acb7c14d6f3.html (73)</tspan>
+<tspan x="10" y="1466">[4859:0918/192740.331158:INFO:CONSOLE(73)] "[browser test-case 2 of 2 passed] - testCase_middlew\</tspan>
 <tspan x="10" y="1482">areRouterCustom_default", source: file:///tmp/npmTestPublished/node_modules/elasticsearch-lite/t\</tspan>
-<tspan x="10" y="1498">mp/electron.15e8fac26300.9192cfac03ec3.html (73)</tspan>
-<tspan x="10" y="1514">[4861:0917/114940.121898:INFO:CONSOLE(73)] "----------|-----------|-----------|-----------|-----\</tspan>
+<tspan x="10" y="1498">mp/electron.15e9675d9450.09acb7c14d6f3.html (73)</tspan>
+<tspan x="10" y="1514">[4859:0918/192741.337386:INFO:CONSOLE(73)] "----------|-----------|-----------|-----------|-----\</tspan>
 <tspan x="10" y="1530">------|</tspan>
 <tspan x="10" y="1546">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 <tspan x="10" y="1562">----------|-----------|-----------|-----------|-----------|</tspan>
 <tspan x="10" y="1578">----------|-----------|-----------|-----------|-----------|</tspan>
 <tspan x="10" y="1594">All files |       100 |       100 |       100 |       100 |</tspan>
 <tspan x="10" y="1610">----------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="1626">", source: file:///tmp/npmTestPublished/node_modules/elasticsearch-lite/tmp/electron.15e8fac2630\</tspan>
-<tspan x="10" y="1642">0.9192cfac03ec3.html (73)</tspan>
-<tspan x="10" y="1658">[4861:0917/114940.128399:INFO:CONSOLE(73)] "created coverage file /tmp/build/coverage.html/index\</tspan>
-<tspan x="10" y="1674">.html", source: file:///tmp/npmTestPublished/node_modules/elasticsearch-lite/tmp/electron.15e8fa\</tspan>
-<tspan x="10" y="1690">c26300.9192cfac03ec3.html (73)</tspan>
+<tspan x="10" y="1626">", source: file:///tmp/npmTestPublished/node_modules/elasticsearch-lite/tmp/electron.15e9675d945\</tspan>
+<tspan x="10" y="1642">0.09acb7c14d6f3.html (73)</tspan>
+<tspan x="10" y="1658">[4859:0918/192741.345091:INFO:CONSOLE(73)] "created coverage file /tmp/build/coverage.html/index\</tspan>
+<tspan x="10" y="1674">.html", source: file:///tmp/npmTestPublished/node_modules/elasticsearch-lite/tmp/electron.15e967\</tspan>
+<tspan x="10" y="1690">5d9450.09acb7c14d6f3.html (73)</tspan>
 <tspan x="10" y="1706">[node test-case 9 of 10 passed] - testCase_buildApp_default</tspan>
 <tspan x="10" y="1722"></tspan>
 <tspan x="10" y="1738">browserTest - created screenshot file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/b\</tspan>
@@ -125,39 +125,38 @@
 <tspan x="10" y="1962">---------------------------|-----------|-----------|-----------|-----------|</tspan>
 <tspan x="10" y="1978">File                       |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 <tspan x="10" y="1994">---------------------------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="2010">   elasticsearch-lite/     |     95.02 |     95.34 |     98.21 |     95.02 |</tspan>
+<tspan x="10" y="2010">   elasticsearch-lite/     |     58.57 |     68.91 |     64.29 |     58.57 |</tspan>
 <tspan x="10" y="2026">      example.js           |       100 |       100 |       100 |       100 |</tspan>
-<tspan x="10" y="2042">      lib.elasticsearch.js |     88.15 |     86.76 |     94.44 |     88.15 |</tspan>
-<tspan x="10" y="2058">      test.js              |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="2042">      lib.elasticsearch.js |     20.74 |        25 |     22.22 |     20.74 |</tspan>
+<tspan x="10" y="2058">      test.js              |     69.05 |     80.43 |     72.73 |     69.05 |</tspan>
 <tspan x="10" y="2074">---------------------------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="2090">All files                  |     95.02 |     95.34 |     98.21 |     95.02 |</tspan>
+<tspan x="10" y="2090">All files                  |     58.57 |     68.91 |     64.29 |     58.57 |</tspan>
 <tspan x="10" y="2106">---------------------------|-----------|-----------|-----------|-----------|</tspan>
 <tspan x="10" y="2122"></tspan>
 <tspan x="10" y="2138">created coverage file /tmp/npmTestPublished/node_modules/elasticsearch-lite/tmp/build/coverage.h\</tspan>
 <tspan x="10" y="2154">tml/index.html</tspan>
-<tspan x="10" y="2170">[2017-09-17 11:49:54,709][INFO ][node                     ] [Lunatica] stopping ...</tspan>
-<tspan x="10" y="2186"></tspan>
-<tspan x="10" y="2202">-------------------------------------------------------</tspan>
-<tspan x="10" y="2218">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
-<tspan x="10" y="2234">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36 - 20\</tspan>
-<tspan x="10" y="2250">17-09-17T11:49:38.922Z</tspan>
-<tspan x="10" y="2266">|     122 ms            0 failed        2 passed      |</tspan>
-<tspan x="10" y="2282">-------------------------------------------------------</tspan>
-<tspan x="10" y="2298">| test-report - npmTestPublished - node - linux v6.11.3 - 2017-09-17T11:49:26.262Z</tspan>
-<tspan x="10" y="2314">|   17734 ms            0 failed       10 passed      |</tspan>
+<tspan x="10" y="2170">[2017-09-18 19:27:56,071][INFO ][node                     ] [Agron] stopping ...</tspan>
+<tspan x="10" y="2186">[2017-09-18 19:27:56,175][INFO ][node                     ] [Agron] stopped</tspan>
+<tspan x="10" y="2202">[2017-09-18 19:27:56,175][INFO ][node                     ] [Agron] closing ...</tspan>
+<tspan x="10" y="2218">[2017-09-18 19:27:56,182][INFO ][node                     ] [Agron] closed</tspan>
+<tspan x="10" y="2234"></tspan>
+<tspan x="10" y="2250">-------------------------------------------------------</tspan>
+<tspan x="10" y="2266">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
+<tspan x="10" y="2282">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36 - 20\</tspan>
+<tspan x="10" y="2298">17-09-18T19:27:40.220Z</tspan>
+<tspan x="10" y="2314">|      63 ms            0 failed        2 passed      |</tspan>
 <tspan x="10" y="2330">-------------------------------------------------------</tspan>
-<tspan x="10" y="2346"></tspan>
-<tspan x="10" y="2362">created test-report file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/build/test-rep\</tspan>
-<tspan x="10" y="2378">ort.html</tspan>
+<tspan x="10" y="2346">| test-report - npmTestPublished - node - linux v6.11.3 - 2017-09-18T19:27:29.087Z</tspan>
+<tspan x="10" y="2362">|   17375 ms            0 failed       10 passed      |</tspan>
+<tspan x="10" y="2378">-------------------------------------------------------</tspan>
 <tspan x="10" y="2394"></tspan>
-<tspan x="10" y="2410"></tspan>
-<tspan x="10" y="2426">npmTestPublished - 0 failed tests</tspan>
+<tspan x="10" y="2410">created test-report file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/build/test-rep\</tspan>
+<tspan x="10" y="2426">ort.html</tspan>
 <tspan x="10" y="2442"></tspan>
 <tspan x="10" y="2458"></tspan>
-<tspan x="10" y="2474">[MODE_BUILD=npmTestPublished] - 2017-09-17T11:49:54.990Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="2474">npmTestPublished - 0 failed tests</tspan>
 <tspan x="10" y="2490"></tspan>
-<tspan x="10" y="2506">[2017-09-17 11:49:56,331][INFO ][node                     ] [Lunatica] stopped</tspan>
-<tspan x="10" y="2522">[2017-09-17 11:49:56,332][INFO ][node                     ] [Lunatica] closing ...</tspan>
-<tspan x="10" y="2538">[2017-09-17 11:49:56,337][INFO ][node                     ] [Lunatica] closed</tspan>
+<tspan x="10" y="2506"></tspan>
+<tspan x="10" y="2522">[MODE_BUILD=npmTestPublished] - 2017-09-18T19:27:56.344Z - EXIT_CODE - 0</tspan>
 </text>
 </svg>
