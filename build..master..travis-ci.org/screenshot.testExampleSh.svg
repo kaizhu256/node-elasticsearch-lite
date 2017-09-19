@@ -1,0 +1,362 @@
+<svg height="5742" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="5742" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26"></tspan>
+<tspan x="10" y="42">&gt; elasticsearch-lite@2017.7.24 postinstall /tmp/app/node_modules/elasticsearch-lite</tspan>
+<tspan x="10" y="58">&gt; [ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall</tspan>
+<tspan x="10" y="74"></tspan>
+<tspan x="10" y="90">/tmp/app</tspan>
+<tspan x="10" y="106">└── elasticsearch-lite@2017.7.24 </tspan>
+<tspan x="10" y="122"></tspan>
+<tspan x="10" y="138">npm WARN enoent ENOENT: no such file or directory, open '/tmp/app/package.json'</tspan>
+<tspan x="10" y="154">npm WARN app No description</tspan>
+<tspan x="10" y="170">npm WARN app No repository field.</tspan>
+<tspan x="10" y="186">npm WARN app No README data</tspan>
+<tspan x="10" y="202">npm WARN app No license field.</tspan>
+<tspan x="10" y="218"></tspan>
+<tspan x="10" y="234">testExampleSh - merged test-report from file /home/travis/build/kaizhu256/node-elasticsearch-lit\</tspan>
+<tspan x="10" y="250">e/tmp/build/test-report.json</tspan>
+<tspan x="10" y="266">server listening on http-port 9200</tspan>
+<tspan x="10" y="282">starting elasticsearch-server ...</tspan>
+<tspan x="10" y="298">&gt; [2017-07-25 04:46:30,994][INFO ][node                     ] [Aardwolf] version[1.7.6], pid[736\</tspan>
+<tspan x="10" y="314">2], build[c730b59/2016-11-18T15:21:16Z]</tspan>
+<tspan x="10" y="330">[2017-07-25 04:46:30,995][INFO ][node                     ] [Aardwolf] initializing ...</tspan>
+<tspan x="10" y="346">[2017-07-25 04:46:31,106][INFO ][plugins                  ] [Aardwolf] loaded [], sites []</tspan>
+<tspan x="10" y="362">[2017-07-25 04:46:31,142][INFO ][env                      ] [Aardwolf] using [1] data paths, mou\</tspan>
+<tspan x="10" y="378">nts [[/ (/dev/sda1)]], net usable_space [17.7gb], net total_space [29.4gb], types [ext4]</tspan>
+<tspan x="10" y="394">[2017-07-25 04:46:33,470][INFO ][node                     ] [Aardwolf] initialized</tspan>
+<tspan x="10" y="410">[2017-07-25 04:46:33,471][INFO ][node                     ] [Aardwolf] starting ...</tspan>
+<tspan x="10" y="426">[2017-07-25 04:46:33,698][INFO ][transport                ] [Aardwolf] bound_address {inet[/0.0.\</tspan>
+<tspan x="10" y="442">0.0:9300]}, publish_address {inet[/10.10.20.6:9300]}</tspan>
+<tspan x="10" y="458">[2017-07-25 04:46:33,755][INFO ][discovery                ] [Aardwolf] elasticsearch/qSzF_CJmQou\</tspan>
+<tspan x="10" y="474">TSaNzbW5PDw</tspan>
+<tspan x="10" y="490">[2017-07-25 04:46:37,544][INFO ][cluster.service          ] [Aardwolf] new_master [Aardwolf][qSz\</tspan>
+<tspan x="10" y="506">F_CJmQouTSaNzbW5PDw][testing-gce-3a40d7a8-a9b6-4d29-84d2-86ac99ca5867][inet[/10.10.20.6:9300]], \</tspan>
+<tspan x="10" y="522">reason: zen-disco-join (elected_as_master)</tspan>
+<tspan x="10" y="538">[2017-07-25 04:46:37,587][INFO ][http                     ] [Aardwolf] bound_address {inet[/0.0.\</tspan>
+<tspan x="10" y="554">0.0:9201]}, publish_address {inet[/10.10.20.6:9201]}</tspan>
+<tspan x="10" y="570">[2017-07-25 04:46:37,589][INFO ][node                     ] [Aardwolf] started</tspan>
+<tspan x="10" y="586">[2017-07-25 04:46:37,593][INFO ][gateway                  ] [Aardwolf] recovered [0] indices int\</tspan>
+<tspan x="10" y="602">o cluster_state</tspan>
+<tspan x="10" y="618">elasticsearch-server listening on http-port9201</tspan>
+<tspan x="10" y="634">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:42.494Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="650">bana/index.html","statusCode":200,"duration":35,"requestContentLength":0,"responseContentLength"\</tspan>
+<tspan x="10" y="666">:918,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"","request\</tspan>
+<tspan x="10" y="682">HeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/\</tspan>
+<tspan x="10" y="698">56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="714">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:42.682Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="730">bana/css/bootstrap.light.min.css","statusCode":200,"duration":72,"requestContentLength":0,"respo\</tspan>
+<tspan x="10" y="746">nseContentLength":19498,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderR\</tspan>
+<tspan x="10" y="762">eferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Li\</tspan>
+<tspan x="10" y="778">nux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/53\</tspan>
+<tspan x="10" y="794">7.36"}</tspan>
+<tspan x="10" y="810">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:42.695Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="826">bana/css/timepicker.css","statusCode":200,"duration":70,"requestContentLength":0,"responseConten\</tspan>
+<tspan x="10" y="842">tLength":1944,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"h\</tspan>
+<tspan x="10" y="858">ttp://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64\</tspan>
+<tspan x="10" y="874">) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="890">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:42.697Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="906">bana/css/animate.min.css","statusCode":200,"duration":78,"requestContentLength":0,"responseConte\</tspan>
+<tspan x="10" y="922">ntLength":4609,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"\</tspan>
+<tspan x="10" y="938">http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_6\</tspan>
+<tspan x="10" y="954">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="970">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:42.705Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="986">bana/css/normalize.min.css","statusCode":200,"duration":75,"requestContentLength":0,"responseCon\</tspan>
+<tspan x="10" y="1002">tentLength":1056,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer"\</tspan>
+<tspan x="10" y="1018">:"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86\</tspan>
+<tspan x="10" y="1034">_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="1050">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:42.707Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="1066">bana/vendor/require/require.js","statusCode":200,"duration":83,"requestContentLength":0,"respons\</tspan>
+<tspan x="10" y="1082">eContentLength":6279,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderRefe\</tspan>
+<tspan x="10" y="1098">rer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux\</tspan>
+<tspan x="10" y="1114"> x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.3\</tspan>
+<tspan x="10" y="1130">6"}</tspan>
+<tspan x="10" y="1146">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:42.724Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="1162">bana/app/components/require.config.js","statusCode":200,"duration":90,"requestContentLength":0,"\</tspan>
+<tspan x="10" y="1178">responseContentLength":743,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHead\</tspan>
+<tspan x="10" y="1194">erReferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11;\</tspan>
+<tspan x="10" y="1210"> Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari\</tspan>
+<tspan x="10" y="1226">/537.36"}</tspan>
+<tspan x="10" y="1242">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:42.796Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="1258">bana/css/bootstrap-responsive.min.css","statusCode":200,"duration":30,"requestContentLength":0,"\</tspan>
+<tspan x="10" y="1274">responseContentLength":3923,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHea\</tspan>
+<tspan x="10" y="1290">derReferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11\</tspan>
+<tspan x="10" y="1306">; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safar\</tspan>
+<tspan x="10" y="1322">i/537.36"}</tspan>
+<tspan x="10" y="1338">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:42.797Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="1354">bana/css/font-awesome.min.css","statusCode":200,"duration":40,"requestContentLength":0,"response\</tspan>
+<tspan x="10" y="1370">ContentLength":4345,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderRefer\</tspan>
+<tspan x="10" y="1386">er":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux \</tspan>
+<tspan x="10" y="1402">x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36\</tspan>
+<tspan x="10" y="1418">"}</tspan>
+<tspan x="10" y="1434">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:42.839Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="1450">bana/img/small.png","statusCode":200,"duration":14,"requestContentLength":0,"responseContentLeng\</tspan>
+<tspan x="10" y="1466">th":503,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"http://\</tspan>
+<tspan x="10" y="1482">127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) Appl\</tspan>
+<tspan x="10" y="1498">eWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="1514">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:42.857Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="1530">bana/app/app.js","statusCode":200,"duration":197,"requestContentLength":0,"responseContentLength\</tspan>
+<tspan x="10" y="1546">":190814,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"http:/\</tspan>
+<tspan x="10" y="1562">/127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) App\</tspan>
+<tspan x="10" y="1578">leWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="1594">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.225Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="1610">"statusCode":200,"duration":6,"requestContentLength":0,"responseContentLength":3577,"requestHead\</tspan>
+<tspan x="10" y="1626">erXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"","requestHeaderUserAgent":\</tspan>
+<tspan x="10" y="1642">"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Elec\</tspan>
+<tspan x="10" y="1658">tron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="1674">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.354Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="1690">bana/config.js","statusCode":200,"duration":5,"requestContentLength":0,"responseContentLength":9\</tspan>
+<tspan x="10" y="1706">31,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"http://127.0\</tspan>
+<tspan x="10" y="1722">.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebK\</tspan>
+<tspan x="10" y="1738">it/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="1754">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.401Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="1770">sets.utility2.rollup.js","statusCode":200,"duration":170,"requestContentLength":0,"responseConte\</tspan>
+<tspan x="10" y="1786">ntLength":268114,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer"\</tspan>
+<tspan x="10" y="1802">:"http://127.0.0.1:9200/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/\</tspan>
+<tspan x="10" y="1818">537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="1834">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.504Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="1850">bana/app/partials/dashLoader.html","statusCode":200,"duration":71,"requestContentLength":0,"resp\</tspan>
+<tspan x="10" y="1866">onseContentLength":1436,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderR\</tspan>
+<tspan x="10" y="1882">eferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Li\</tspan>
+<tspan x="10" y="1898">nux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/53\</tspan>
+<tspan x="10" y="1914">7.36"}</tspan>
+<tspan x="10" y="1930">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.506Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="1946">bana/app/partials/dashboard.html","statusCode":200,"duration":72,"requestContentLength":0,"respo\</tspan>
+<tspan x="10" y="1962">nseContentLength":1285,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderRe\</tspan>
+<tspan x="10" y="1978">ferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Lin\</tspan>
+<tspan x="10" y="1994">ux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537\</tspan>
+<tspan x="10" y="2010">.36"}</tspan>
+<tspan x="10" y="2026">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.481Z","method":"GET","url":"/_n\</tspan>
+<tspan x="10" y="2042">odes","statusCode":200,"duration":120,"requestContentLength":0,"responseContentLength":3154,"req\</tspan>
+<tspan x="10" y="2058">uestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"http://127.0.0.1:92\</tspan>
+<tspan x="10" y="2074">00/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.\</tspan>
+<tspan x="10" y="2090">36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="2106">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.502Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="2122">bana/css/bootstrap.dark.min.css","statusCode":200,"duration":121,"requestContentLength":0,"respo\</tspan>
+<tspan x="10" y="2138">nseContentLength":19817,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderR\</tspan>
+<tspan x="10" y="2154">eferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Li\</tspan>
+<tspan x="10" y="2170">nux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/53\</tspan>
+<tspan x="10" y="2186">7.36"}</tspan>
+<tspan x="10" y="2202">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.662Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="2218">bana/app/partials/dashLoaderShare.html","statusCode":200,"duration":5,"requestContentLength":0,"\</tspan>
+<tspan x="10" y="2234">responseContentLength":330,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHead\</tspan>
+<tspan x="10" y="2250">erReferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11;\</tspan>
+<tspan x="10" y="2266"> Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari\</tspan>
+<tspan x="10" y="2282">/537.36"}</tspan>
+<tspan x="10" y="2298">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.687Z","method":"GET","url":"/_n\</tspan>
+<tspan x="10" y="2314">odes","statusCode":200,"duration":14,"requestContentLength":0,"responseContentLength":3154,"requ\</tspan>
+<tspan x="10" y="2330">estHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"http://127.0.0.1:920\</tspan>
+<tspan x="10" y="2346">0/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.3\</tspan>
+<tspan x="10" y="2362">6 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="2378">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.705Z","method":"GET","url":"/_n\</tspan>
+<tspan x="10" y="2394">odes","statusCode":200,"duration":15,"requestContentLength":0,"responseContentLength":3154,"requ\</tspan>
+<tspan x="10" y="2410">estHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"http://127.0.0.1:920\</tspan>
+<tspan x="10" y="2426">0/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.3\</tspan>
+<tspan x="10" y="2442">6 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="2458">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.724Z","method":"GET","url":"/_n\</tspan>
+<tspan x="10" y="2474">odes","statusCode":200,"duration":10,"requestContentLength":0,"responseContentLength":3154,"requ\</tspan>
+<tspan x="10" y="2490">estHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"http://127.0.0.1:920\</tspan>
+<tspan x="10" y="2506">0/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.3\</tspan>
+<tspan x="10" y="2522">6 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="2538">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.741Z","method":"GET","url":"/_n\</tspan>
+<tspan x="10" y="2554">odes","statusCode":200,"duration":7,"requestContentLength":0,"responseContentLength":3154,"reque\</tspan>
+<tspan x="10" y="2570">stHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"http://127.0.0.1:9200\</tspan>
+<tspan x="10" y="2586">/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36\</tspan>
+<tspan x="10" y="2602"> (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="2618">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.753Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="2634">bana/font/fontawesome-webfont.woff?v=3.2.1","statusCode":200,"duration":50,"requestContentLength\</tspan>
+<tspan x="10" y="2650">":0,"responseContentLength":43577,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"http://\</tspan>
+<tspan x="10" y="2666">127.0.0.1:9200","requestHeaderReferer":"http://127.0.0.1:9200/kibana/css/font-awesome.min.css","\</tspan>
+<tspan x="10" y="2682">requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) \</tspan>
+<tspan x="10" y="2698">Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="2714">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.807Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="2730">bana/app/panels/timepicker/module.html","statusCode":200,"duration":9,"requestContentLength":0,"\</tspan>
+<tspan x="10" y="2746">responseContentLength":681,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHead\</tspan>
+<tspan x="10" y="2762">erReferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11;\</tspan>
+<tspan x="10" y="2778"> Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari\</tspan>
+<tspan x="10" y="2794">/537.36"}</tspan>
+<tspan x="10" y="2810">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.823Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="2826">bana/app/dashboards/logstash.json?1500958003822","statusCode":200,"duration":17,"requestContentL\</tspan>
+<tspan x="10" y="2842">ength":0,"responseContentLength":1172,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","\</tspan>
+<tspan x="10" y="2858">requestHeaderReferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozill\</tspan>
+<tspan x="10" y="2874">a/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.\</tspan>
+<tspan x="10" y="2890">6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="2906">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.826Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="2922">sets.swgg.swagger.json","statusCode":200,"duration":52,"requestContentLength":0,"responseContent\</tspan>
+<tspan x="10" y="2938">Length":31468,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"h\</tspan>
+<tspan x="10" y="2954">ttp://127.0.0.1:9200/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
+<tspan x="10" y="2970">.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="2986">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:43.960Z","method":"GET","url":"/_a\</tspan>
+<tspan x="10" y="3002">ll/_mapping","statusCode":200,"duration":18,"requestContentLength":0,"responseContentLength":2,"\</tspan>
+<tspan x="10" y="3018">requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"http://127.0.0.1\</tspan>
+<tspan x="10" y="3034">:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/5\</tspan>
+<tspan x="10" y="3050">37.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="3066">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.033Z","method":"GET","url":"/_a\</tspan>
+<tspan x="10" y="3082">ll/_mapping","statusCode":200,"duration":4,"requestContentLength":0,"responseContentLength":2,"r\</tspan>
+<tspan x="10" y="3098">equestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"http://127.0.0.1:\</tspan>
+<tspan x="10" y="3114">9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/53\</tspan>
+<tspan x="10" y="3130">7.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="3146">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.082Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="3162">bana/app/panels/query/module.html","statusCode":200,"duration":5,"requestContentLength":0,"respo\</tspan>
+<tspan x="10" y="3178">nseContentLength":828,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderRef\</tspan>
+<tspan x="10" y="3194">erer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linu\</tspan>
+<tspan x="10" y="3210">x x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.\</tspan>
+<tspan x="10" y="3226">36"}</tspan>
+<tspan x="10" y="3242">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.108Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="3258">bana/app/panels/filtering/module.html","statusCode":200,"duration":23,"requestContentLength":0,"\</tspan>
+<tspan x="10" y="3274">responseContentLength":1006,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHea\</tspan>
+<tspan x="10" y="3290">derReferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11\</tspan>
+<tspan x="10" y="3306">; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safar\</tspan>
+<tspan x="10" y="3322">i/537.36"}</tspan>
+<tspan x="10" y="3338">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.135Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="3354">bana/app/panels/histogram/module.html","statusCode":200,"duration":60,"requestContentLength":0,"\</tspan>
+<tspan x="10" y="3370">responseContentLength":1108,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHea\</tspan>
+<tspan x="10" y="3386">derReferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11\</tspan>
+<tspan x="10" y="3402">; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safar\</tspan>
+<tspan x="10" y="3418">i/537.36"}</tspan>
+<tspan x="10" y="3434">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.148Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="3450">bana/app/panels/histogram/editor.html","statusCode":200,"duration":53,"requestContentLength":0,"\</tspan>
+<tspan x="10" y="3466">responseContentLength":699,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHead\</tspan>
+<tspan x="10" y="3482">erReferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11;\</tspan>
+<tspan x="10" y="3498"> Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari\</tspan>
+<tspan x="10" y="3514">/537.36"}</tspan>
+<tspan x="10" y="3530">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.150Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="3546">bana/app/panels/table/module.html","statusCode":200,"duration":58,"requestContentLength":0,"resp\</tspan>
+<tspan x="10" y="3562">onseContentLength":2406,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderR\</tspan>
+<tspan x="10" y="3578">eferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Li\</tspan>
+<tspan x="10" y="3594">nux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/53\</tspan>
+<tspan x="10" y="3610">7.36"}</tspan>
+<tspan x="10" y="3626">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.187Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="3642">bana/app/panels/table/editor.html","statusCode":200,"duration":27,"requestContentLength":0,"resp\</tspan>
+<tspan x="10" y="3658">onseContentLength":813,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderRe\</tspan>
+<tspan x="10" y="3674">ferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Lin\</tspan>
+<tspan x="10" y="3690">ux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537\</tspan>
+<tspan x="10" y="3706">.36"}</tspan>
+<tspan x="10" y="3722">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.188Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="3738">bana/app/panels/timepicker/module.js","statusCode":200,"duration":36,"requestContentLength":0,"r\</tspan>
+<tspan x="10" y="3754">esponseContentLength":1290,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHead\</tspan>
+<tspan x="10" y="3770">erReferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11;\</tspan>
+<tspan x="10" y="3786"> Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari\</tspan>
+<tspan x="10" y="3802">/537.36"}</tspan>
+<tspan x="10" y="3818">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.212Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="3834">bana/app/panels/query/module.js","statusCode":200,"duration":36,"requestContentLength":0,"respon\</tspan>
+<tspan x="10" y="3850">seContentLength":1229,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderRef\</tspan>
+<tspan x="10" y="3866">erer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linu\</tspan>
+<tspan x="10" y="3882">x x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.\</tspan>
+<tspan x="10" y="3898">36"}</tspan>
+<tspan x="10" y="3914">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.229Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="3930">bana/app/panels/filtering/module.js","statusCode":200,"duration":24,"requestContentLength":0,"re\</tspan>
+<tspan x="10" y="3946">sponseContentLength":714,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeader\</tspan>
+<tspan x="10" y="3962">Referer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; L\</tspan>
+<tspan x="10" y="3978">inux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/5\</tspan>
+<tspan x="10" y="3994">37.36"}</tspan>
+<tspan x="10" y="4010">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.234Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="4026">bana/img/load_big.gif","statusCode":200,"duration":39,"requestContentLength":0,"responseContentL\</tspan>
+<tspan x="10" y="4042">ength":2518,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"htt\</tspan>
+<tspan x="10" y="4058">p://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) \</tspan>
+<tspan x="10" y="4074">AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="4090">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.257Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="4106">bana/app/panels/histogram/module.js","statusCode":200,"duration":29,"requestContentLength":0,"re\</tspan>
+<tspan x="10" y="4122">sponseContentLength":12323,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHead\</tspan>
+<tspan x="10" y="4138">erReferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11;\</tspan>
+<tspan x="10" y="4154"> Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari\</tspan>
+<tspan x="10" y="4170">/537.36"}</tspan>
+<tspan x="10" y="4186">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.259Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="4202">bana/app/panels/table/module.js","statusCode":200,"duration":34,"requestContentLength":0,"respon\</tspan>
+<tspan x="10" y="4218">seContentLength":3802,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderRef\</tspan>
+<tspan x="10" y="4234">erer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linu\</tspan>
+<tspan x="10" y="4250">x x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.\</tspan>
+<tspan x="10" y="4266">36"}</tspan>
+<tspan x="10" y="4282">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.296Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="4298">bana/app/panels/timepicker/custom.html","statusCode":200,"duration":10,"requestContentLength":0,\</tspan>
+<tspan x="10" y="4314">"responseContentLength":880,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHea\</tspan>
+<tspan x="10" y="4330">derReferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11\</tspan>
+<tspan x="10" y="4346">; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safar\</tspan>
+<tspan x="10" y="4362">i/537.36"}</tspan>
+<tspan x="10" y="4378">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.337Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="4394">bana/app/panels/query/helpModal.html","statusCode":200,"duration":5,"requestContentLength":0,"re\</tspan>
+<tspan x="10" y="4410">sponseContentLength":218,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeader\</tspan>
+<tspan x="10" y="4426">Referer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; L\</tspan>
+<tspan x="10" y="4442">inux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/5\</tspan>
+<tspan x="10" y="4458">37.36"}</tspan>
+<tspan x="10" y="4474">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.366Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="4490">bana/app/panels/query/meta.html","statusCode":200,"duration":15,"requestContentLength":0,"respon\</tspan>
+<tspan x="10" y="4506">seContentLength":598,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderRefe\</tspan>
+<tspan x="10" y="4522">rer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux\</tspan>
+<tspan x="10" y="4538"> x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.3\</tspan>
+<tspan x="10" y="4554">6"}</tspan>
+<tspan x="10" y="4570">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.531Z","method":"POST","url":"/_\</tspan>
+<tspan x="10" y="4586">all/_search?search_type=count","statusCode":200,"duration":18,"requestContentLength":0,"response\</tspan>
+<tspan x="10" y="4602">ContentLength":121,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"http://127.0.0.1:9200"\</tspan>
+<tspan x="10" y="4618">,"requestHeaderReferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozi\</tspan>
+<tspan x="10" y="4634">lla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/\</tspan>
+<tspan x="10" y="4650">1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="4666">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.573Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="4682">bana/app/partials/inspector.html","statusCode":200,"duration":6,"requestContentLength":0,"respon\</tspan>
+<tspan x="10" y="4698">seContentLength":275,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderRefe\</tspan>
+<tspan x="10" y="4714">rer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux\</tspan>
+<tspan x="10" y="4730"> x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.3\</tspan>
+<tspan x="10" y="4746">6"}</tspan>
+<tspan x="10" y="4762">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.677Z","method":"POST","url":"/_\</tspan>
+<tspan x="10" y="4778">all/_search","statusCode":200,"duration":12,"requestContentLength":0,"responseContentLength":121\</tspan>
+<tspan x="10" y="4794">,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"http://127.0.0.1:9200","requestHeaderRef\</tspan>
+<tspan x="10" y="4810">erer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linu\</tspan>
+<tspan x="10" y="4826">x x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.\</tspan>
+<tspan x="10" y="4842">36"}</tspan>
+<tspan x="10" y="4858">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:44.941Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="4874">bana/app/panels/query/help/lucene.html","statusCode":200,"duration":32,"requestContentLength":0,\</tspan>
+<tspan x="10" y="4890">"responseContentLength":583,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHea\</tspan>
+<tspan x="10" y="4906">derReferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11\</tspan>
+<tspan x="10" y="4922">; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safar\</tspan>
+<tspan x="10" y="4938">i/537.36"}</tspan>
+<tspan x="10" y="4954">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:57.677Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="4970">bana/css/bootstrap.light.min.css","statusCode":200,"duration":12,"requestContentLength":0,"respo\</tspan>
+<tspan x="10" y="4986">nseContentLength":19498,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderR\</tspan>
+<tspan x="10" y="5002">eferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Li\</tspan>
+<tspan x="10" y="5018">nux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/53\</tspan>
+<tspan x="10" y="5034">7.36"}</tspan>
+<tspan x="10" y="5050">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:57.703Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="5066">bana/css/timepicker.css","statusCode":200,"duration":3,"requestContentLength":0,"responseContent\</tspan>
+<tspan x="10" y="5082">Length":1944,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"ht\</tspan>
+<tspan x="10" y="5098">tp://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64)\</tspan>
+<tspan x="10" y="5114"> AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="5130">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:57.709Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="5146">bana/css/animate.min.css","statusCode":200,"duration":4,"requestContentLength":0,"responseConten\</tspan>
+<tspan x="10" y="5162">tLength":4609,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"h\</tspan>
+<tspan x="10" y="5178">ttp://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64\</tspan>
+<tspan x="10" y="5194">) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="5210">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:57.731Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="5226">bana/css/normalize.min.css","statusCode":200,"duration":2,"requestContentLength":0,"responseCont\</tspan>
+<tspan x="10" y="5242">entLength":1056,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":\</tspan>
+<tspan x="10" y="5258">"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_\</tspan>
+<tspan x="10" y="5274">64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="5290">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:57.745Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="5306">bana/css/bootstrap.dark.min.css","statusCode":304,"duration":15,"requestContentLength":0,"respon\</tspan>
+<tspan x="10" y="5322">seContentLength":0,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderRefere\</tspan>
+<tspan x="10" y="5338">r":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x\</tspan>
+<tspan x="10" y="5354">86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"\</tspan>
+<tspan x="10" y="5370">}</tspan>
+<tspan x="10" y="5386">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:57.796Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="5402">bana/css/bootstrap-responsive.min.css","statusCode":200,"duration":10,"requestContentLength":0,"\</tspan>
+<tspan x="10" y="5418">responseContentLength":3923,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHea\</tspan>
+<tspan x="10" y="5434">derReferer":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11\</tspan>
+<tspan x="10" y="5450">; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safar\</tspan>
+<tspan x="10" y="5466">i/537.36"}</tspan>
+<tspan x="10" y="5482">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:57.808Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="5498">bana/css/font-awesome.min.css","statusCode":200,"duration":7,"requestContentLength":0,"responseC\</tspan>
+<tspan x="10" y="5514">ontentLength":4345,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderRefere\</tspan>
+<tspan x="10" y="5530">r":"http://127.0.0.1:9200/kibana/index.html","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x\</tspan>
+<tspan x="10" y="5546">86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"\</tspan>
+<tspan x="10" y="5562">}</tspan>
+<tspan x="10" y="5578">serverLog - {"type":"serverResponse","time":"2017-07-25T04:46:57.817Z","method":"GET","url":"/ki\</tspan>
+<tspan x="10" y="5594">bana/img/glyphicons-halflings.png","statusCode":200,"duration":38,"requestContentLength":0,"resp\</tspan>
+<tspan x="10" y="5610">onseContentLength":12625,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeader\</tspan>
+<tspan x="10" y="5626">Referer":"http://127.0.0.1:9200/kibana/css/bootstrap.light.min.css","requestHeaderUserAgent":"Mo\</tspan>
+<tspan x="10" y="5642">zilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electro\</tspan>
+<tspan x="10" y="5658">n/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="5674">[2017-07-25 04:47:00,135][INFO ][node                     ] [Aardwolf] stopping ...</tspan>
+<tspan x="10" y="5690">[2017-07-25 04:47:00,150][INFO ][node                     ] [Aardwolf] stopped</tspan>
+<tspan x="10" y="5706">[2017-07-25 04:47:00,150][INFO ][node                     ] [Aardwolf] closing ...</tspan>
+<tspan x="10" y="5722">[2017-07-25 04:47:00,156][INFO ][node                     ] [Aardwolf] closed</tspan>
+</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg height="222" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="222" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">Usage: /home/travis/build/kaizhu256/node-elasticsearch-lite/external/elasticsearch/bin/elasticse\</tspan>
+<tspan x="10" y="42">arch [-vdh] [-p pidfile] [-D prop] [-X prop]</tspan>
+<tspan x="10" y="58">Start elasticsearch.</tspan>
+<tspan x="10" y="74">    -d            daemonize (run in background)</tspan>
+<tspan x="10" y="90">    -p pidfile    write PID to &lt;pidfile&gt;</tspan>
+<tspan x="10" y="106">    -h</tspan>
+<tspan x="10" y="122">    --help        print command line options</tspan>
+<tspan x="10" y="138">    -v            print elasticsearch version, then exit</tspan>
+<tspan x="10" y="154">    -D prop       set JAVA system property</tspan>
+<tspan x="10" y="170">    -X prop       set non-standard JAVA system property</tspan>
+<tspan x="10" y="186">   --prop=val</tspan>
+<tspan x="10" y="202">   --prop val     set elasticsearch property (i.e. -Des.&lt;prop&gt;=&lt;val&gt;)</tspan>
+</text>
+</svg>
