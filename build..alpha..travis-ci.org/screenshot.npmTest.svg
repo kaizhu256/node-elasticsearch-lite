@@ -2,7 +2,7 @@
 <rect height="3118" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
-<tspan x="10" y="42">[MODE_BUILD=npmTest] - 2017-09-18T21:49:00.986Z - npm-testing /home/travis/build/kaizhu256/node-\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=npmTest] - 2017-09-19T01:23:22.736Z - npm-testing /home/travis/build/kaizhu256/node-\</tspan>
 <tspan x="10" y="58">elasticsearch-lite</tspan>
 <tspan x="10" y="74"></tspan>
 <tspan x="10" y="90"></tspan>
@@ -12,34 +12,34 @@
 <tspan x="10" y="154">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/\</tspan>
 <tspan x="10" y="170">build/test-report.json</tspan>
 <tspan x="10" y="186">override assets assets.swgg.swagger.json</tspan>
-<tspan x="10" y="202">&gt; server listening on http-port 37656</tspan>
+<tspan x="10" y="202">&gt; server listening on http-port 45362</tspan>
 <tspan x="10" y="218">starting elasticsearch-server ...</tspan>
-<tspan x="10" y="234">serverLog - {"type":"serverResponse","time":"2017-09-18T21:49:02.495Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="250">"statusCode":200,"duration":6,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
-<tspan x="10" y="266">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="282">[2017-09-18 21:49:02,986][INFO ][node                     ] [Stentor] version[1.7.6], pid[5568],\</tspan>
-<tspan x="10" y="298"> build[c730b59/2016-11-18T15:21:16Z]</tspan>
-<tspan x="10" y="314">[2017-09-18 21:49:02,987][INFO ][node                     ] [Stentor] initializing ...</tspan>
-<tspan x="10" y="330">[2017-09-18 21:49:03,093][INFO ][plugins                  ] [Stentor] loaded [], sites []</tspan>
-<tspan x="10" y="346">[2017-09-18 21:49:03,126][INFO ][env                      ] [Stentor] using [1] data paths, moun\</tspan>
-<tspan x="10" y="362">ts [[/ (/dev/sda1)]], net usable_space [17.6gb], net total_space [29.4gb], types [ext4]</tspan>
-<tspan x="10" y="378">[2017-09-18 21:49:05,748][INFO ][node                     ] [Stentor] initialized</tspan>
-<tspan x="10" y="394">[2017-09-18 21:49:05,752][INFO ][node                     ] [Stentor] starting ...</tspan>
-<tspan x="10" y="410">[2017-09-18 21:49:05,850][INFO ][transport                ] [Stentor] bound_address {inet[/0.0.0\</tspan>
-<tspan x="10" y="426">.0:9300]}, publish_address {inet[/10.10.20.161:9300]}</tspan>
-<tspan x="10" y="442">[2017-09-18 21:49:05,929][INFO ][discovery                ] [Stentor] elasticsearch/PzmqiCnXSlSV\</tspan>
-<tspan x="10" y="458">0oz2npIy7g</tspan>
-<tspan x="10" y="474">[2017-09-18 21:49:09,722][INFO ][cluster.service          ] [Stentor] new_master [Stentor][Pzmqi\</tspan>
-<tspan x="10" y="490">CnXSlSV0oz2npIy7g][testing-gce-50ad92bc-e4f9-475b-a056-db0f2588d295][inet[/10.10.20.161:9300]], \</tspan>
-<tspan x="10" y="506">reason: zen-disco-join (elected_as_master)</tspan>
-<tspan x="10" y="522">[2017-09-18 21:49:09,779][INFO ][gateway                  ] [Stentor] recovered [0] indices into\</tspan>
-<tspan x="10" y="538"> cluster_state</tspan>
-<tspan x="10" y="554">[2017-09-18 21:49:09,781][INFO ][http                     ] [Stentor] bound_address {inet[/0.0.0\</tspan>
-<tspan x="10" y="570">.0:37657]}, publish_address {inet[/10.10.20.161:37657]}</tspan>
-<tspan x="10" y="586">[2017-09-18 21:49:09,783][INFO ][node                     ] [Stentor] started</tspan>
-<tspan x="10" y="602">elasticsearch-server listening on http-port37657</tspan>
-<tspan x="10" y="618">serverLog - {"type":"serverResponse","time":"2017-09-18T21:49:10.301Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="634">"statusCode":200,"duration":7,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
+<tspan x="10" y="234">serverLog - {"type":"serverResponse","time":"2017-09-19T01:23:23.703Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="250">"statusCode":200,"duration":10,"requestContentLength":0,"responseContentLength":11557,"requestHe\</tspan>
+<tspan x="10" y="266">aderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="282">[2017-09-19 01:23:24,016][INFO ][node                     ] [Adrian Corbo] version[1.7.6], pid[5\</tspan>
+<tspan x="10" y="298">574], build[c730b59/2016-11-18T15:21:16Z]</tspan>
+<tspan x="10" y="314">[2017-09-19 01:23:24,025][INFO ][node                     ] [Adrian Corbo] initializing ...</tspan>
+<tspan x="10" y="330">[2017-09-19 01:23:24,101][INFO ][plugins                  ] [Adrian Corbo] loaded [], sites []</tspan>
+<tspan x="10" y="346">[2017-09-19 01:23:24,132][INFO ][env                      ] [Adrian Corbo] using [1] data paths,\</tspan>
+<tspan x="10" y="362"> mounts [[/ (/dev/sda1)]], net usable_space [17.6gb], net total_space [29.4gb], types [ext4]</tspan>
+<tspan x="10" y="378">[2017-09-19 01:23:26,647][INFO ][node                     ] [Adrian Corbo] initialized</tspan>
+<tspan x="10" y="394">[2017-09-19 01:23:26,648][INFO ][node                     ] [Adrian Corbo] starting ...</tspan>
+<tspan x="10" y="410">[2017-09-19 01:23:26,788][INFO ][transport                ] [Adrian Corbo] bound_address {inet[/\</tspan>
+<tspan x="10" y="426">0.0.0.0:9300]}, publish_address {inet[/10.10.20.206:9300]}</tspan>
+<tspan x="10" y="442">[2017-09-19 01:23:26,859][INFO ][discovery                ] [Adrian Corbo] elasticsearch/K0ddKZo\</tspan>
+<tspan x="10" y="458">WS2yZtYIGNbNalw</tspan>
+<tspan x="10" y="474">[2017-09-19 01:23:30,635][INFO ][cluster.service          ] [Adrian Corbo] new_master [Adrian Co\</tspan>
+<tspan x="10" y="490">rbo][K0ddKZoWS2yZtYIGNbNalw][testing-gce-d956bf89-ba1a-4498-a885-e98f9ed3f0de][inet[/10.10.20.20\</tspan>
+<tspan x="10" y="506">6:9300]], reason: zen-disco-join (elected_as_master)</tspan>
+<tspan x="10" y="522">[2017-09-19 01:23:30,675][INFO ][http                     ] [Adrian Corbo] bound_address {inet[/\</tspan>
+<tspan x="10" y="538">0.0.0.0:45363]}, publish_address {inet[/10.10.20.206:45363]}</tspan>
+<tspan x="10" y="554">[2017-09-19 01:23:30,676][INFO ][node                     ] [Adrian Corbo] started</tspan>
+<tspan x="10" y="570">[2017-09-19 01:23:30,684][INFO ][gateway                  ] [Adrian Corbo] recovered [0] indices\</tspan>
+<tspan x="10" y="586"> into cluster_state</tspan>
+<tspan x="10" y="602">elasticsearch-server listening on http-port45363</tspan>
+<tspan x="10" y="618">serverLog - {"type":"serverResponse","time":"2017-09-19T01:23:31.540Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="634">"statusCode":200,"duration":3,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
 <tspan x="10" y="650">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
 <tspan x="10" y="666">created apidoc file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/build/apidoc.html</tspan>
 <tspan x="10" y="682"></tspan>
@@ -51,86 +51,86 @@
 <tspan x="10" y="778">[node test-case 6 of 11 passed] - testCase_killElasticsearch_default</tspan>
 <tspan x="10" y="794">[node test-case 7 of 11 passed] - testCase_nop_default</tspan>
 <tspan x="10" y="810">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="826">[2017-09-18 21:49:11,437][INFO ][cluster.metadata         ] [Stentor] [server_log] creating inde\</tspan>
-<tspan x="10" y="842">x, cause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
-<tspan x="10" y="858"></tspan>
-<tspan x="10" y="874">browserTest - created electron entry-page /home/travis/build/kaizhu256/node-elasticsearch-lite/t\</tspan>
-<tspan x="10" y="890">mp/electron.15e96f770e20.6c437716178ce.html</tspan>
-<tspan x="10" y="906"></tspan>
-<tspan x="10" y="922">[2017-09-18 21:49:12,328][INFO ][cluster.metadata         ] [Stentor] [server_log] update_mappin\</tspan>
-<tspan x="10" y="938">g [test] (dynamic)</tspan>
-<tspan x="10" y="954">[node test-case 8 of 11 passed] - testCase_middlewareRouterCustom_default</tspan>
-<tspan x="10" y="970">[node test-case 9 of 11 passed] - testCase_middlewareBulkPut_default</tspan>
-<tspan x="10" y="986">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="1002">[2017-09-18 21:49:12,394][INFO ][cluster.metadata         ] [Stentor] [server_log] update_mappin\</tspan>
-<tspan x="10" y="1018">g [serverResponse] (dynamic)</tspan>
-<tspan x="10" y="1034">[5629:0918/214912.410673:WARNING:audio_manager.cc(317)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="826">[2017-09-19 01:23:32,202][INFO ][cluster.metadata         ] [Adrian Corbo] [server_log] creating\</tspan>
+<tspan x="10" y="842"> index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
+<tspan x="10" y="858">[2017-09-19 01:23:32,908][INFO ][cluster.metadata         ] [Adrian Corbo] [server_log] update_m\</tspan>
+<tspan x="10" y="874">apping [test] (dynamic)</tspan>
+<tspan x="10" y="890">[2017-09-19 01:23:32,948][INFO ][cluster.metadata         ] [Adrian Corbo] [server_log] update_m\</tspan>
+<tspan x="10" y="906">apping [serverResponse] (dynamic)</tspan>
+<tspan x="10" y="922">[node test-case 8 of 11 passed] - testCase_middlewareBulkPut_default</tspan>
+<tspan x="10" y="938">[node test-case 9 of 11 passed] - testCase_middlewareRouterCustom_default</tspan>
+<tspan x="10" y="954"></tspan>
+<tspan x="10" y="970">browserTest - created electron entry-page /home/travis/build/kaizhu256/node-elasticsearch-lite/t\</tspan>
+<tspan x="10" y="986">mp/electron.15e97bbaeea0.8b1fde6a38743.html</tspan>
+<tspan x="10" y="1002"></tspan>
+<tspan x="10" y="1018">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="1034">[5635:0919/012333.350266:WARNING:audio_manager.cc(317)] Multiple instances of AudioManager detec\</tspan>
 <tspan x="10" y="1050">ted</tspan>
-<tspan x="10" y="1066">[5629:0918/214912.411589:WARNING:audio_manager.cc(278)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="1066">[5635:0919/012333.350346:WARNING:audio_manager.cc(278)] Multiple instances of AudioManager detec\</tspan>
 <tspan x="10" y="1082">ted</tspan>
-<tspan x="10" y="1098">[5629:0918/214912.495565:ERROR:bus.cc(427)] Failed to connect to the bus: //bin/dbus-launch term\</tspan>
+<tspan x="10" y="1098">[5635:0919/012333.437267:ERROR:bus.cc(427)] Failed to connect to the bus: //bin/dbus-launch term\</tspan>
 <tspan x="10" y="1114">inated abnormally without any error message</tspan>
-<tspan x="10" y="1130">[5665:0918/214912.551902:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="1130">[5671:0919/012333.530641:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple t\</tspan>
 <tspan x="10" y="1146">hreads in process gpu-process. </tspan>
-<tspan x="10" y="1162">[5629:0918/214912.563943:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1162">[5635:0919/012333.538708:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="1178">l.</tspan>
-<tspan x="10" y="1194">[5629:0918/214912.565165:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1194">[5635:0919/012333.538778:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="1210">l.</tspan>
-<tspan x="10" y="1226">[5629:0918/214912.567048:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1226">[5635:0919/012333.538837:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="1242">l.</tspan>
-<tspan x="10" y="1258">[5629:0918/214912.568399:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1258">[5635:0919/012333.538894:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="1274">l.</tspan>
-<tspan x="10" y="1290">[5629:0918/214912.570582:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="1290">[5635:0919/012333.538951:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="1306">l.</tspan>
-<tspan x="10" y="1322">&gt; server listening on http-port 57304</tspan>
-<tspan x="10" y="1338">serverLog - {"type":"serverResponse","time":"2017-09-18T21:49:12.854Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="1354">"statusCode":200,"duration":10,"requestContentLength":0,"responseContentLength":11557,"requestHe\</tspan>
+<tspan x="10" y="1322">&gt; server listening on http-port 52788</tspan>
+<tspan x="10" y="1338">serverLog - {"type":"serverResponse","time":"2017-09-19T01:23:33.703Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="1354">"statusCode":200,"duration":15,"requestContentLength":0,"responseContentLength":11557,"requestHe\</tspan>
 <tspan x="10" y="1370">aderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="1386"></tspan>
-<tspan x="10" y="1402">browserTest - opened http://127.0.0.1:37656/index.default.html?modeTest=1</tspan>
-<tspan x="10" y="1418"></tspan>
-<tspan x="10" y="1434">serverLog - {"type":"serverResponse","time":"2017-09-18T21:49:12.877Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="1450">"statusCode":200,"duration":4,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
-<tspan x="10" y="1466">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="1482">[5629:0918/214913.444764:INFO:CONSOLE(73)] "[browser test-case 1 of 9 passed] - testCase_buildAp\</tspan>
+<tspan x="10" y="1386">serverLog - {"type":"serverResponse","time":"2017-09-19T01:23:33.756Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="1402">"statusCode":200,"duration":12,"requestContentLength":0,"responseContentLength":11557,"requestHe\</tspan>
+<tspan x="10" y="1418">aderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="1434"></tspan>
+<tspan x="10" y="1450">browserTest - opened http://127.0.0.1:45362/index.default.html?modeTest=1</tspan>
+<tspan x="10" y="1466"></tspan>
+<tspan x="10" y="1482">[5635:0919/012334.611562:INFO:CONSOLE(73)] "[browser test-case 1 of 9 passed] - testCase_buildAp\</tspan>
 <tspan x="10" y="1498">idoc_default", source: file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/electron.\</tspan>
-<tspan x="10" y="1514">15e96f770e20.6c437716178ce.html (73)</tspan>
-<tspan x="10" y="1530">[5629:0918/214913.455733:INFO:CONSOLE(73)] "[browser test-case 2 of 9 passed] - testCase_buildAp\</tspan>
+<tspan x="10" y="1514">15e97bbaeea0.8b1fde6a38743.html (73)</tspan>
+<tspan x="10" y="1530">[5635:0919/012334.622950:INFO:CONSOLE(73)] "[browser test-case 2 of 9 passed] - testCase_buildAp\</tspan>
 <tspan x="10" y="1546">p_default", source: file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/electron.15e\</tspan>
-<tspan x="10" y="1562">96f770e20.6c437716178ce.html (73)</tspan>
-<tspan x="10" y="1578">[5629:0918/214913.457662:INFO:CONSOLE(73)] "[browser test-case 3 of 9 passed] - testCase_buildCu\</tspan>
+<tspan x="10" y="1562">97bbaeea0.8b1fde6a38743.html (73)</tspan>
+<tspan x="10" y="1578">[5635:0919/012334.625606:INFO:CONSOLE(73)] "[browser test-case 3 of 9 passed] - testCase_buildCu\</tspan>
 <tspan x="10" y="1594">stomOrg_default", source: file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/electr\</tspan>
-<tspan x="10" y="1610">on.15e96f770e20.6c437716178ce.html (73)</tspan>
-<tspan x="10" y="1626">[5629:0918/214913.461535:INFO:CONSOLE(73)] "[browser test-case 4 of 9 passed] - testCase_buildLi\</tspan>
+<tspan x="10" y="1610">on.15e97bbaeea0.8b1fde6a38743.html (73)</tspan>
+<tspan x="10" y="1626">[5635:0919/012334.628166:INFO:CONSOLE(73)] "[browser test-case 4 of 9 passed] - testCase_buildLi\</tspan>
 <tspan x="10" y="1642">b_default", source: file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/electron.15e\</tspan>
-<tspan x="10" y="1658">96f770e20.6c437716178ce.html (73)</tspan>
-<tspan x="10" y="1674">[5629:0918/214913.463707:INFO:CONSOLE(73)] "[browser test-case 5 of 9 passed] - testCase_buildRe\</tspan>
+<tspan x="10" y="1658">97bbaeea0.8b1fde6a38743.html (73)</tspan>
+<tspan x="10" y="1674">[5635:0919/012334.630585:INFO:CONSOLE(73)] "[browser test-case 5 of 9 passed] - testCase_buildRe\</tspan>
 <tspan x="10" y="1690">adme_default", source: file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/electron.\</tspan>
-<tspan x="10" y="1706">15e96f770e20.6c437716178ce.html (73)</tspan>
-<tspan x="10" y="1722">[5629:0918/214913.465114:INFO:CONSOLE(73)] "[browser test-case 6 of 9 passed] - testCase_buildTe\</tspan>
+<tspan x="10" y="1706">15e97bbaeea0.8b1fde6a38743.html (73)</tspan>
+<tspan x="10" y="1722">[5635:0919/012334.633696:INFO:CONSOLE(73)] "[browser test-case 6 of 9 passed] - testCase_buildTe\</tspan>
 <tspan x="10" y="1738">st_default", source: file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/electron.15\</tspan>
-<tspan x="10" y="1754">e96f770e20.6c437716178ce.html (73)</tspan>
-<tspan x="10" y="1770">[5629:0918/214913.486467:INFO:CONSOLE(73)] "[browser test-case 7 of 9 passed] - testCase_nop_def\</tspan>
-<tspan x="10" y="1786">ault", source: file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/electron.15e96f77\</tspan>
-<tspan x="10" y="1802">0e20.6c437716178ce.html (73)</tspan>
-<tspan x="10" y="1818">[5629:0918/214913.487517:INFO:CONSOLE(73)] "[browser test-case 8 of 9 passed] - testCase_webpage\</tspan>
+<tspan x="10" y="1754">e97bbaeea0.8b1fde6a38743.html (73)</tspan>
+<tspan x="10" y="1770">[5635:0919/012334.662617:INFO:CONSOLE(73)] "[browser test-case 7 of 9 passed] - testCase_nop_def\</tspan>
+<tspan x="10" y="1786">ault", source: file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/electron.15e97bba\</tspan>
+<tspan x="10" y="1802">eea0.8b1fde6a38743.html (73)</tspan>
+<tspan x="10" y="1818">[5635:0919/012334.669069:INFO:CONSOLE(73)] "[browser test-case 8 of 9 passed] - testCase_webpage\</tspan>
 <tspan x="10" y="1834">_default", source: file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/electron.15e9\</tspan>
-<tspan x="10" y="1850">6f770e20.6c437716178ce.html (73)</tspan>
-<tspan x="10" y="1866">[5629:0918/214913.554329:INFO:CONSOLE(73)] "[browser test-case 9 of 9 passed] - testCase_middlew\</tspan>
+<tspan x="10" y="1850">7bbaeea0.8b1fde6a38743.html (73)</tspan>
+<tspan x="10" y="1866">[5635:0919/012334.712073:INFO:CONSOLE(73)] "[browser test-case 9 of 9 passed] - testCase_middlew\</tspan>
 <tspan x="10" y="1882">areRouterCustom_default", source: file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tm\</tspan>
-<tspan x="10" y="1898">p/electron.15e96f770e20.6c437716178ce.html (73)</tspan>
-<tspan x="10" y="1914">[5629:0918/214914.566172:INFO:CONSOLE(73)] "----------|-----------|-----------|-----------|-----\</tspan>
+<tspan x="10" y="1898">p/electron.15e97bbaeea0.8b1fde6a38743.html (73)</tspan>
+<tspan x="10" y="1914">[5635:0919/012335.723256:INFO:CONSOLE(73)] "----------|-----------|-----------|-----------|-----\</tspan>
 <tspan x="10" y="1930">------|</tspan>
 <tspan x="10" y="1946">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 <tspan x="10" y="1962">----------|-----------|-----------|-----------|-----------|</tspan>
 <tspan x="10" y="1978">----------|-----------|-----------|-----------|-----------|</tspan>
 <tspan x="10" y="1994">All files |       100 |       100 |       100 |       100 |</tspan>
 <tspan x="10" y="2010">----------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="2026">", source: file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/electron.15e96f770e20\</tspan>
-<tspan x="10" y="2042">.6c437716178ce.html (73)</tspan>
-<tspan x="10" y="2058">[5629:0918/214914.577629:INFO:CONSOLE(73)] "created coverage file /tmp/build/coverage.html/index\</tspan>
-<tspan x="10" y="2074">.html", source: file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/electron.15e96f7\</tspan>
-<tspan x="10" y="2090">70e20.6c437716178ce.html (73)</tspan>
+<tspan x="10" y="2026">", source: file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/electron.15e97bbaeea0\</tspan>
+<tspan x="10" y="2042">.8b1fde6a38743.html (73)</tspan>
+<tspan x="10" y="2058">[5635:0919/012335.729487:INFO:CONSOLE(73)] "created coverage file /tmp/build/coverage.html/index\</tspan>
+<tspan x="10" y="2074">.html", source: file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/electron.15e97bb\</tspan>
+<tspan x="10" y="2090">aeea0.8b1fde6a38743.html (73)</tspan>
 <tspan x="10" y="2106">[node test-case 10 of 11 passed] - testCase_buildApp_default</tspan>
 <tspan x="10" y="2122"></tspan>
 <tspan x="10" y="2138">browserTest - created screenshot file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/b\</tspan>
@@ -160,30 +160,30 @@
 <tspan x="10" y="2522"></tspan>
 <tspan x="10" y="2538">created coverage file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/build/coverage.ht\</tspan>
 <tspan x="10" y="2554">ml/index.html</tspan>
-<tspan x="10" y="2570">[2017-09-18 21:49:29,198][INFO ][node                     ] [Stentor] stopping ...</tspan>
-<tspan x="10" y="2586">[2017-09-18 21:49:29,307][INFO ][node                     ] [Stentor] stopped</tspan>
-<tspan x="10" y="2602">[2017-09-18 21:49:29,307][INFO ][node                     ] [Stentor] closing ...</tspan>
-<tspan x="10" y="2618">[2017-09-18 21:49:29,313][INFO ][node                     ] [Stentor] closed</tspan>
+<tspan x="10" y="2570">[2017-09-19 01:23:50,299][INFO ][node                     ] [Adrian Corbo] stopping ...</tspan>
+<tspan x="10" y="2586">[2017-09-19 01:23:50,372][INFO ][node                     ] [Adrian Corbo] stopped</tspan>
+<tspan x="10" y="2602">[2017-09-19 01:23:50,372][INFO ][node                     ] [Adrian Corbo] closing ...</tspan>
+<tspan x="10" y="2618">[2017-09-19 01:23:50,377][INFO ][node                     ] [Adrian Corbo] closed</tspan>
 <tspan x="10" y="2634"></tspan>
 <tspan x="10" y="2650">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/\</tspan>
 <tspan x="10" y="2666">build/test-report.json</tspan>
 <tspan x="10" y="2682"></tspan>
 <tspan x="10" y="2698">-------------------------------------------------------</tspan>
 <tspan x="10" y="2714">| test-report - npmTest - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_64) AppleW\</tspan>
-<tspan x="10" y="2730">ebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36 - 2017-09-18T\</tspan>
-<tspan x="10" y="2746">21:49:13.372Z</tspan>
-<tspan x="10" y="2762">|     125 ms            0 failed        9 passed      |</tspan>
+<tspan x="10" y="2730">ebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36 - 2017-09-19T\</tspan>
+<tspan x="10" y="2746">01:23:34.518Z</tspan>
+<tspan x="10" y="2762">|     115 ms            0 failed        9 passed      |</tspan>
 <tspan x="10" y="2778">-------------------------------------------------------</tspan>
-<tspan x="10" y="2794">| test-report - npmTest - node - linux v6.11.3 - 2017-09-18T21:49:01.329Z</tspan>
-<tspan x="10" y="2810">|   17809 ms            0 failed       11 passed      |</tspan>
+<tspan x="10" y="2794">| test-report - npmTest - node - linux v6.11.3 - 2017-09-19T01:23:23.018Z</tspan>
+<tspan x="10" y="2810">|   17704 ms            0 failed       11 passed      |</tspan>
 <tspan x="10" y="2826">-------------------------------------------------------</tspan>
 <tspan x="10" y="2842">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
 <tspan x="10" y="2858">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36 - 20\</tspan>
-<tspan x="10" y="2874">17-09-18T21:47:47.654Z</tspan>
-<tspan x="10" y="2890">|      96 ms            0 failed        2 passed      |</tspan>
+<tspan x="10" y="2874">17-09-19T01:22:09.588Z</tspan>
+<tspan x="10" y="2890">|      83 ms            0 failed        2 passed      |</tspan>
 <tspan x="10" y="2906">-------------------------------------------------------</tspan>
-<tspan x="10" y="2922">| test-report - npmTestPublished - node - linux v6.11.3 - 2017-09-18T21:47:34.697Z</tspan>
-<tspan x="10" y="2938">|   18088 ms            0 failed       10 passed      |</tspan>
+<tspan x="10" y="2922">| test-report - npmTestPublished - node - linux v6.11.3 - 2017-09-19T01:21:57.096Z</tspan>
+<tspan x="10" y="2938">|   17652 ms            0 failed       10 passed      |</tspan>
 <tspan x="10" y="2954">-------------------------------------------------------</tspan>
 <tspan x="10" y="2970"></tspan>
 <tspan x="10" y="2986">created test-report file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/build/test-rep\</tspan>
@@ -193,6 +193,6 @@
 <tspan x="10" y="3050">npmTest - 0 failed tests</tspan>
 <tspan x="10" y="3066"></tspan>
 <tspan x="10" y="3082"></tspan>
-<tspan x="10" y="3098">[MODE_BUILD=npmTest] - 2017-09-18T21:49:29.567Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="3098">[MODE_BUILD=npmTest] - 2017-09-19T01:23:50.593Z - EXIT_CODE - 0</tspan>
 </text>
 </svg>
