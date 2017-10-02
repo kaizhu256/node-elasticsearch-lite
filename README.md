@@ -60,13 +60,13 @@ this zero-dependency package will download and install elasticsearch (v1.7.6), k
 [![apidoc](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/apidoc.html)
 
 #### todo
+- npm publish 2017.10.2
+- improve test-coverage
 - fix swagger validation
 - revamp _bulk api to retry on errors
 - none
 
-#### changelog for v2017.10.1
-- npm publish 2017.10.1
-- add cli-help section in README.md
+#### changelog for v2017.10.2
 - none
 
 #### this package requires
@@ -446,7 +446,7 @@ instruction
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
-    "version": "2017.10.1"
+    "version": "2017.10.2"
 }
 ```
 
