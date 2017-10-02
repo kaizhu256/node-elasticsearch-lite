@@ -428,16 +428,36 @@ border: 0;
 */
 (function () {
     "use strict";
-    var ajaxProgressDiv1, ajaxProgressState;
+    var ajaxProgressDiv1,
+        ajaxProgressState,
+        ajaxProgressUpdate,
+        timerIntervalAjaxProgressUpdate;
     ajaxProgressDiv1 = document.querySelector("#ajaxProgressDiv1");
+    setTimeout(function () {
+        ajaxProgressDiv1.style.width = "25%";
+    });
     ajaxProgressState = 0;
-    window.timerIntervalAjaxProgressUpdate = setInterval(function () {
+    ajaxProgressUpdate = (window.local &&
+        window.local.ajaxProgressUpdate) || function () {
+        ajaxProgressDiv1.style.width = "100%";
+        setTimeout(function () {
+            ajaxProgressDiv1.style.background = "transparent";
+            setTimeout(function () {
+                ajaxProgressDiv1.style.width = "0%";
+            }, 500);
+        }, 1500);
+    };
+    timerIntervalAjaxProgressUpdate = setInterval(function () {
         ajaxProgressState += 1;
         ajaxProgressDiv1.style.width = Math.max(
-            100 - 100 * Math.exp(-0.0625 * ajaxProgressState),
+            100 - 75 * Math.exp(-0.125 * ajaxProgressState),
             Number(ajaxProgressDiv1.style.width.slice(0, -1)) || 0
         ) + "%";
     }, 1000);
+    window.addEventListener("load", function () {
+        clearInterval(timerIntervalAjaxProgressUpdate);
+        ajaxProgressUpdate();
+    });
 }());
 </script>
 <div class="swggUiContainer">

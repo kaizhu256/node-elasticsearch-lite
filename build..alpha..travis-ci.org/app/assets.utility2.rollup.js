@@ -14300,7 +14300,6 @@ textarea[readonly] {\n\
 </style>\n\
 </head>\n\
 <body>\n\
-<!-- utility2-comment\n\
 <div id="ajaxProgressDiv1" style="background: #d00; height: 2px; left: 0; margin: 0; padding: 0; position: fixed; top: 0; transition: background 500ms, width 1500ms; width: 0%;"></div>\n\
 <script>\n\
 /*jslint\n\
@@ -14315,19 +14314,38 @@ textarea[readonly] {\n\
 */\n\
 (function () {\n\
     "use strict";\n\
-    var ajaxProgressDiv1, ajaxProgressState;\n\
+    var ajaxProgressDiv1,\n\
+        ajaxProgressState,\n\
+        ajaxProgressUpdate,\n\
+        timerIntervalAjaxProgressUpdate;\n\
     ajaxProgressDiv1 = document.querySelector("#ajaxProgressDiv1");\n\
+    setTimeout(function () {\n\
+        ajaxProgressDiv1.style.width = "25%";\n\
+    });\n\
     ajaxProgressState = 0;\n\
-    window.timerIntervalAjaxProgressUpdate = setInterval(function () {\n\
+    ajaxProgressUpdate = (window.local &&\n\
+        window.local.ajaxProgressUpdate) || function () {\n\
+        ajaxProgressDiv1.style.width = "100%";\n\
+        setTimeout(function () {\n\
+            ajaxProgressDiv1.style.background = "transparent";\n\
+            setTimeout(function () {\n\
+                ajaxProgressDiv1.style.width = "0%";\n\
+            }, 500);\n\
+        }, 1500);\n\
+    };\n\
+    timerIntervalAjaxProgressUpdate = setInterval(function () {\n\
         ajaxProgressState += 1;\n\
         ajaxProgressDiv1.style.width = Math.max(\n\
-            100 - 100 * Math.exp(-0.0625 * ajaxProgressState),\n\
+            100 - 75 * Math.exp(-0.125 * ajaxProgressState),\n\
             Number(ajaxProgressDiv1.style.width.slice(0, -1)) || 0\n\
         ) + "%";\n\
     }, 1000);\n\
+    window.addEventListener("load", function () {\n\
+        clearInterval(timerIntervalAjaxProgressUpdate);\n\
+        ajaxProgressUpdate();\n\
+    });\n\
 }());\n\
 </script>\n\
-utility2-comment -->\n\
 <h1>\n\
 <!-- utility2-comment\n\
     <a\n\
@@ -14746,12 +14764,12 @@ the greatest app in the world!\n\
 #### cli help\n\
 ![screenshot](https://kaizhu256.github.io/node-jslint-lite/build/screenshot.npmPackageCliHelp.svg)\n\
 \n\
-#### apidoc\n\
+#### api doc\n\
 - [https://kaizhu256.github.io/node-jslint-lite/build..beta..travis-ci.org/apidoc.html](https://kaizhu256.github.io/node-jslint-lite/build..beta..travis-ci.org/apidoc.html)\n\
 \n\
 [![apidoc](https://kaizhu256.github.io/node-jslint-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-jslint-lite/build..beta..travis-ci.org/apidoc.html)\n\
 \n\
-#### swaggerdoc\n\
+#### swagger doc\n\
 - [https://kaizhu256.github.io/node-jslint-lite/build..beta..travis-ci.org/app/assets.swgg.html](https://kaizhu256.github.io/node-jslint-lite/build..beta..travis-ci.org/app/assets.swgg.html)\n\
 \n\
 [![swaggerdoc](https://kaizhu256.github.io/node-jslint-lite/build/screenshot.deployGithub.browser.%252Fnode-jslint-lite%252Fbuild%252Fapp%252Fassets.swgg.html.png)](https://kaizhu256.github.io/node-jslint-lite/build..beta..travis-ci.org/app/assets.swgg.html)\n\
@@ -16101,8 +16119,6 @@ local.assetsDict['/favicon.ico'] = '';
          * this function will update ajaxProgress
          */
             var ajaxProgressDiv1;
-            // cleanup timerInterval
-            clearInterval(local.global.timerIntervalAjaxProgressUpdate);
             ajaxProgressDiv1 = local.modeJs === 'browser' &&
                 document.querySelector('#ajaxProgressDiv1');
             if (!ajaxProgressDiv1) {
@@ -17473,7 +17489,7 @@ return Utf8ArrayToStr(bff);
             if (!local.assetsDict['/assets.swgg.swagger.json'] ||
                     (/\bswggUiContainer\b/).exec(local.assetsDict['/index.html'])) {
                 options.dataTo = options.dataTo.replace(
-                    (/\n#### swaggerdoc\n[\S\s]*?\n#### /),
+                    (/\n#### swagger doc\n[\S\s]*?\n#### /),
                     '\n#### '
                 );
             }
