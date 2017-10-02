@@ -5,7 +5,7 @@
     },
     &quot;href&quot;: &quot;file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/build/coverage.lib.html&quot;,
     &quot;url&quot;: &quot;file:///home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/build/coverage.lib.html&quot;,
-    &quot;bodyTextContent&quot;: &quot;1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n76\n77\n78\n79\n80\n81\n82\n83\n84\n85\n86\n87\n88\n89\n90\n91\n92\n93\n94\n95\n96\n97\n98\n99\n100\n101\n102\n103\n104\n105\n106\n107\n108\n109\n110\n111\n112\n113\n114\n115\n116\n117\n118\n119\n120\n121\n122\n123\n124\n125\n126\n127\n128\n129\n130\n131\n132\n133\n134\n135\n136\n137\n138\n139\n140\n141\n142\n143\n144\n145\n146\n147\n148\n149\n150\n151\n152\n153\n154\n155\n156\n157\n158\n159\n160\n161\n162\n163\n164\n165\n166\n167\n168\n169\n170\n171\n172\n173\n174\n175\n176\n177\n178\n179\n180\n181\n182\n183\n184\n185\n186\n187\n188\n189\n190\n191\n192\n193\n194\n195\n196\n197\n198\n199\n200\n\n&nbsp;    // run shared js-env code - init-before\n    (function () {\n        // init local\n        local = {};\n        // init modeJs\n        local.modeJs = (function () {\n            try {\n                return typeof navigator.userAgent === 'string' &amp;&amp;\n                    typeof document.querySelector('body') === 'object' &amp;&amp;\n                    typeof XMLHttpRequest.prototype.open === 'function' &amp;&amp;\n                    'browser';\n            } catch (errorCaughtBrowser) {\n                return module.exports &amp;&amp;\n                    typeof process.versions.node === 'string' &amp;&amp;\n                    typeof require('http').createServer === 'function' &amp;&amp;\n                    'node';\n            }\n        }());\n        // init global\n        local.global = local.modeJs === 'browser'\n            ? window\n            : global;\n        // re-init local\n        local = local.global.local = (local.global.utility2 ||\n            require('./assets.utility2.rollup.js')).requireReadme();\n        // init test\n        local.testRunInit(local);\n    }());\n\n    // run shared js-env code - function\n    (function () {\n        local.testCase_middlewareRouterCustom_default = function (options, onError) {\n        /*\n         * this function will test middlewareRouterCustom's default handling-behavior\n         */\n            options = {\n                list: [{\n                    method: 'GET',\n                    url: '/__info'\n                }, {\n                    method: 'GET',\n                    url: '/_alias'\n                }, {\n                    method: 'PUT',\n                    data: '{\&quot;index\&quot;:{\&quot;_id\&quot;:null,\&quot;_index\&quot;:\&quot;server_log\&quot;,\&quot;_type\&quot;:\&quot;test\&quot;}}\\n{}\\n',\n                    url: '/_bulk'\n                }, {\n                    method: 'GET',\n                    url: '/kibana'\n                }, {\n                    method: 'GET',\n                    url: '/kibana/'\n                }, {\n                    method: 'OPTIONS',\n                    url: '/undefined'\n                }]\n            };\n            local.onParallelList(options, function (options2, onParallel) {\n                onParallel.counter += 1;\n                local.ajax(options2.element, onParallel);\n            }, onError);\n        };\n    }());\n    switch (local.modeJs) {\n\n        // run node js-env code - function\n    case 'node':\n        local.testCase_buildApp_default = function (options, onError) {\n        /*\n         * this function will test buildApp's default handling-behavior\n         */\n            local.testCase_buildReadme_default(options, local.onErrorThrow);\n            local.testCase_buildLib_default(options, local.onErrorThrow);\n            local.testCase_buildTest_default(options, local.onErrorThrow);\n            local.testCase_buildCustomOrg_default(options, local.onErrorThrow);\n            options = [{\n                file: '/kibana/app/app.js',\n                url: '/kibana/app/app.js'\n            }, {\n                file: '/kibana/config.js',\n                url: '/kibana/config.js'\n            }, {\n                file: '/kibana/app/dashboards/logstash.json',\n                url: '/kibana/app/dashboards/logstash.json'\n            }];\n            local.buildApp(options, onError);\n            local.child_process.execSync(\n                'mkdir -p tmp/build/app/ &amp;&amp; cp -a external/kibana tmp/build/app/',\n                { stdio: ['ignore', 2, 2] }\n            );\n        };\n\n        local.testCase_killElasticsearch_default = function (options, onError) {\n        /*\n         * this function will test killElasticsearch's default handling-behavior\n         */\n            options = [\n                [process, { kill: local.nop }]\n            ];\n            local.testMock(options, function (onError) {\n                local.killElasticsearch();\n                onError();\n            }, onError);\n        };\n\n        local.testCase_middlewareBulkPut_default = function (options, onError) {\n        /*\n         * this function will test middlewareBulkPut's default handling-behavior\n         */\n            options = {\n                list: [{\n                    method: 'GET',\n                    url: '/__info'\n                }, {\n                    method: 'GET',\n                    url: '/_alias'\n                }, {\n                    method: 'PUT',\n                    data: '{\&quot;index\&quot;:{\&quot;_id\&quot;:null,\&quot;_index\&quot;:\&quot;server_log\&quot;,\&quot;_type\&quot;:\&quot;test\&quot;}}\\n{}\\n',\n                    url: '/_bulk'\n                }, {\n                    method: 'GET',\n                    url: '/kibana'\n                }, {\n                    method: 'GET',\n                    url: '/kibana/'\n                }, {\n                    method: 'OPTIONS',\n                    url: '/undefined'\n                }]\n            };\n            local.onParallelList(options, function (options2, onParallel) {\n                onParallel.counter += 1;\n                local.ajax(options2.element, onParallel);\n            }, onError);\n        };\n\n            // run browser js-env code - init-test\n    /* istanbul ignore next */\n    case 'browser':\n        // run tests\n        Eif (local.modeTest &amp;&amp; document.querySelector('#testRunButton1')) {\n            Iif (!local.testRunBrowser) {\n                local.testRunBrowser = function () {\n                    local.testRunDefault(local);\n                };\n                document.querySelector('#testRunButton1')\n                    .addEventListener('click', local.testRunBrowser);\n            }\n            document.querySelector('#testRunButton1').click();\n        }\n        break;&quot;
+    &quot;bodyTextContent&quot;: &quot;1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n76\n77\n78\n79\n80\n81\n82\n83\n84\n85\n86\n87\n88\n89\n90\n91\n92\n93\n94\n95\n96\n97\n98\n99\n100\n101\n102\n103\n104\n105\n106\n107\n108\n109\n110\n111\n112\n113\n114\n115\n116\n117\n118\n119\n120\n121\n122\n123\n124\n125\n126\n127\n128\n129\n130\n131\n132\n133\n134\n135\n136\n137\n138\n139\n140\n141\n142\n143\n144\n145\n146\n147\n148\n149\n150\n151\n152\n153\n154\n155\n156\n157\n158\n159\n160\n161\n162\n163\n164\n165\n\n&nbsp;    // run shared js-env code - init-before\n    (function () {\n        // init local\n        local = {};\n        // init modeJs\n        local.modeJs = (function () {\n            try {\n                return typeof navigator.userAgent === 'string' &amp;&amp;\n                    typeof document.querySelector('body') === 'object' &amp;&amp;\n                    typeof XMLHttpRequest.prototype.open === 'function' &amp;&amp;\n                    'browser';\n            } catch (errorCaughtBrowser) {\n                return module.exports &amp;&amp;\n                    typeof process.versions.node === 'string' &amp;&amp;\n                    typeof require('http').createServer === 'function' &amp;&amp;\n                    'node';\n            }\n        }());\n        // init global\n        local.global = local.modeJs === 'browser'\n            ? window\n            : global;\n        // re-init local\n        local = local.global.local = (local.global.utility2 ||\n            require('./assets.utility2.rollup.js')).requireReadme();\n        // init test\n        local.testRunInit(local);\n    }());\n\n    // run shared js-env code - function\n    (function () {\n        local.testCase_middlewareRouterCustom_default = function (options, onError) {\n        /*\n         * this function will test middlewareRouterCustom's default handling-behavior\n         */\n            options = {\n                list: [{\n                    method: 'GET',\n                    url: '/__info'\n                }, {\n                    method: 'GET',\n                    url: '/_alias'\n                }, {\n                    method: 'PUT',\n                    data: '{\&quot;index\&quot;:{\&quot;_id\&quot;:null,\&quot;_index\&quot;:\&quot;server_log\&quot;,\&quot;_type\&quot;:\&quot;test\&quot;}}\\n{}\\n',\n                    url: '/_bulk'\n                }, {\n                    method: 'GET',\n                    url: '/kibana'\n                }, {\n                    method: 'GET',\n                    url: '/kibana/'\n                }, {\n                    method: 'OPTIONS',\n                    url: '/undefined'\n                }]\n            };\n            local.onParallelList(options, function (options2, onParallel) {\n                onParallel.counter += 1;\n                local.ajax(options2.element, onParallel);\n            }, onError);\n        };\n    }());\n    switch (local.modeJs) {\n\n    // run node js-env code - function\n    case 'node':\n        local.testCase_buildApp_default = function (options, onError) {\n        /*\n         * this function will test buildApp's default handling-behavior\n         */\n            local.testCase_buildReadme_default(options, local.onErrorThrow);\n            local.testCase_buildLib_default(options, local.onErrorThrow);\n            local.testCase_buildTest_default(options, local.onErrorThrow);\n            local.testCase_buildCustomOrg_default(options, local.onErrorThrow);\n            options = [{\n                file: '/kibana/app/app.js',\n                url: '/kibana/app/app.js'\n            }, {\n                file: '/kibana/config.js',\n                url: '/kibana/config.js'\n            }, {\n                file: '/kibana/app/dashboards/logstash.json',\n                url: '/kibana/app/dashboards/logstash.json'\n            }];\n            local.buildApp(options, onError);\n            local.child_process.execSync(\n                'mkdir -p tmp/build/app/ &amp;&amp; cp -a external/kibana tmp/build/app/',\n                { stdio: ['ignore', 2, 2] }\n            );\n        };\n\n        local.testCase_killElasticsearch_default = function (options, onError) {\n        /*\n         * this function will test killElasticsearch's default handling-behavior\n         */\n            options = [\n                [process, { kill: local.nop }]\n            ];\n            local.testMock(options, function (onError) {\n                local.killElasticsearch();\n                onError();\n            }, onError);\n        };\n\n        local.testCase_middlewareBulkPut_default = function (options, onError) {\n        /*\n         * this function will test middlewareBulkPut's default handling-behavior\n         */\n            options = {\n                list: [{\n                    method: 'GET',\n                    url: '/__info'\n                }, {\n                    method: 'GET',\n                    url: '/_alias'\n                }, {\n                    method: 'PUT',\n                    data: '{\&quot;index\&quot;:{\&quot;_id\&quot;:null,\&quot;_index\&quot;:\&quot;server_log\&quot;,\&quot;_type\&quot;:\&quot;test\&quot;}}\\n{}\\n',\n                    url: '/_bulk'\n                }, {\n                    method: 'GET',\n                    url: '/kibana'\n                }, {\n                    method: 'GET',\n                    url: '/kibana/'\n                }, {\n                    method: 'OPTIONS',\n                    url: '/undefined'\n                }]\n            };\n            local.onParallelList(options, function (options2, onParallel) {\n                onParallel.counter += 1;\n                local.ajax(options2.element, onParallel);\n            }, onError);\n        };&quot;
 }"><head>
     <title>Code coverage report for node-elasticsearch-lite/test.js</title>
     <meta charset="utf-8">
@@ -203,18 +203,18 @@
     <h1>Code coverage report for <span class="entity">node-elasticsearch-lite/test.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">100% <small>(49 / 49)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">100% <small>(38 / 38)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">100% <small>(22 / 22)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(13 / 13)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">100% <small>(12 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(11 / 11)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">100% <small>(49 / 49)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(38 / 38)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
-        Ignored: <span class="metric">3 statements, 1 function, 2 branches</span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
     <div class="path"><a href="../index.html">All files</a> » <a href="index.html">node-elasticsearch-lite/</a> » test.js</div>
 </div>
@@ -384,42 +384,7 @@
 162
 163
 164
-165
-166
-167
-168
-169
-170
-171
-172
-173
-174
-175
-176
-177
-178
-179
-180
-181
-182
-183
-184
-185
-186
-187
-188
-189
-190
-191
-192
-193
-194
-195
-196
-197
-198
-199
-200</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+165</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -511,12 +476,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
@@ -580,35 +539,6 @@
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">6</span>
 <span class="cline-any cline-yes">6</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -704,12 +634,6 @@
 &nbsp;
 &nbsp;
 &nbsp;
-    // run browser js-env code - function
-    case 'browser':
-        break;
-&nbsp;
-&nbsp;
-&nbsp;
     // run node js-env code - function
     case 'node':
         local.testCase_buildApp_default = function (options, onError) {
@@ -786,42 +710,13 @@
         local.serverStart();
         break;
     }
-    switch (local.modeJs) {
-&nbsp;
-&nbsp;
-&nbsp;
-    // run browser js-env code - init-test
-    /* istanbul ignore next */
-    case 'browser':
-        // run tests
-        <span class="skip-if-branch" title="else path not taken">E</span>if (local.modeTest &amp;&amp; document.querySelector('#testRunButton1')) {
-            <span class="skip-if-branch" title="if path not taken">I</span>if (!local.testRunBrowser) {
-<span class="cstat-skip" title="statement not covered">                local.testRunBrowser = <span class="fstat-skip" title="function not covered">function () {</span></span>
-<span class="cstat-skip" title="statement not covered">                    local.testRunDefault(local);</span>
-                };
-<span class="cstat-skip" title="statement not covered">                document.querySelector('#testRunButton1')</span>
-                    .addEventListener('click', local.testRunBrowser);
-            }
-            document.querySelector('#testRunButton1').click();
-        }
-        break;
-&nbsp;
-&nbsp;
-&nbsp;
-    // run node js-env code - init-test
-    /* istanbul ignore next */
-    case 'node':
-        // run test-server
-        local.testRunServer(local);
-        break;
-    }
 }());
 &nbsp;
 &nbsp;</pre></td></tr>
 </tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Sep 19 2017 01:23:50 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Oct 02 2017 09:27:13 GMT+0000 (UTC)</div>
 </div>
 
 

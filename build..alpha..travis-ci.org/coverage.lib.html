@@ -197,18 +197,18 @@
     <h1>Code coverage report for <span class="entity">node-elasticsearch-lite/test.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">100% <small>(49 / 49)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">100% <small>(38 / 38)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">100% <small>(22 / 22)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(13 / 13)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">100% <small>(12 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(11 / 11)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">100% <small>(49 / 49)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(38 / 38)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
-        Ignored: <span class="metric">3 statements, 1 function, 2 branches</span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
     <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">node-elasticsearch-lite/</a> &#187; test.js</div>
 </div>
@@ -378,42 +378,7 @@
 162
 163
 164
-165
-166
-167
-168
-169
-170
-171
-172
-173
-174
-175
-176
-177
-178
-179
-180
-181
-182
-183
-184
-185
-186
-187
-188
-189
-190
-191
-192
-193
-194
-195
-196
-197
-198
-199
-200</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+165</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -505,12 +470,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
@@ -574,35 +533,6 @@
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">6</span>
 <span class="cline-any cline-yes">6</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -698,12 +628,6 @@
 &nbsp;
 &nbsp;
 &nbsp;
-    // run browser js-env code - function
-    case 'browser':
-        break;
-&nbsp;
-&nbsp;
-&nbsp;
     // run node js-env code - function
     case 'node':
         local.testCase_buildApp_default = function (options, onError) {
@@ -780,42 +704,13 @@
         local.serverStart();
         break;
     }
-    switch (local.modeJs) {
-&nbsp;
-&nbsp;
-&nbsp;
-    // run browser js-env code - init-test
-    /* istanbul ignore next */
-    case 'browser':
-        // run tests
-        <span class="skip-if-branch" title="else path not taken" >E</span>if (local.modeTest &amp;&amp; document.querySelector('#testRunButton1')) {
-            <span class="skip-if-branch" title="if path not taken" >I</span>if (!local.testRunBrowser) {
-<span class="cstat-skip" title="statement not covered" >                local.testRunBrowser = <span class="fstat-skip" title="function not covered" >function () {</span></span>
-<span class="cstat-skip" title="statement not covered" >                    local.testRunDefault(local);</span>
-                };
-<span class="cstat-skip" title="statement not covered" >                document.querySelector('#testRunButton1')</span>
-                    .addEventListener('click', local.testRunBrowser);
-            }
-            document.querySelector('#testRunButton1').click();
-        }
-        break;
-&nbsp;
-&nbsp;
-&nbsp;
-    // run node js-env code - init-test
-    /* istanbul ignore next */
-    case 'node':
-        // run test-server
-        local.testRunServer(local);
-        break;
-    }
 }());
 &nbsp;
 &nbsp;</pre></td></tr>
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Sep 19 2017 01:23:50 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Oct 02 2017 09:27:13 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
