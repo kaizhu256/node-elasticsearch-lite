@@ -5,7 +5,7 @@ var local={};local.githubCorsUrlOverride=function (url, hostOverride, rgxHostOve
          */
             location = location || (typeof window === 'object' && window && window.location);
             if (!(hostOverride && location && (local.githubCorsHostTest ||
-                    location.host.match(/\bgithub.com$|\bgithub.io$/)))) {
+                    (/\bgithub.com$|\bgithub.io$/).test(location.host)))) {
                 return url;
             }
             // init github-branch

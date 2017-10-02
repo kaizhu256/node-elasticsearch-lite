@@ -46,6 +46,12 @@
         if (local.modeJs === 'browser') {
             local.global.utility2_elasticsearch = local;
         } else {
+            // require builtins
+            Object.keys(process.binding('natives')).forEach(function (key) {
+                if (!local[key] && !(/\/|^_|^sys$/).test(key)) {
+                    local[key] = require(key);
+                }
+            });
             module.exports = local;
             module.exports.__dirname = __dirname;
             module.exports.module = module;
@@ -329,9 +335,20 @@
         // init utility2
         local.utility2 = local.utility2 || require('./assets.utility2.rollup.js');
         local.utility2.objectSetDefault(local, local.utility2);
-        // run the cli
+        // init cli
         if (module !== require.main || local.global.utility2_rollup) {
             break;
+        }
+        switch (process.argv[2]) {
+        case '--help':
+        case '-h':
+        case '-v':
+            local.child_process.spawnSync(
+                __dirname + '/external/elasticsearch/bin/elasticsearch',
+                process.argv.slice(2),
+                { stdio: ['ignore', 1, 2] }
+            );
+            return;
         }
         local.serverStart({ argv: process.argv.slice(2) });
         // init exports
