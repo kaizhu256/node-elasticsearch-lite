@@ -192,7 +192,7 @@
 <body>
 <div class="header high">
     <h1 style="font-weight: bold;">
-        <a href="https://github.com/kaizhu256/node-elasticsearch-lite">elasticsearch-lite (v2017.7.25)</a>
+        <a href="https://github.com/kaizhu256/node-elasticsearch-lite">elasticsearch-lite (v2017.10.1)</a>
     </h1>
     <h1>Code coverage report for <span class="entity">node-elasticsearch-lite/example.js</span></h1>
     <h2>
@@ -200,15 +200,15 @@
         Statements: <span class="metric">100% <small>(102 / 102)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">100% <small>(79 / 79)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(83 / 83)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">100% <small>(16 / 16)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(17 / 17)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
         Lines: <span class="metric">100% <small>(102 / 102)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
-        Ignored: <span class="metric">31 statements, 2 functions, 34 branches</span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric">32 statements, 2 functions, 36 branches</span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
     <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">node-elasticsearch-lite/</a> &#187; example.js</div>
 </div>
@@ -595,7 +595,8 @@
 379
 380
 381
-382</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+382
+383</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -805,7 +806,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -863,20 +863,20 @@
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-yes">4</span>
-<span class="cline-any cline-yes">4</span>
-<span class="cline-any cline-yes">4</span>
-<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">11</span>
+<span class="cline-any cline-yes">11</span>
+<span class="cline-any cline-yes">11</span>
+<span class="cline-any cline-yes">11</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4</span>
-<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">11</span>
+<span class="cline-any cline-yes">11</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">11</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -898,8 +898,10 @@
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">83</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
@@ -1183,8 +1185,7 @@ instruction
 &nbsp;
 &nbsp;
 &nbsp;
-    // init-after
-    // run browser js-env code - init-after
+    // run browser js-env code - init-test
     /* istanbul ignore next */
     case 'browser':
         local.testRunBrowser = function (event) {
@@ -1272,15 +1273,17 @@ instruction
 &nbsp;
 &nbsp;
 &nbsp;
-    // run node js-env code - init-after
+    // run node js-env code - init-test
     /* istanbul ignore next */
     case 'node':
         // init exports
         module.exports = local;
-        // require modules
-        local.fs = require('fs');
-        local.http = require('http');
-        local.url = require('url');
+        // require builtins
+        Object.keys(process.binding('natives')).forEach(function (key) {
+            <span class="skip-if-branch" title="if path not taken" >I</span>if (!local[key] &amp;&amp; !(/\/|^_|^sys$/).test(key)) {
+<span class="cstat-skip" title="statement not covered" >                local[key] = require(key);</span>
+            }
+        });
         // init assets
         local.assetsDict = local.assetsDict || <span class="branch-1 cbranch-skip" title="branch not covered" >{};</span>
         [
@@ -1309,7 +1312,7 @@ instruction
 <span class="cstat-skip" title="statement not covered" >                    return 'the greatest app in the world!';</span>
                 case 'npm_package_name':
 <span class="cstat-skip" title="statement not covered" >                    return 'elasticsearch-lite';</span>
-                case 'npm_package_nameAlias':
+                case 'npm_package_nameLib':
 <span class="cstat-skip" title="statement not covered" >                    return 'elasticsearch';</span>
                 case 'npm_package_version':
 <span class="cstat-skip" title="statement not covered" >                    return '0.0.1';</span>
@@ -1317,8 +1320,8 @@ instruction
 <span class="cstat-skip" title="statement not covered" >                    return match0;</span>
                 }
             });
-        // run the cli
-        <span class="skip-if-branch" title="else path not taken" >E</span>if (local.global.utility2_rollup || module !== require.main) {
+        // init cli
+        <span class="skip-if-branch" title="else path not taken" >E</span>if (module !== require.main || <span class="branch-1 cbranch-skip" title="branch not covered" >local.global.utility2_rollup)</span> {
             break;
         }
 <span class="cstat-skip" title="statement not covered" >        local.assetsDict['/assets.example.js'] =</span>
@@ -1361,7 +1364,7 @@ instruction
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Fri Aug 04 2017 09:58:53 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Oct 02 2017 10:15:12 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
