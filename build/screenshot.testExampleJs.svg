@@ -2,12 +2,12 @@
 <rect height="1070" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
-<tspan x="10" y="42">&gt; elasticsearch-lite@2017.7.25 postinstall /tmp/app/node_modules/elasticsearch-lite</tspan>
+<tspan x="10" y="42">&gt; elasticsearch-lite@2017.10.1 postinstall /tmp/app/node_modules/elasticsearch-lite</tspan>
 <tspan x="10" y="58">&gt; [ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall</tspan>
 <tspan x="10" y="74"></tspan>
 <tspan x="10" y="90">/tmp/app</tspan>
-<tspan x="10" y="106">└── elasticsearch-lite@2017.7.25  (git://github.com/kaizhu256/node-elasticsearch-lite.git#989335\</tspan>
-<tspan x="10" y="122">1f8a067151cd013ae84c03fd23a6a98197)</tspan>
+<tspan x="10" y="106">└── elasticsearch-lite@2017.10.1  (git://github.com/kaizhu256/node-elasticsearch-lite.git#9693d2\</tspan>
+<tspan x="10" y="122">e2145d8029d7f290291c35104305466440)</tspan>
 <tspan x="10" y="138"></tspan>
 <tspan x="10" y="154">npm WARN enoent ENOENT: no such file or directory, open '/tmp/app/package.json'</tspan>
 <tspan x="10" y="170">npm WARN app No description</tspan>
@@ -16,55 +16,55 @@
 <tspan x="10" y="218">npm WARN app No license field.</tspan>
 <tspan x="10" y="234">server listening on http-port 8081</tspan>
 <tspan x="10" y="250">starting elasticsearch-server ...</tspan>
-<tspan x="10" y="266">serverLog - {"type":"serverResponse","time":"2017-10-02T09:26:00.433Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="266">serverLog - {"type":"serverResponse","time":"2017-10-02T09:36:17.389Z","method":"GET","url":"/",\</tspan>
 <tspan x="10" y="282">"statusCode":200,"duration":7,"requestContentLength":0,"responseContentLength":12231,"requestHea\</tspan>
 <tspan x="10" y="298">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="314">[2017-10-02 09:26:00,991][INFO ][node                     ] [Selene] version[1.7.6], pid[5261], \</tspan>
-<tspan x="10" y="330">build[c730b59/2016-11-18T15:21:16Z]</tspan>
-<tspan x="10" y="346">[2017-10-02 09:26:00,992][INFO ][node                     ] [Selene] initializing ...</tspan>
-<tspan x="10" y="362">[2017-10-02 09:26:01,079][INFO ][plugins                  ] [Selene] loaded [], sites []</tspan>
-<tspan x="10" y="378">[2017-10-02 09:26:01,109][INFO ][env                      ] [Selene] using [1] data paths, mount\</tspan>
-<tspan x="10" y="394">s [[/ (/dev/sda1)]], net usable_space [17.5gb], net total_space [29.4gb], types [ext4]</tspan>
-<tspan x="10" y="410">[2017-10-02 09:26:03,597][INFO ][node                     ] [Selene] initialized</tspan>
-<tspan x="10" y="426">[2017-10-02 09:26:03,607][INFO ][node                     ] [Selene] starting ...</tspan>
-<tspan x="10" y="442">[2017-10-02 09:26:03,762][INFO ][transport                ] [Selene] bound_address {inet[/0.0.0.\</tspan>
-<tspan x="10" y="458">0:9300]}, publish_address {inet[/10.10.20.215:9300]}</tspan>
-<tspan x="10" y="474">[2017-10-02 09:26:03,822][INFO ][discovery                ] [Selene] elasticsearch/iTkEeweBRTeKE\</tspan>
-<tspan x="10" y="490">TfII9gMsA</tspan>
-<tspan x="10" y="506">serverLog - {"type":"serverResponse","time":"2017-10-02T09:26:06.913Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="522">"statusCode":200,"duration":16,"requestContentLength":0,"responseContentLength":3700,"requestHea\</tspan>
-<tspan x="10" y="538">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"","requestHeaderUserAgent"\</tspan>
-<tspan x="10" y="554">:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Ele\</tspan>
-<tspan x="10" y="570">ctron/1.6.11 Safari/537.36"}</tspan>
-<tspan x="10" y="586">serverLog - {"type":"serverResponse","time":"2017-10-02T09:26:07.048Z","method":"GET","url":"/as\</tspan>
-<tspan x="10" y="602">sets.utility2.rollup.js","statusCode":200,"duration":142,"requestContentLength":0,"responseConte\</tspan>
-<tspan x="10" y="618">ntLength":275937,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer"\</tspan>
-<tspan x="10" y="634">:"http://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/\</tspan>
-<tspan x="10" y="650">537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
-<tspan x="10" y="666">serverLog - {"type":"serverResponse","time":"2017-10-02T09:26:07.334Z","method":"GET","url":"/as\</tspan>
-<tspan x="10" y="682">sets.swgg.swagger.json","statusCode":200,"duration":32,"requestContentLength":0,"responseContent\</tspan>
-<tspan x="10" y="698">Length":31468,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"h\</tspan>
-<tspan x="10" y="714">ttp://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
-<tspan x="10" y="730">.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
-<tspan x="10" y="746">[2017-10-02 09:26:07,640][INFO ][cluster.service          ] [Selene] new_master [Selene][iTkEewe\</tspan>
-<tspan x="10" y="762">BRTeKETfII9gMsA][testing-gce-6f78189b-5201-44d4-bc0f-4038f4ef6b5f][inet[/10.10.20.215:9300]], re\</tspan>
-<tspan x="10" y="778">ason: zen-disco-join (elected_as_master)</tspan>
-<tspan x="10" y="794">[2017-10-02 09:26:07,722][INFO ][gateway                  ] [Selene] recovered [0] indices into \</tspan>
-<tspan x="10" y="810">cluster_state</tspan>
-<tspan x="10" y="826">[2017-10-02 09:26:07,722][INFO ][http                     ] [Selene] bound_address {inet[/0.0.0.\</tspan>
-<tspan x="10" y="842">0:8082]}, publish_address {inet[/10.10.20.215:8082]}</tspan>
-<tspan x="10" y="858">[2017-10-02 09:26:07,724][INFO ][node                     ] [Selene] started</tspan>
-<tspan x="10" y="874">elasticsearch-server listening on http-port8082</tspan>
-<tspan x="10" y="890">serverLog - {"type":"serverResponse","time":"2017-10-02T09:26:08.546Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="906">"statusCode":200,"duration":2,"requestContentLength":0,"responseContentLength":12231,"requestHea\</tspan>
-<tspan x="10" y="922">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="938">[2017-10-02 09:26:09,077][INFO ][cluster.metadata         ] [Selene] [server_log] creating index\</tspan>
-<tspan x="10" y="954">, cause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
-<tspan x="10" y="970">[2017-10-02 09:26:09,740][INFO ][cluster.metadata         ] [Selene] [server_log] update_mapping\</tspan>
-<tspan x="10" y="986"> [serverResponse] (dynamic)</tspan>
-<tspan x="10" y="1002">[2017-10-02 09:26:30,115][INFO ][node                     ] [Selene] stopping ...</tspan>
-<tspan x="10" y="1018">[2017-10-02 09:26:30,894][INFO ][node                     ] [Selene] stopped</tspan>
-<tspan x="10" y="1034">[2017-10-02 09:26:30,894][INFO ][node                     ] [Selene] closing ...</tspan>
-<tspan x="10" y="1050">[2017-10-02 09:26:30,907][INFO ][node                     ] [Selene] closed</tspan>
+<tspan x="10" y="314">[2017-10-02 09:36:17,860][INFO ][node                     ] [Powderkeg] version[1.7.6], pid[5187\</tspan>
+<tspan x="10" y="330">], build[c730b59/2016-11-18T15:21:16Z]</tspan>
+<tspan x="10" y="346">[2017-10-02 09:36:17,867][INFO ][node                     ] [Powderkeg] initializing ...</tspan>
+<tspan x="10" y="362">[2017-10-02 09:36:17,965][INFO ][plugins                  ] [Powderkeg] loaded [], sites []</tspan>
+<tspan x="10" y="378">[2017-10-02 09:36:18,012][INFO ][env                      ] [Powderkeg] using [1] data paths, mo\</tspan>
+<tspan x="10" y="394">unts [[/ (/dev/sda1)]], net usable_space [17.5gb], net total_space [29.4gb], types [ext4]</tspan>
+<tspan x="10" y="410">[2017-10-02 09:36:20,195][INFO ][node                     ] [Powderkeg] initialized</tspan>
+<tspan x="10" y="426">[2017-10-02 09:36:20,199][INFO ][node                     ] [Powderkeg] starting ...</tspan>
+<tspan x="10" y="442">[2017-10-02 09:36:20,309][INFO ][transport                ] [Powderkeg] bound_address {inet[/0.0\</tspan>
+<tspan x="10" y="458">.0.0:9300]}, publish_address {inet[/10.10.20.26:9300]}</tspan>
+<tspan x="10" y="474">[2017-10-02 09:36:20,343][INFO ][discovery                ] [Powderkeg] elasticsearch/GUecI-CUR3\</tspan>
+<tspan x="10" y="490">ORzmfiHS09Rg</tspan>
+<tspan x="10" y="506">[2017-10-02 09:36:24,140][INFO ][cluster.service          ] [Powderkeg] new_master [Powderkeg][G\</tspan>
+<tspan x="10" y="522">UecI-CUR3ORzmfiHS09Rg][testing-gce-a40ecc0a-6d53-4a9a-8b3a-59051255a99c][inet[/10.10.20.26:9300]\</tspan>
+<tspan x="10" y="538">], reason: zen-disco-join (elected_as_master)</tspan>
+<tspan x="10" y="554">[2017-10-02 09:36:24,210][INFO ][http                     ] [Powderkeg] bound_address {inet[/0.0\</tspan>
+<tspan x="10" y="570">.0.0:8082]}, publish_address {inet[/10.10.20.26:8082]}</tspan>
+<tspan x="10" y="586">[2017-10-02 09:36:24,211][INFO ][node                     ] [Powderkeg] started</tspan>
+<tspan x="10" y="602">[2017-10-02 09:36:24,213][INFO ][gateway                  ] [Powderkeg] recovered [0] indices in\</tspan>
+<tspan x="10" y="618">to cluster_state</tspan>
+<tspan x="10" y="634">serverLog - {"type":"serverResponse","time":"2017-10-02T09:36:24.287Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="650">"statusCode":200,"duration":13,"requestContentLength":0,"responseContentLength":3700,"requestHea\</tspan>
+<tspan x="10" y="666">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"","requestHeaderUserAgent"\</tspan>
+<tspan x="10" y="682">:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Ele\</tspan>
+<tspan x="10" y="698">ctron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="714">serverLog - {"type":"serverResponse","time":"2017-10-02T09:36:24.453Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="730">sets.utility2.rollup.js","statusCode":200,"duration":207,"requestContentLength":0,"responseConte\</tspan>
+<tspan x="10" y="746">ntLength":275937,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer"\</tspan>
+<tspan x="10" y="762">:"http://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/\</tspan>
+<tspan x="10" y="778">537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="794">elasticsearch-server listening on http-port8082</tspan>
+<tspan x="10" y="810">serverLog - {"type":"serverResponse","time":"2017-10-02T09:36:24.684Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="826">"statusCode":200,"duration":1,"requestContentLength":0,"responseContentLength":12231,"requestHea\</tspan>
+<tspan x="10" y="842">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="858">serverLog - {"type":"serverResponse","time":"2017-10-02T09:36:24.877Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="874">sets.swgg.swagger.json","statusCode":200,"duration":44,"requestContentLength":0,"responseContent\</tspan>
+<tspan x="10" y="890">Length":31474,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"h\</tspan>
+<tspan x="10" y="906">ttp://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
+<tspan x="10" y="922">.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="938">[2017-10-02 09:36:25,237][INFO ][cluster.metadata         ] [Powderkeg] [server_log] creating in\</tspan>
+<tspan x="10" y="954">dex, cause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
+<tspan x="10" y="970">[2017-10-02 09:36:25,851][INFO ][cluster.metadata         ] [Powderkeg] [server_log] update_mapp\</tspan>
+<tspan x="10" y="986">ing [serverResponse] (dynamic)</tspan>
+<tspan x="10" y="1002">[2017-10-02 09:36:47,075][INFO ][node                     ] [Powderkeg] stopping ...</tspan>
+<tspan x="10" y="1018">[2017-10-02 09:36:47,597][INFO ][node                     ] [Powderkeg] stopped</tspan>
+<tspan x="10" y="1034">[2017-10-02 09:36:47,597][INFO ][node                     ] [Powderkeg] closing ...</tspan>
+<tspan x="10" y="1050">[2017-10-02 09:36:47,602][INFO ][node                     ] [Powderkeg] closed</tspan>
 </text>
 </svg>
