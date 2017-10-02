@@ -1,0 +1,70 @@
+<svg height="1070" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1070" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26"></tspan>
+<tspan x="10" y="42">&gt; elasticsearch-lite@2017.7.25 postinstall /tmp/app/node_modules/elasticsearch-lite</tspan>
+<tspan x="10" y="58">&gt; [ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall</tspan>
+<tspan x="10" y="74"></tspan>
+<tspan x="10" y="90">/tmp/app</tspan>
+<tspan x="10" y="106">└── elasticsearch-lite@2017.7.25  (git://github.com/kaizhu256/node-elasticsearch-lite.git#84ea1d\</tspan>
+<tspan x="10" y="122">9c7a09912bd9a50c3755e9c5d7cf2e6e0b)</tspan>
+<tspan x="10" y="138"></tspan>
+<tspan x="10" y="154">npm WARN enoent ENOENT: no such file or directory, open '/tmp/app/package.json'</tspan>
+<tspan x="10" y="170">npm WARN app No description</tspan>
+<tspan x="10" y="186">npm WARN app No repository field.</tspan>
+<tspan x="10" y="202">npm WARN app No README data</tspan>
+<tspan x="10" y="218">npm WARN app No license field.</tspan>
+<tspan x="10" y="234">server listening on http-port 8081</tspan>
+<tspan x="10" y="250">starting elasticsearch-server ...</tspan>
+<tspan x="10" y="266">serverLog - {"type":"serverResponse","time":"2017-09-19T01:22:36.709Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="282">"statusCode":200,"duration":8,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
+<tspan x="10" y="298">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="314">[2017-09-19 01:22:37,222][INFO ][node                     ] [Cadaver] version[1.7.6], pid[5271],\</tspan>
+<tspan x="10" y="330"> build[c730b59/2016-11-18T15:21:16Z]</tspan>
+<tspan x="10" y="346">[2017-09-19 01:22:37,224][INFO ][node                     ] [Cadaver] initializing ...</tspan>
+<tspan x="10" y="362">[2017-09-19 01:22:37,328][INFO ][plugins                  ] [Cadaver] loaded [], sites []</tspan>
+<tspan x="10" y="378">[2017-09-19 01:22:37,377][INFO ][env                      ] [Cadaver] using [1] data paths, moun\</tspan>
+<tspan x="10" y="394">ts [[/ (/dev/sda1)]], net usable_space [17.6gb], net total_space [29.4gb], types [ext4]</tspan>
+<tspan x="10" y="410">[2017-09-19 01:22:39,720][INFO ][node                     ] [Cadaver] initialized</tspan>
+<tspan x="10" y="426">[2017-09-19 01:22:39,723][INFO ][node                     ] [Cadaver] starting ...</tspan>
+<tspan x="10" y="442">[2017-09-19 01:22:39,842][INFO ][transport                ] [Cadaver] bound_address {inet[/0.0.0\</tspan>
+<tspan x="10" y="458">.0:9300]}, publish_address {inet[/10.10.20.206:9300]}</tspan>
+<tspan x="10" y="474">[2017-09-19 01:22:39,870][INFO ][discovery                ] [Cadaver] elasticsearch/cu7TQnEYTwus\</tspan>
+<tspan x="10" y="490">-ZozRMHMLg</tspan>
+<tspan x="10" y="506">[2017-09-19 01:22:43,670][INFO ][cluster.service          ] [Cadaver] new_master [Cadaver][cu7TQ\</tspan>
+<tspan x="10" y="522">nEYTwus-ZozRMHMLg][testing-gce-d956bf89-ba1a-4498-a885-e98f9ed3f0de][inet[/10.10.20.206:9300]], \</tspan>
+<tspan x="10" y="538">reason: zen-disco-join (elected_as_master)</tspan>
+<tspan x="10" y="554">[2017-09-19 01:22:43,752][INFO ][http                     ] [Cadaver] bound_address {inet[/0.0.0\</tspan>
+<tspan x="10" y="570">.0:8082]}, publish_address {inet[/10.10.20.206:8082]}</tspan>
+<tspan x="10" y="586">[2017-09-19 01:22:43,752][INFO ][node                     ] [Cadaver] started</tspan>
+<tspan x="10" y="602">[2017-09-19 01:22:43,775][INFO ][gateway                  ] [Cadaver] recovered [0] indices into\</tspan>
+<tspan x="10" y="618"> cluster_state</tspan>
+<tspan x="10" y="634">serverLog - {"type":"serverResponse","time":"2017-09-19T01:22:44.110Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="650">"statusCode":200,"duration":12,"requestContentLength":0,"responseContentLength":3572,"requestHea\</tspan>
+<tspan x="10" y="666">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"","requestHeaderUserAgent"\</tspan>
+<tspan x="10" y="682">:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Ele\</tspan>
+<tspan x="10" y="698">ctron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="714">serverLog - {"type":"serverResponse","time":"2017-09-19T01:22:44.241Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="730">sets.utility2.rollup.js","statusCode":200,"duration":103,"requestContentLength":0,"responseConte\</tspan>
+<tspan x="10" y="746">ntLength":275836,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer"\</tspan>
+<tspan x="10" y="762">:"http://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/\</tspan>
+<tspan x="10" y="778">537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="794">serverLog - {"type":"serverResponse","time":"2017-09-19T01:22:44.459Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="810">sets.swgg.swagger.json","statusCode":200,"duration":23,"requestContentLength":0,"responseContent\</tspan>
+<tspan x="10" y="826">Length":31468,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"h\</tspan>
+<tspan x="10" y="842">ttp://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
+<tspan x="10" y="858">.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="874">elasticsearch-server listening on http-port8082</tspan>
+<tspan x="10" y="890">serverLog - {"type":"serverResponse","time":"2017-09-19T01:22:44.808Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="906">"statusCode":200,"duration":1,"requestContentLength":0,"responseContentLength":11557,"requestHea\</tspan>
+<tspan x="10" y="922">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="938">[2017-09-19 01:22:45,294][INFO ][cluster.metadata         ] [Cadaver] [server_log] creating inde\</tspan>
+<tspan x="10" y="954">x, cause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
+<tspan x="10" y="970">[2017-09-19 01:22:45,957][INFO ][cluster.metadata         ] [Cadaver] [server_log] update_mappin\</tspan>
+<tspan x="10" y="986">g [serverResponse] (dynamic)</tspan>
+<tspan x="10" y="1002">[2017-09-19 01:23:06,407][INFO ][node                     ] [Cadaver] stopping ...</tspan>
+<tspan x="10" y="1018">[2017-09-19 01:23:06,453][INFO ][node                     ] [Cadaver] stopped</tspan>
+<tspan x="10" y="1034">[2017-09-19 01:23:06,453][INFO ][node                     ] [Cadaver] closing ...</tspan>
+<tspan x="10" y="1050">[2017-09-19 01:23:06,458][INFO ][node                     ] [Cadaver] closed</tspan>
+</text>
+</svg>

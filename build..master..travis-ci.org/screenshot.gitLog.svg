@@ -1,0 +1,32 @@
+<svg height="462" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="462" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">2017-07-25 11:52:40 +0800</tspan>
+<tspan x="10" y="42">[npm publish] - npm publish 2017.7.24</tspan>
+<tspan x="10" y="58">- add extra elasticsearch api /__info</tspan>
+<tspan x="10" y="74">- add function local.middlewareBulkPut</tspan>
+<tspan x="10" y="90">- add functional kibana demo</tspan>
+<tspan x="10" y="106">- add info.title and info.description to swagger.json</tspan>
+<tspan x="10" y="122">- add logstash for full elk stack</tspan>
+<tspan x="10" y="138">- add quickstart shell example in README.md</tspan>
+<tspan x="10" y="154">- remove file lib.elasticsearch.accounts._json</tspan>
+<tspan x="10" y="170"></tspan>
+<tspan x="10" y="186">2017-07-16 02:30:22 +0800</tspan>
+<tspan x="10" y="202">[npm publish] - npm publish 2017.6.2</tspan>
+<tspan x="10" y="218">- persist db data at $PWD/tmp/elasticsearch.data.$NODE_ENV</tspan>
+<tspan x="10" y="234"></tspan>
+<tspan x="10" y="250">2017-07-05 19:22:50 +0800</tspan>
+<tspan x="10" y="266">[npm publish] - npm publish 2017.6.1</tspan>
+<tspan x="10" y="282">- persist db data at $PWD/tmp/elasticsearch.data.$NODE_ENV</tspan>
+<tspan x="10" y="298">- update docs</tspan>
+<tspan x="10" y="314"></tspan>
+<tspan x="10" y="330">2017-06-21 20:19:43 +0800</tspan>
+<tspan x="10" y="346">[npm publish] - npm publish 2017.6.1</tspan>
+<tspan x="10" y="362">- add kibana to buildApp</tspan>
+<tspan x="10" y="378">- enable cors in github</tspan>
+<tspan x="10" y="394">- initial working server</tspan>
+<tspan x="10" y="410"></tspan>
+<tspan x="10" y="426">2014-03-26 02:31:50 +0700</tspan>
+<tspan x="10" y="442">add blank README.md</tspan>
+</text>
+</svg>

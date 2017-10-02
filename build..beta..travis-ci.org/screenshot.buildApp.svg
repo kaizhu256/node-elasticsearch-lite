@@ -1,0 +1,87 @@
+<svg height="1342" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1342" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26"></tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2017-08-04T10:00:03.166Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
+<tspan x="10" y="58">-elasticsearch-lite</tspan>
+<tspan x="10" y="74"></tspan>
+<tspan x="10" y="90"></tspan>
+<tspan x="10" y="106">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp\</tspan>
+<tspan x="10" y="122">/build/test-report.json</tspan>
+<tspan x="10" y="138">override assets assets.swgg.swagger.json</tspan>
+<tspan x="10" y="154">&gt; server listening on http-port 50515</tspan>
+<tspan x="10" y="170">starting elasticsearch-server ...</tspan>
+<tspan x="10" y="186">serverLog - {"type":"serverResponse","time":"2017-08-04T10:00:04.148Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="202">"statusCode":200,"duration":5,"requestContentLength":0,"responseContentLength":11616,"requestHea\</tspan>
+<tspan x="10" y="218">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="234">[2017-08-04 10:00:04,425][INFO ][node                     ] [Michael Nowman] version[1.7.6], pid\</tspan>
+<tspan x="10" y="250">[6932], build[c730b59/2016-11-18T15:21:16Z]</tspan>
+<tspan x="10" y="266">[2017-08-04 10:00:04,433][INFO ][node                     ] [Michael Nowman] initializing ...</tspan>
+<tspan x="10" y="282">[2017-08-04 10:00:04,494][INFO ][plugins                  ] [Michael Nowman] loaded [], sites []</tspan>
+<tspan x="10" y="298">[2017-08-04 10:00:04,522][INFO ][env                      ] [Michael Nowman] using [1] data path\</tspan>
+<tspan x="10" y="314">s, mounts [[/ (/dev/sda1)]], net usable_space [17.9gb], net total_space [29.4gb], types [ext4]</tspan>
+<tspan x="10" y="330">[2017-08-04 10:00:07,199][INFO ][node                     ] [Michael Nowman] initialized</tspan>
+<tspan x="10" y="346">[2017-08-04 10:00:07,208][INFO ][node                     ] [Michael Nowman] starting ...</tspan>
+<tspan x="10" y="362">[2017-08-04 10:00:07,370][INFO ][transport                ] [Michael Nowman] bound_address {inet\</tspan>
+<tspan x="10" y="378">[/0.0.0.0:9300]}, publish_address {inet[/10.10.20.188:9300]}</tspan>
+<tspan x="10" y="394">[2017-08-04 10:00:07,425][INFO ][discovery                ] [Michael Nowman] elasticsearch/un1zb\</tspan>
+<tspan x="10" y="410">o-nTviYBEFGplYxzA</tspan>
+<tspan x="10" y="426">[2017-08-04 10:00:11,223][INFO ][cluster.service          ] [Michael Nowman] new_master [Michael\</tspan>
+<tspan x="10" y="442"> Nowman][un1zbo-nTviYBEFGplYxzA][testing-gce-e0e41a22-3e8b-4f6e-bf9d-f49a1c3f8042][inet[/10.10.2\</tspan>
+<tspan x="10" y="458">0.188:9300]], reason: zen-disco-join (elected_as_master)</tspan>
+<tspan x="10" y="474">[2017-08-04 10:00:11,249][INFO ][http                     ] [Michael Nowman] bound_address {inet\</tspan>
+<tspan x="10" y="490">[/0.0.0.0:50516]}, publish_address {inet[/10.10.20.188:50516]}</tspan>
+<tspan x="10" y="506">[2017-08-04 10:00:11,251][INFO ][node                     ] [Michael Nowman] started</tspan>
+<tspan x="10" y="522">[2017-08-04 10:00:11,291][INFO ][gateway                  ] [Michael Nowman] recovered [1] indic\</tspan>
+<tspan x="10" y="538">es into cluster_state</tspan>
+<tspan x="10" y="554">elasticsearch-server listening on http-port50516</tspan>
+<tspan x="10" y="570">serverLog - {"type":"serverResponse","time":"2017-08-04T10:00:11.953Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="586">"statusCode":200,"duration":4,"requestContentLength":0,"responseContentLength":11616,"requestHea\</tspan>
+<tspan x="10" y="602">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="618">&gt; server listening on http-port 42569</tspan>
+<tspan x="10" y="634">serverLog - {"type":"serverResponse","time":"2017-08-04T10:00:13.276Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="650">"statusCode":200,"duration":9,"requestContentLength":0,"responseContentLength":11616,"requestHea\</tspan>
+<tspan x="10" y="666">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="682">serverLog - {"type":"serverResponse","time":"2017-08-04T10:00:13.292Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="698">"statusCode":200,"duration":5,"requestContentLength":0,"responseContentLength":11616,"requestHea\</tspan>
+<tspan x="10" y="714">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="730">[node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
+<tspan x="10" y="746">[2017-08-04 10:00:19,161][INFO ][node                     ] [Michael Nowman] stopping ...</tspan>
+<tspan x="10" y="762">[2017-08-04 10:00:19,259][INFO ][node                     ] [Michael Nowman] stopped</tspan>
+<tspan x="10" y="778">[2017-08-04 10:00:19,259][INFO ][node                     ] [Michael Nowman] closing ...</tspan>
+<tspan x="10" y="794">[2017-08-04 10:00:19,282][INFO ][node                     ] [Michael Nowman] closed</tspan>
+<tspan x="10" y="810"></tspan>
+<tspan x="10" y="826">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp\</tspan>
+<tspan x="10" y="842">/build/test-report.json</tspan>
+<tspan x="10" y="858"></tspan>
+<tspan x="10" y="874">-------------------------------------------------------</tspan>
+<tspan x="10" y="890">| test-report - buildApidoc - node - linux v6.11.2 - 2017-08-04T09:58:55.777Z</tspan>
+<tspan x="10" y="906">|   73739 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="922">-------------------------------------------------------</tspan>
+<tspan x="10" y="938">| test-report - npmTest - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_64) AppleW\</tspan>
+<tspan x="10" y="954">ebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36 - 2017-08-04T\</tspan>
+<tspan x="10" y="970">09:58:37.538Z</tspan>
+<tspan x="10" y="986">|      74 ms            0 failed        2 passed      |</tspan>
+<tspan x="10" y="1002">-------------------------------------------------------</tspan>
+<tspan x="10" y="1018">| test-report - npmTest - node - linux v6.11.2 - 2017-08-04T09:58:26.015Z</tspan>
+<tspan x="10" y="1034">|   17728 ms            0 failed       10 passed      |</tspan>
+<tspan x="10" y="1050">-------------------------------------------------------</tspan>
+<tspan x="10" y="1066">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
+<tspan x="10" y="1082">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36 - 20\</tspan>
+<tspan x="10" y="1098">17-08-04T09:57:16.882Z</tspan>
+<tspan x="10" y="1114">|     132 ms            0 failed        2 passed      |</tspan>
+<tspan x="10" y="1130">-------------------------------------------------------</tspan>
+<tspan x="10" y="1146">| test-report - npmTestPublished - node - linux v6.11.2 - 2017-08-04T09:57:03.815Z</tspan>
+<tspan x="10" y="1162">|   18102 ms            0 failed       10 passed      |</tspan>
+<tspan x="10" y="1178">-------------------------------------------------------</tspan>
+<tspan x="10" y="1194"></tspan>
+<tspan x="10" y="1210">created test-report file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/build/test-rep\</tspan>
+<tspan x="10" y="1226">ort.html</tspan>
+<tspan x="10" y="1242"></tspan>
+<tspan x="10" y="1258"></tspan>
+<tspan x="10" y="1274">buildApp - 0 failed tests</tspan>
+<tspan x="10" y="1290"></tspan>
+<tspan x="10" y="1306"></tspan>
+<tspan x="10" y="1322">[MODE_BUILD=buildApp] - 2017-08-04T10:00:19.647Z - EXIT_CODE - 0</tspan>
+</text>
+</svg>

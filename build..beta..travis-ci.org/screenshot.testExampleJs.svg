@@ -1,0 +1,71 @@
+<svg height="1086" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1086" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26"></tspan>
+<tspan x="10" y="42">&gt; elasticsearch-lite@2017.7.25 postinstall /tmp/app/node_modules/elasticsearch-lite</tspan>
+<tspan x="10" y="58">&gt; [ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall</tspan>
+<tspan x="10" y="74"></tspan>
+<tspan x="10" y="90">/tmp/app</tspan>
+<tspan x="10" y="106">└── elasticsearch-lite@2017.7.25 </tspan>
+<tspan x="10" y="122"></tspan>
+<tspan x="10" y="138">npm WARN enoent ENOENT: no such file or directory, open '/tmp/app/package.json'</tspan>
+<tspan x="10" y="154">npm WARN app No description</tspan>
+<tspan x="10" y="170">npm WARN app No repository field.</tspan>
+<tspan x="10" y="186">npm WARN app No README data</tspan>
+<tspan x="10" y="202">npm WARN app No license field.</tspan>
+<tspan x="10" y="218">server listening on http-port 8081</tspan>
+<tspan x="10" y="234">starting elasticsearch-server ...</tspan>
+<tspan x="10" y="250">serverLog - {"type":"serverResponse","time":"2017-08-04T09:57:38.866Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="266">"statusCode":200,"duration":7,"requestContentLength":0,"responseContentLength":11616,"requestHea\</tspan>
+<tspan x="10" y="282">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="298">[2017-08-04 09:57:39,385][INFO ][node                     ] [Grandmaster] version[1.7.6], pid[56\</tspan>
+<tspan x="10" y="314">10], build[c730b59/2016-11-18T15:21:16Z]</tspan>
+<tspan x="10" y="330">[2017-08-04 09:57:39,402][INFO ][node                     ] [Grandmaster] initializing ...</tspan>
+<tspan x="10" y="346">[2017-08-04 09:57:39,507][INFO ][plugins                  ] [Grandmaster] loaded [], sites []</tspan>
+<tspan x="10" y="362">[2017-08-04 09:57:39,539][INFO ][env                      ] [Grandmaster] using [1] data paths, \</tspan>
+<tspan x="10" y="378">mounts [[/ (/dev/sda1)]], net usable_space [18.1gb], net total_space [29.4gb], types [ext4]</tspan>
+<tspan x="10" y="394">[2017-08-04 09:57:41,895][INFO ][node                     ] [Grandmaster] initialized</tspan>
+<tspan x="10" y="410">[2017-08-04 09:57:41,905][INFO ][node                     ] [Grandmaster] starting ...</tspan>
+<tspan x="10" y="426">[2017-08-04 09:57:42,058][INFO ][transport                ] [Grandmaster] bound_address {inet[/0\</tspan>
+<tspan x="10" y="442">.0.0.0:9300]}, publish_address {inet[/10.10.20.188:9300]}</tspan>
+<tspan x="10" y="458">[2017-08-04 09:57:42,091][INFO ][discovery                ] [Grandmaster] elasticsearch/Ur2O5DSH\</tspan>
+<tspan x="10" y="474">RmSbpsi8E8wipA</tspan>
+<tspan x="10" y="490">[2017-08-04 09:57:45,875][INFO ][cluster.service          ] [Grandmaster] new_master [Grandmaste\</tspan>
+<tspan x="10" y="506">r][Ur2O5DSHRmSbpsi8E8wipA][testing-gce-e0e41a22-3e8b-4f6e-bf9d-f49a1c3f8042][inet[/10.10.20.188:\</tspan>
+<tspan x="10" y="522">9300]], reason: zen-disco-join (elected_as_master)</tspan>
+<tspan x="10" y="538">[2017-08-04 09:57:45,908][INFO ][http                     ] [Grandmaster] bound_address {inet[/0\</tspan>
+<tspan x="10" y="554">.0.0.0:8082]}, publish_address {inet[/10.10.20.188:8082]}</tspan>
+<tspan x="10" y="570">[2017-08-04 09:57:45,925][INFO ][node                     ] [Grandmaster] started</tspan>
+<tspan x="10" y="586">[2017-08-04 09:57:45,952][INFO ][gateway                  ] [Grandmaster] recovered [0] indices \</tspan>
+<tspan x="10" y="602">into cluster_state</tspan>
+<tspan x="10" y="618">elasticsearch-server listening on http-port8082</tspan>
+<tspan x="10" y="634">serverLog - {"type":"serverResponse","time":"2017-08-04T09:57:46.922Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="650">"statusCode":200,"duration":2,"requestContentLength":0,"responseContentLength":11616,"requestHea\</tspan>
+<tspan x="10" y="666">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="682">[2017-08-04 09:57:47,238][INFO ][cluster.metadata         ] [Grandmaster] [server_log] creating \</tspan>
+<tspan x="10" y="698">index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
+<tspan x="10" y="714">[2017-08-04 09:57:47,701][INFO ][cluster.metadata         ] [Grandmaster] [server_log] update_ma\</tspan>
+<tspan x="10" y="730">pping [serverResponse] (dynamic)</tspan>
+<tspan x="10" y="746">serverLog - {"type":"serverResponse","time":"2017-08-04T09:57:50.719Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="762">"statusCode":200,"duration":12,"requestContentLength":0,"responseContentLength":3572,"requestHea\</tspan>
+<tspan x="10" y="778">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"","requestHeaderUserAgent"\</tspan>
+<tspan x="10" y="794">:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Ele\</tspan>
+<tspan x="10" y="810">ctron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="826">[2017-08-04 09:57:50,778][INFO ][cluster.metadata         ] [Grandmaster] [server_log] update_ma\</tspan>
+<tspan x="10" y="842">pping [serverResponse] (dynamic)</tspan>
+<tspan x="10" y="858">serverLog - {"type":"serverResponse","time":"2017-08-04T09:57:50.854Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="874">sets.utility2.rollup.js","statusCode":200,"duration":101,"requestContentLength":0,"responseConte\</tspan>
+<tspan x="10" y="890">ntLength":268112,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer"\</tspan>
+<tspan x="10" y="906">:"http://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/\</tspan>
+<tspan x="10" y="922">537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="938">serverLog - {"type":"serverResponse","time":"2017-08-04T09:57:51.081Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="954">sets.swgg.swagger.json","statusCode":200,"duration":26,"requestContentLength":0,"responseContent\</tspan>
+<tspan x="10" y="970">Length":31468,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"h\</tspan>
+<tspan x="10" y="986">ttp://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
+<tspan x="10" y="1002">.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="1018">[2017-08-04 09:58:08,504][INFO ][node                     ] [Grandmaster] stopping ...</tspan>
+<tspan x="10" y="1034">[2017-08-04 09:58:08,607][INFO ][node                     ] [Grandmaster] stopped</tspan>
+<tspan x="10" y="1050">[2017-08-04 09:58:08,608][INFO ][node                     ] [Grandmaster] closing ...</tspan>
+<tspan x="10" y="1066">[2017-08-04 09:58:08,612][INFO ][node                     ] [Grandmaster] closed</tspan>
+</text>
+</svg>

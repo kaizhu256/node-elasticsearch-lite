@@ -1,0 +1,82 @@
+<svg height="1262" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1262" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26"></tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2017-08-04T09:58:55.524Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="58">ode-elasticsearch-lite</tspan>
+<tspan x="10" y="74"></tspan>
+<tspan x="10" y="90"></tspan>
+<tspan x="10" y="106">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-elasticsearch-lite/\</tspan>
+<tspan x="10" y="122">tmp/build/test-report.json</tspan>
+<tspan x="10" y="138">override assets assets.swgg.swagger.json</tspan>
+<tspan x="10" y="154">&gt; server listening on http-port 63541</tspan>
+<tspan x="10" y="170">starting elasticsearch-server ...</tspan>
+<tspan x="10" y="186">serverLog - {"type":"serverResponse","time":"2017-08-04T09:58:56.809Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="202">"statusCode":200,"duration":8,"requestContentLength":0,"responseContentLength":11616,"requestHea\</tspan>
+<tspan x="10" y="218">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="234">[2017-08-04 09:58:57,215][INFO ][node                     ] [Nova-Prime] version[1.7.6], pid[618\</tspan>
+<tspan x="10" y="250">8], build[c730b59/2016-11-18T15:21:16Z]</tspan>
+<tspan x="10" y="266">[2017-08-04 09:58:57,216][INFO ][node                     ] [Nova-Prime] initializing ...</tspan>
+<tspan x="10" y="282">[2017-08-04 09:58:57,313][INFO ][plugins                  ] [Nova-Prime] loaded [], sites []</tspan>
+<tspan x="10" y="298">[2017-08-04 09:58:57,353][INFO ][env                      ] [Nova-Prime] using [1] data paths, m\</tspan>
+<tspan x="10" y="314">ounts [[/ (/dev/sda1)]], net usable_space [18.1gb], net total_space [29.4gb], types [ext4]</tspan>
+<tspan x="10" y="330">[2017-08-04 09:59:00,104][INFO ][node                     ] [Nova-Prime] initialized</tspan>
+<tspan x="10" y="346">[2017-08-04 09:59:00,105][INFO ][node                     ] [Nova-Prime] starting ...</tspan>
+<tspan x="10" y="362">[2017-08-04 09:59:00,276][INFO ][transport                ] [Nova-Prime] bound_address {inet[/0.\</tspan>
+<tspan x="10" y="378">0.0.0:9300]}, publish_address {inet[/10.10.20.188:9300]}</tspan>
+<tspan x="10" y="394">[2017-08-04 09:59:00,321][INFO ][discovery                ] [Nova-Prime] elasticsearch/hzp6qw_iQ\</tspan>
+<tspan x="10" y="410">HGJa_y9t5dBXg</tspan>
+<tspan x="10" y="426">[2017-08-04 09:59:04,128][INFO ][cluster.service          ] [Nova-Prime] new_master [Nova-Prime]\</tspan>
+<tspan x="10" y="442">[hzp6qw_iQHGJa_y9t5dBXg][testing-gce-e0e41a22-3e8b-4f6e-bf9d-f49a1c3f8042][inet[/10.10.20.188:93\</tspan>
+<tspan x="10" y="458">00]], reason: zen-disco-join (elected_as_master)</tspan>
+<tspan x="10" y="474">[2017-08-04 09:59:04,182][INFO ][http                     ] [Nova-Prime] bound_address {inet[/0.\</tspan>
+<tspan x="10" y="490">0.0.0:63542]}, publish_address {inet[/10.10.20.188:63542]}</tspan>
+<tspan x="10" y="506">[2017-08-04 09:59:04,183][INFO ][node                     ] [Nova-Prime] started</tspan>
+<tspan x="10" y="522">[2017-08-04 09:59:04,199][INFO ][gateway                  ] [Nova-Prime] recovered [1] indices i\</tspan>
+<tspan x="10" y="538">nto cluster_state</tspan>
+<tspan x="10" y="554">elasticsearch-server listening on http-port63542</tspan>
+<tspan x="10" y="570">serverLog - {"type":"serverResponse","time":"2017-08-04T09:59:04.363Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="586">"statusCode":200,"duration":7,"requestContentLength":0,"responseContentLength":11616,"requestHea\</tspan>
+<tspan x="10" y="602">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="618">created apidoc file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/build/apidoc.html</tspan>
+<tspan x="10" y="634"></tspan>
+<tspan x="10" y="650">[node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
+<tspan x="10" y="666">[2017-08-04 09:59:05,668][INFO ][node                     ] [Nova-Prime] stopping ...</tspan>
+<tspan x="10" y="682">[2017-08-04 09:59:05,802][INFO ][node                     ] [Nova-Prime] stopped</tspan>
+<tspan x="10" y="698">[2017-08-04 09:59:05,802][INFO ][node                     ] [Nova-Prime] closing ...</tspan>
+<tspan x="10" y="714">[2017-08-04 09:59:05,826][INFO ][node                     ] [Nova-Prime] closed</tspan>
+<tspan x="10" y="730"></tspan>
+<tspan x="10" y="746">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-elasticsearch-lite/\</tspan>
+<tspan x="10" y="762">tmp/build/test-report.json</tspan>
+<tspan x="10" y="778"></tspan>
+<tspan x="10" y="794">-------------------------------------------------------</tspan>
+<tspan x="10" y="810">| test-report - buildApidoc - node - linux v6.11.2 - 2017-08-04T09:58:55.777Z</tspan>
+<tspan x="10" y="826">|     237 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="842">-------------------------------------------------------</tspan>
+<tspan x="10" y="858">| test-report - npmTest - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_64) AppleW\</tspan>
+<tspan x="10" y="874">ebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36 - 2017-08-04T\</tspan>
+<tspan x="10" y="890">09:58:37.538Z</tspan>
+<tspan x="10" y="906">|      74 ms            0 failed        2 passed      |</tspan>
+<tspan x="10" y="922">-------------------------------------------------------</tspan>
+<tspan x="10" y="938">| test-report - npmTest - node - linux v6.11.2 - 2017-08-04T09:58:26.015Z</tspan>
+<tspan x="10" y="954">|   17728 ms            0 failed       10 passed      |</tspan>
+<tspan x="10" y="970">-------------------------------------------------------</tspan>
+<tspan x="10" y="986">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
+<tspan x="10" y="1002">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36 - 20\</tspan>
+<tspan x="10" y="1018">17-08-04T09:57:16.882Z</tspan>
+<tspan x="10" y="1034">|     132 ms            0 failed        2 passed      |</tspan>
+<tspan x="10" y="1050">-------------------------------------------------------</tspan>
+<tspan x="10" y="1066">| test-report - npmTestPublished - node - linux v6.11.2 - 2017-08-04T09:57:03.815Z</tspan>
+<tspan x="10" y="1082">|   18102 ms            0 failed       10 passed      |</tspan>
+<tspan x="10" y="1098">-------------------------------------------------------</tspan>
+<tspan x="10" y="1114"></tspan>
+<tspan x="10" y="1130">created test-report file /home/travis/build/kaizhu256/node-elasticsearch-lite/tmp/build/test-rep\</tspan>
+<tspan x="10" y="1146">ort.html</tspan>
+<tspan x="10" y="1162"></tspan>
+<tspan x="10" y="1178"></tspan>
+<tspan x="10" y="1194">buildApidoc - 0 failed tests</tspan>
+<tspan x="10" y="1210"></tspan>
+<tspan x="10" y="1226"></tspan>
+<tspan x="10" y="1242">[MODE_BUILD=buildApidoc] - 2017-08-04T09:59:06.211Z - EXIT_CODE - 0</tspan>
+</text>
+</svg>
