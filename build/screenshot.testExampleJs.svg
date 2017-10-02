@@ -16,55 +16,55 @@
 <tspan x="10" y="218">npm WARN app No license field.</tspan>
 <tspan x="10" y="234">server listening on http-port 8081</tspan>
 <tspan x="10" y="250">starting elasticsearch-server ...</tspan>
-<tspan x="10" y="266">serverLog - {"type":"serverResponse","time":"2017-10-02T09:48:29.526Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="282">"statusCode":200,"duration":8,"requestContentLength":0,"responseContentLength":12231,"requestHea\</tspan>
+<tspan x="10" y="266">serverLog - {"type":"serverResponse","time":"2017-10-02T09:59:40.393Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="282">"statusCode":200,"duration":7,"requestContentLength":0,"responseContentLength":12231,"requestHea\</tspan>
 <tspan x="10" y="298">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="314">[2017-10-02 09:48:30,055][INFO ][node                     ] [Karma] version[1.7.6], pid[5262], b\</tspan>
+<tspan x="10" y="314">[2017-10-02 09:59:40,891][INFO ][node                     ] [Dorma] version[1.7.6], pid[5294], b\</tspan>
 <tspan x="10" y="330">uild[c730b59/2016-11-18T15:21:16Z]</tspan>
-<tspan x="10" y="346">[2017-10-02 09:48:30,056][INFO ][node                     ] [Karma] initializing ...</tspan>
-<tspan x="10" y="362">[2017-10-02 09:48:30,165][INFO ][plugins                  ] [Karma] loaded [], sites []</tspan>
-<tspan x="10" y="378">[2017-10-02 09:48:30,214][INFO ][env                      ] [Karma] using [1] data paths, mounts\</tspan>
+<tspan x="10" y="346">[2017-10-02 09:59:40,893][INFO ][node                     ] [Dorma] initializing ...</tspan>
+<tspan x="10" y="362">[2017-10-02 09:59:40,992][INFO ][plugins                  ] [Dorma] loaded [], sites []</tspan>
+<tspan x="10" y="378">[2017-10-02 09:59:41,022][INFO ][env                      ] [Dorma] using [1] data paths, mounts\</tspan>
 <tspan x="10" y="394"> [[/ (/dev/sda1)]], net usable_space [17.5gb], net total_space [29.4gb], types [ext4]</tspan>
-<tspan x="10" y="410">[2017-10-02 09:48:32,679][INFO ][node                     ] [Karma] initialized</tspan>
-<tspan x="10" y="426">[2017-10-02 09:48:32,679][INFO ][node                     ] [Karma] starting ...</tspan>
-<tspan x="10" y="442">[2017-10-02 09:48:32,881][INFO ][transport                ] [Karma] bound_address {inet[/0.0.0.0\</tspan>
-<tspan x="10" y="458">:9300]}, publish_address {inet[/10.10.21.98:9300]}</tspan>
-<tspan x="10" y="474">[2017-10-02 09:48:32,941][INFO ][discovery                ] [Karma] elasticsearch/xj9mNiEaRWG9AQ\</tspan>
-<tspan x="10" y="490">ADjjCOnQ</tspan>
-<tspan x="10" y="506">serverLog - {"type":"serverResponse","time":"2017-10-02T09:48:36.086Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="522">"statusCode":200,"duration":12,"requestContentLength":0,"responseContentLength":3700,"requestHea\</tspan>
+<tspan x="10" y="410">[2017-10-02 09:59:43,400][INFO ][node                     ] [Dorma] initialized</tspan>
+<tspan x="10" y="426">[2017-10-02 09:59:43,401][INFO ][node                     ] [Dorma] starting ...</tspan>
+<tspan x="10" y="442">[2017-10-02 09:59:43,565][INFO ][transport                ] [Dorma] bound_address {inet[/0.0.0.0\</tspan>
+<tspan x="10" y="458">:9300]}, publish_address {inet[/10.10.21.239:9300]}</tspan>
+<tspan x="10" y="474">[2017-10-02 09:59:43,632][INFO ][discovery                ] [Dorma] elasticsearch/j-v-6XkbSbWLfG\</tspan>
+<tspan x="10" y="490">_qeYwPuA</tspan>
+<tspan x="10" y="506">serverLog - {"type":"serverResponse","time":"2017-10-02T09:59:46.640Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="522">"statusCode":200,"duration":11,"requestContentLength":0,"responseContentLength":3700,"requestHea\</tspan>
 <tspan x="10" y="538">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"","requestHeaderUserAgent"\</tspan>
 <tspan x="10" y="554">:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Ele\</tspan>
 <tspan x="10" y="570">ctron/1.6.11 Safari/537.36"}</tspan>
-<tspan x="10" y="586">serverLog - {"type":"serverResponse","time":"2017-10-02T09:48:36.232Z","method":"GET","url":"/as\</tspan>
-<tspan x="10" y="602">sets.utility2.rollup.js","statusCode":200,"duration":117,"requestContentLength":0,"responseConte\</tspan>
+<tspan x="10" y="586">serverLog - {"type":"serverResponse","time":"2017-10-02T09:59:46.787Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="602">sets.utility2.rollup.js","statusCode":200,"duration":141,"requestContentLength":0,"responseConte\</tspan>
 <tspan x="10" y="618">ntLength":275937,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer"\</tspan>
 <tspan x="10" y="634">:"http://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/\</tspan>
 <tspan x="10" y="650">537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
-<tspan x="10" y="666">serverLog - {"type":"serverResponse","time":"2017-10-02T09:48:36.501Z","method":"GET","url":"/as\</tspan>
-<tspan x="10" y="682">sets.swgg.swagger.json","statusCode":200,"duration":24,"requestContentLength":0,"responseContent\</tspan>
+<tspan x="10" y="666">serverLog - {"type":"serverResponse","time":"2017-10-02T09:59:47.076Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="682">sets.swgg.swagger.json","statusCode":200,"duration":34,"requestContentLength":0,"responseContent\</tspan>
 <tspan x="10" y="698">Length":31474,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"h\</tspan>
 <tspan x="10" y="714">ttp://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
 <tspan x="10" y="730">.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
-<tspan x="10" y="746">[2017-10-02 09:48:36,748][INFO ][cluster.service          ] [Karma] new_master [Karma][xj9mNiEaR\</tspan>
-<tspan x="10" y="762">WG9AQADjjCOnQ][testing-gce-ecea9b61-d742-4497-8883-0b69f31e67fd][inet[/10.10.21.98:9300]], reaso\</tspan>
-<tspan x="10" y="778">n: zen-disco-join (elected_as_master)</tspan>
-<tspan x="10" y="794">[2017-10-02 09:48:36,878][INFO ][gateway                  ] [Karma] recovered [0] indices into c\</tspan>
+<tspan x="10" y="746">[2017-10-02 09:59:47,424][INFO ][cluster.service          ] [Dorma] new_master [Dorma][j-v-6XkbS\</tspan>
+<tspan x="10" y="762">bWLfG_qeYwPuA][testing-gce-392708c9-5ff3-4118-abbf-d68f5c7bf7e8][inet[/10.10.21.239:9300]], reas\</tspan>
+<tspan x="10" y="778">on: zen-disco-join (elected_as_master)</tspan>
+<tspan x="10" y="794">[2017-10-02 09:59:47,512][INFO ][gateway                  ] [Dorma] recovered [0] indices into c\</tspan>
 <tspan x="10" y="810">luster_state</tspan>
-<tspan x="10" y="826">[2017-10-02 09:48:36,887][INFO ][http                     ] [Karma] bound_address {inet[/0.0.0.0\</tspan>
-<tspan x="10" y="842">:8082]}, publish_address {inet[/10.10.21.98:8082]}</tspan>
-<tspan x="10" y="858">[2017-10-02 09:48:36,887][INFO ][node                     ] [Karma] started</tspan>
+<tspan x="10" y="826">[2017-10-02 09:59:47,514][INFO ][http                     ] [Dorma] bound_address {inet[/0.0.0.0\</tspan>
+<tspan x="10" y="842">:8082]}, publish_address {inet[/10.10.21.239:8082]}</tspan>
+<tspan x="10" y="858">[2017-10-02 09:59:47,515][INFO ][node                     ] [Dorma] started</tspan>
 <tspan x="10" y="874">elasticsearch-server listening on http-port8082</tspan>
-<tspan x="10" y="890">serverLog - {"type":"serverResponse","time":"2017-10-02T09:48:37.660Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="906">"statusCode":200,"duration":5,"requestContentLength":0,"responseContentLength":12231,"requestHea\</tspan>
+<tspan x="10" y="890">serverLog - {"type":"serverResponse","time":"2017-10-02T09:59:48.520Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="906">"statusCode":200,"duration":1,"requestContentLength":0,"responseContentLength":12231,"requestHea\</tspan>
 <tspan x="10" y="922">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="938">[2017-10-02 09:48:38,168][INFO ][cluster.metadata         ] [Karma] [server_log] creating index,\</tspan>
+<tspan x="10" y="938">[2017-10-02 09:59:48,947][INFO ][cluster.metadata         ] [Dorma] [server_log] creating index,\</tspan>
 <tspan x="10" y="954"> cause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
-<tspan x="10" y="970">[2017-10-02 09:48:38,809][INFO ][cluster.metadata         ] [Karma] [server_log] update_mapping \</tspan>
+<tspan x="10" y="970">[2017-10-02 09:59:49,667][INFO ][cluster.metadata         ] [Dorma] [server_log] update_mapping \</tspan>
 <tspan x="10" y="986">[serverResponse] (dynamic)</tspan>
-<tspan x="10" y="1002">[2017-10-02 09:48:59,178][INFO ][node                     ] [Karma] stopping ...</tspan>
-<tspan x="10" y="1018">[2017-10-02 09:48:59,220][INFO ][node                     ] [Karma] stopped</tspan>
-<tspan x="10" y="1034">[2017-10-02 09:48:59,221][INFO ][node                     ] [Karma] closing ...</tspan>
-<tspan x="10" y="1050">[2017-10-02 09:48:59,227][INFO ][node                     ] [Karma] closed</tspan>
+<tspan x="10" y="1002">[2017-10-02 10:00:10,112][INFO ][node                     ] [Dorma] stopping ...</tspan>
+<tspan x="10" y="1018">[2017-10-02 10:00:10,180][INFO ][node                     ] [Dorma] stopped</tspan>
+<tspan x="10" y="1034">[2017-10-02 10:00:10,180][INFO ][node                     ] [Dorma] closing ...</tspan>
+<tspan x="10" y="1050">[2017-10-02 10:00:10,190][INFO ][node                     ] [Dorma] closed</tspan>
 </text>
 </svg>
