@@ -1,9 +1,18 @@
 # elasticsearch-lite
-this zero-dependency package will download and install elasticsearch-v1.7.6, kibana-v3.1.3 and logstash-v2.4.1 from https://www.elastic.co/downloads
+this zero-dependency package will download and install elasticsearch (v1.7.6), kibana (v3.1.3) and logstash (v2.4.1) from https://www.elastic.co/downloads
+
+# live demo
+- [https://h1-elasticsearch-beta.herokuapp.com/kibana/index.html#/dashboard/file/logstash.json](https://h1-elasticsearch-beta.herokuapp.com/kibana/index.html#/dashboard/file/logstash.json)
 
 [![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252Fkibana%252Findex.html.png)](https://h1-elasticsearch-beta.herokuapp.com/kibana/index.html#/dashboard/file/logstash.json)
 
-[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-elasticsearch-lite.svg)](https://travis-ci.org/kaizhu256/node-elasticsearch-lite) [![coverage](https://kaizhu256.github.io/node-elasticsearch-lite/build/coverage.badge.svg)](https://kaizhu256.github.io/node-elasticsearch-lite/build/coverage.html/index.html)
+- [http://h1-elasticsearch-beta.herokuapp.com/](http://h1-elasticsearch-beta.herokuapp.com/)
+
+[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252F.png)](http://h1-elasticsearch-beta.herokuapp.com/)
+
+
+
+[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-elasticsearch-lite.svg)](https://travis-ci.org/kaizhu256/node-elasticsearch-lite) [![coverage](https://kaizhu256.github.io/node-elasticsearch-lite/build/coverage.badge.svg)](https://kaizhu256.github.io/node-elasticsearch-lite/build/coverage.html/index.html) [![snyk.io vulnerabilities](https://snyk.io/test/github/kaizhu256/node-elasticsearch-lite/badge.svg)](https://snyk.io/test/github/kaizhu256/node-elasticsearch-lite)
 
 [![NPM](https://nodei.co/npm/elasticsearch-lite.png?downloads=true)](https://www.npmjs.com/package/elasticsearch-lite)
 
@@ -25,7 +34,6 @@ this zero-dependency package will download and install elasticsearch-v1.7.6, kib
 
 # table of contents
 1. [cdn download](#cdn-download)
-1. [live demo](#live-demo)
 1. [documentation](#documentation)
 1. [quickstart shell example](#quickstart-shell-example)
 1. [quickstart example.js](#quickstart-examplejs)
@@ -42,19 +50,11 @@ this zero-dependency package will download and install elasticsearch-v1.7.6, kib
 
 
 
-# live demo
-- [https://h1-elasticsearch-beta.herokuapp.com/kibana/index.html#/dashboard/file/logstash.json](https://h1-elasticsearch-beta.herokuapp.com/kibana/index.html#/dashboard/file/logstash.json)
-
-[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252Fkibana%252Findex.html.png)](https://h1-elasticsearch-beta.herokuapp.com/kibana/index.html#/dashboard/file/logstash.json)
-
-- [http://h1-elasticsearch-beta.herokuapp.com/](http://h1-elasticsearch-beta.herokuapp.com/)
-
-[![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.deployHeroku.browser.%252F.png)](http://h1-elasticsearch-beta.herokuapp.com/)
-
-
-
 # documentation
-#### apidoc
+#### cli help
+![screenshot](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.npmPackageCliHelp.svg)
+
+#### api doc
 - [https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/apidoc.html](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/apidoc.html)
 
 [![apidoc](https://kaizhu256.github.io/node-elasticsearch-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-elasticsearch-lite/build..beta..travis-ci.org/apidoc.html)
@@ -64,9 +64,9 @@ this zero-dependency package will download and install elasticsearch-v1.7.6, kib
 - revamp _bulk api to retry on errors
 - none
 
-#### changelog for v2017.7.25
-- npm publish 2017.7.25
-- use heroku for online demo instead of github
+#### changelog for v2017.10.1
+- npm publish 2017.10.1
+- add cli-help section in README.md
 - none
 
 #### this package requires
@@ -205,8 +205,7 @@ instruction
 
 
 
-    // init-after
-    // run browser js-env code - init-after
+    // run browser js-env code - init-test
     /* istanbul ignore next */
     case 'browser':
         local.testRunBrowser = function (event) {
@@ -294,15 +293,17 @@ instruction
 
 
 
-    // run node js-env code - init-after
+    // run node js-env code - init-test
     /* istanbul ignore next */
     case 'node':
         // init exports
         module.exports = local;
-        // require modules
-        local.fs = require('fs');
-        local.http = require('http');
-        local.url = require('url');
+        // require builtins
+        Object.keys(process.binding('natives')).forEach(function (key) {
+            if (!local[key] && !(/\/|^_|^sys$/).test(key)) {
+                local[key] = require(key);
+            }
+        });
         // init assets
         local.assetsDict = local.assetsDict || {};
         [
@@ -331,7 +332,7 @@ instruction
                     return 'the greatest app in the world!';
                 case 'npm_package_name':
                     return 'elasticsearch-lite';
-                case 'npm_package_nameAlias':
+                case 'npm_package_nameLib':
                     return 'elasticsearch';
                 case 'npm_package_version':
                     return '0.0.1';
@@ -339,8 +340,8 @@ instruction
                     return match0;
                 }
             });
-        // run the cli
-        if (local.global.utility2_rollup || module !== require.main) {
+        // init cli
+        if (module !== require.main || local.global.utility2_rollup) {
             break;
         }
         local.assetsDict['/assets.example.js'] =
@@ -408,7 +409,7 @@ instruction
     "bin": {
         "elasticsearch": "lib.elasticsearch.js"
     },
-    "description": "this zero-dependency package will download and install elasticsearch-v1.7.6, kibana-v3.1.3 and logstash-v2.4.1 from https://www.elastic.co/downloads",
+    "description": "this zero-dependency package will download and install elasticsearch (v1.7.6), kibana (v3.1.3) and logstash (v2.4.1) from https://www.elastic.co/downloads",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
@@ -421,14 +422,13 @@ instruction
         "elasticsearch",
         "elk",
         "kibana",
-        "logstash",
-        "search"
+        "logstash"
     ],
     "license": "MIT",
     "main": "lib.elasticsearch.js",
     "name": "elasticsearch-lite",
-    "nameAlias": "elasticsearch",
     "nameAliasPublish": "elk-lite kibana-lite logstash-lite",
+    "nameLib": "elasticsearch",
     "nameOriginal": "elasticsearch-lite",
     "os": [
         "darwin",
@@ -446,7 +446,7 @@ instruction
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
-    "version": "2017.7.25"
+    "version": "2017.10.1"
 }
 ```
 
@@ -469,7 +469,7 @@ shBuildCiAfter() {(set -e
     shDeployGithub
     shDeployHeroku
     # screenshot
-    MODE_BUILD=deployHeroku shBrowserTest "https://h1-elasticsearch-beta.herokuapp.com\
+    MODE_BUILD=deployHeroku shBrowserTest "https://h1-elasticsearch-alpha.herokuapp.com\
 /kibana/index.html#/dashboard/file/logstash.json" screenshot
     (
     export PORT=9200
