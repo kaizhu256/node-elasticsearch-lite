@@ -61,6 +61,7 @@ this zero-dependency package will download and install elasticsearch (v1.7.6), k
 
 #### todo
 - npm publish 2017.10.2
+- add kibana reload-notification for heroku server startup
 - improve test-coverage
 - fix swagger validation
 - revamp _bulk api to retry on errors

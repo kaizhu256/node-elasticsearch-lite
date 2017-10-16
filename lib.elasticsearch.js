@@ -218,7 +218,7 @@
                 local.assetsDict['/assets.swgg.html'];
             local.assetsDict['/assets.swgg.swagger.json'] =
                 local.fs.readFileSync(__dirname + '/assets.swgg.swagger.json');
-            local.apiDictUpdate(require('./assets.swgg.swagger.json'));
+            local.apiUpdate(require('./assets.swgg.swagger.json'));
             // init assets - kibana
             local.onReadyBefore.counter += 1;
             local.child_process.exec('find kibana', {
