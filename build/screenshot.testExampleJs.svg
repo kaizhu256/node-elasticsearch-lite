@@ -6,8 +6,8 @@
 <tspan x="10" y="58">&gt; [ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall</tspan>
 <tspan x="10" y="74"></tspan>
 <tspan x="10" y="90">/tmp/app</tspan>
-<tspan x="10" y="106">└── elasticsearch-lite@2017.10.2  (git://github.com/kaizhu256/node-elasticsearch-lite.git#84bcf3\</tspan>
-<tspan x="10" y="122">f01cc3633e5e656d41895c3836e80f4eaf)</tspan>
+<tspan x="10" y="106">└── elasticsearch-lite@2017.10.2  (git://github.com/kaizhu256/node-elasticsearch-lite.git#4c159d\</tspan>
+<tspan x="10" y="122">14c59827c18557781104691b0ea0fb52fc)</tspan>
 <tspan x="10" y="138"></tspan>
 <tspan x="10" y="154">npm WARN enoent ENOENT: no such file or directory, open '/tmp/app/package.json'</tspan>
 <tspan x="10" y="170">npm WARN app No description</tspan>
@@ -16,55 +16,55 @@
 <tspan x="10" y="218">npm WARN app No license field.</tspan>
 <tspan x="10" y="234">server listening on http-port 8081</tspan>
 <tspan x="10" y="250">starting elasticsearch-server ...</tspan>
-<tspan x="10" y="266">serverLog - {"type":"serverResponse","time":"2017-10-02T17:03:30.893Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="282">"statusCode":200,"duration":8,"requestContentLength":0,"responseContentLength":12231,"requestHea\</tspan>
-<tspan x="10" y="298">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="314">[2017-10-02 17:03:31,458][INFO ][node                     ] [James Rhodes] version[1.7.6], pid[5\</tspan>
-<tspan x="10" y="330">184], build[c730b59/2016-11-18T15:21:16Z]</tspan>
-<tspan x="10" y="346">[2017-10-02 17:03:31,464][INFO ][node                     ] [James Rhodes] initializing ...</tspan>
-<tspan x="10" y="362">[2017-10-02 17:03:31,552][INFO ][plugins                  ] [James Rhodes] loaded [], sites []</tspan>
-<tspan x="10" y="378">[2017-10-02 17:03:31,583][INFO ][env                      ] [James Rhodes] using [1] data paths,\</tspan>
-<tspan x="10" y="394"> mounts [[/ (/dev/sda1)]], net usable_space [17.5gb], net total_space [29.4gb], types [ext4]</tspan>
-<tspan x="10" y="410">[2017-10-02 17:03:33,986][INFO ][node                     ] [James Rhodes] initialized</tspan>
-<tspan x="10" y="426">[2017-10-02 17:03:33,987][INFO ][node                     ] [James Rhodes] starting ...</tspan>
-<tspan x="10" y="442">[2017-10-02 17:03:34,187][INFO ][transport                ] [James Rhodes] bound_address {inet[/\</tspan>
-<tspan x="10" y="458">0.0.0.0:9300]}, publish_address {inet[/10.10.20.32:9300]}</tspan>
-<tspan x="10" y="474">[2017-10-02 17:03:34,236][INFO ][discovery                ] [James Rhodes] elasticsearch/zb5V97l\</tspan>
-<tspan x="10" y="490">CQ8a1L3lUEsQ1cQ</tspan>
-<tspan x="10" y="506">serverLog - {"type":"serverResponse","time":"2017-10-02T17:03:37.930Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="522">"statusCode":200,"duration":15,"requestContentLength":0,"responseContentLength":3700,"requestHea\</tspan>
+<tspan x="10" y="266">serverLog - {"type":"serverResponse","time":"2017-10-16T22:12:39.002Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="282">"statusCode":200,"duration":10,"requestContentLength":0,"responseContentLength":13518,"requestHe\</tspan>
+<tspan x="10" y="298">aderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
+<tspan x="10" y="314">[2017-10-16 22:12:39,619][INFO ][node                     ] [Ape] version[1.7.6], pid[5349], bui\</tspan>
+<tspan x="10" y="330">ld[c730b59/2016-11-18T15:21:16Z]</tspan>
+<tspan x="10" y="346">[2017-10-16 22:12:39,633][INFO ][node                     ] [Ape] initializing ...</tspan>
+<tspan x="10" y="362">[2017-10-16 22:12:39,729][INFO ][plugins                  ] [Ape] loaded [], sites []</tspan>
+<tspan x="10" y="378">[2017-10-16 22:12:39,769][INFO ][env                      ] [Ape] using [1] data paths, mounts [\</tspan>
+<tspan x="10" y="394">[/ (/dev/sda1)]], net usable_space [17.5gb], net total_space [29.4gb], types [ext4]</tspan>
+<tspan x="10" y="410">[2017-10-16 22:12:42,704][INFO ][node                     ] [Ape] initialized</tspan>
+<tspan x="10" y="426">[2017-10-16 22:12:42,713][INFO ][node                     ] [Ape] starting ...</tspan>
+<tspan x="10" y="442">[2017-10-16 22:12:42,870][INFO ][transport                ] [Ape] bound_address {inet[/0.0.0.0:9\</tspan>
+<tspan x="10" y="458">300]}, publish_address {inet[/10.20.0.229:9300]}</tspan>
+<tspan x="10" y="474">[2017-10-16 22:12:42,891][INFO ][discovery                ] [Ape] elasticsearch/V--eJ1pdTcWXnYpY\</tspan>
+<tspan x="10" y="490">cXAovA</tspan>
+<tspan x="10" y="506">serverLog - {"type":"serverResponse","time":"2017-10-16T22:12:45.669Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="522">"statusCode":200,"duration":18,"requestContentLength":0,"responseContentLength":4054,"requestHea\</tspan>
 <tspan x="10" y="538">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"","requestHeaderUserAgent"\</tspan>
 <tspan x="10" y="554">:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Ele\</tspan>
-<tspan x="10" y="570">ctron/1.6.11 Safari/537.36"}</tspan>
-<tspan x="10" y="586">[2017-10-02 17:03:38,030][INFO ][cluster.service          ] [James Rhodes] new_master [James Rho\</tspan>
-<tspan x="10" y="602">des][zb5V97lCQ8a1L3lUEsQ1cQ][testing-gce-8564d14f-6573-42c2-bd32-af781b20580f][inet[/10.10.20.32\</tspan>
-<tspan x="10" y="618">:9300]], reason: zen-disco-join (elected_as_master)</tspan>
-<tspan x="10" y="634">[2017-10-02 17:03:38,136][INFO ][gateway                  ] [James Rhodes] recovered [0] indices\</tspan>
-<tspan x="10" y="650"> into cluster_state</tspan>
-<tspan x="10" y="666">[2017-10-02 17:03:38,136][INFO ][http                     ] [James Rhodes] bound_address {inet[/\</tspan>
-<tspan x="10" y="682">0.0.0.0:8082]}, publish_address {inet[/10.10.20.32:8082]}</tspan>
-<tspan x="10" y="698">[2017-10-02 17:03:38,137][INFO ][node                     ] [James Rhodes] started</tspan>
-<tspan x="10" y="714">serverLog - {"type":"serverResponse","time":"2017-10-02T17:03:38.129Z","method":"GET","url":"/as\</tspan>
-<tspan x="10" y="730">sets.utility2.rollup.js","statusCode":200,"duration":117,"requestContentLength":0,"responseConte\</tspan>
-<tspan x="10" y="746">ntLength":275937,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer"\</tspan>
-<tspan x="10" y="762">:"http://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/\</tspan>
-<tspan x="10" y="778">537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
-<tspan x="10" y="794">serverLog - {"type":"serverResponse","time":"2017-10-02T17:03:38.394Z","method":"GET","url":"/as\</tspan>
-<tspan x="10" y="810">sets.swgg.swagger.json","statusCode":200,"duration":22,"requestContentLength":0,"responseContent\</tspan>
-<tspan x="10" y="826">Length":31474,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"h\</tspan>
-<tspan x="10" y="842">ttp://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
-<tspan x="10" y="858">.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.11 Safari/537.36"}</tspan>
+<tspan x="10" y="570">ctron/1.6.14 Safari/537.36"}</tspan>
+<tspan x="10" y="586">serverLog - {"type":"serverResponse","time":"2017-10-16T22:12:45.836Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="602">sets.utility2.rollup.js","statusCode":200,"duration":148,"requestContentLength":0,"responseConte\</tspan>
+<tspan x="10" y="618">ntLength":278240,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer"\</tspan>
+<tspan x="10" y="634">:"http://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/\</tspan>
+<tspan x="10" y="650">537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.14 Safari/537.36"}</tspan>
+<tspan x="10" y="666">serverLog - {"type":"serverResponse","time":"2017-10-16T22:12:46.149Z","method":"GET","url":"/as\</tspan>
+<tspan x="10" y="682">sets.swgg.swagger.json","statusCode":200,"duration":34,"requestContentLength":0,"responseContent\</tspan>
+<tspan x="10" y="698">Length":31474,"requestHeaderXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":"h\</tspan>
+<tspan x="10" y="714">ttp://127.0.0.1:8081/","requestHeaderUserAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537\</tspan>
+<tspan x="10" y="730">.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.14 Safari/537.36"}</tspan>
+<tspan x="10" y="746">[2017-10-16 22:12:46,675][INFO ][cluster.service          ] [Ape] new_master [Ape][V--eJ1pdTcWXn\</tspan>
+<tspan x="10" y="762">YpYcXAovA][testing-gce-266e900f-84d7-4fb7-b904-16567b2d0b65][inet[/10.20.0.229:9300]], reason: z\</tspan>
+<tspan x="10" y="778">en-disco-join (elected_as_master)</tspan>
+<tspan x="10" y="794">[2017-10-16 22:12:46,737][INFO ][gateway                  ] [Ape] recovered [0] indices into clu\</tspan>
+<tspan x="10" y="810">ster_state</tspan>
+<tspan x="10" y="826">[2017-10-16 22:12:46,742][INFO ][http                     ] [Ape] bound_address {inet[/0.0.0.0:8\</tspan>
+<tspan x="10" y="842">082]}, publish_address {inet[/10.20.0.229:8082]}</tspan>
+<tspan x="10" y="858">[2017-10-16 22:12:46,749][INFO ][node                     ] [Ape] started</tspan>
 <tspan x="10" y="874">elasticsearch-server listening on http-port8082</tspan>
-<tspan x="10" y="890">serverLog - {"type":"serverResponse","time":"2017-10-02T17:03:38.962Z","method":"GET","url":"/",\</tspan>
-<tspan x="10" y="906">"statusCode":200,"duration":1,"requestContentLength":0,"responseContentLength":12231,"requestHea\</tspan>
+<tspan x="10" y="890">serverLog - {"type":"serverResponse","time":"2017-10-16T22:12:47.158Z","method":"GET","url":"/",\</tspan>
+<tspan x="10" y="906">"statusCode":200,"duration":8,"requestContentLength":0,"responseContentLength":13518,"requestHea\</tspan>
 <tspan x="10" y="922">derXForwardedFor":"","requestHeaderOrigin":"","requestHeaderReferer":""}</tspan>
-<tspan x="10" y="938">[2017-10-02 17:03:39,502][INFO ][cluster.metadata         ] [James Rhodes] [server_log] creating\</tspan>
-<tspan x="10" y="954"> index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
-<tspan x="10" y="970">[2017-10-02 17:03:40,095][INFO ][cluster.metadata         ] [James Rhodes] [server_log] update_m\</tspan>
-<tspan x="10" y="986">apping [serverResponse] (dynamic)</tspan>
-<tspan x="10" y="1002">[2017-10-02 17:04:00,586][INFO ][node                     ] [James Rhodes] stopping ...</tspan>
-<tspan x="10" y="1018">[2017-10-02 17:04:01,122][INFO ][node                     ] [James Rhodes] stopped</tspan>
-<tspan x="10" y="1034">[2017-10-02 17:04:01,124][INFO ][node                     ] [James Rhodes] closing ...</tspan>
-<tspan x="10" y="1050">[2017-10-02 17:04:01,129][INFO ][node                     ] [James Rhodes] closed</tspan>
+<tspan x="10" y="938">[2017-10-16 22:12:47,804][INFO ][cluster.metadata         ] [Ape] [server_log] creating index, c\</tspan>
+<tspan x="10" y="954">ause [auto(bulk api)], templates [], shards [5]/[1], mappings [serverResponse]</tspan>
+<tspan x="10" y="970">[2017-10-16 22:12:48,613][INFO ][cluster.metadata         ] [Ape] [server_log] update_mapping [s\</tspan>
+<tspan x="10" y="986">erverResponse] (dynamic)</tspan>
+<tspan x="10" y="1002">[2017-10-16 22:13:08,329][INFO ][node                     ] [Ape] stopping ...</tspan>
+<tspan x="10" y="1018">[2017-10-16 22:13:09,129][INFO ][node                     ] [Ape] stopped</tspan>
+<tspan x="10" y="1034">[2017-10-16 22:13:09,130][INFO ][node                     ] [Ape] closing ...</tspan>
+<tspan x="10" y="1050">[2017-10-16 22:13:09,146][INFO ][node                     ] [Ape] closed</tspan>
 </text>
 </svg>

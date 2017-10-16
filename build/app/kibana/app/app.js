@@ -1,11 +1,12 @@
 var local={};local.githubCorsUrlOverride=function (url, hostOverride, rgxHostOverride, location) {
         /*
-         * this function will return hostOverride over location.host,
-         * if this app is hosted on github.io
+         * this function will replace the url's host with hostOverride,
+         * if location.host is a github site
          */
             location = location || (typeof window === 'object' && window && window.location);
-            if (!(hostOverride && location && (local.githubCorsHostTest ||
-                    (/\bgithub.com$|\bgithub.io$/).test(location.host)))) {
+            if (!(hostOverride &&
+                    location &&
+                    (/\bgithub.com$|\bgithub.io$/).test(location.host))) {
                 return url;
             }
             // init github-branch
